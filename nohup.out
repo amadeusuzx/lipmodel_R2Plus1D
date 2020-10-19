@@ -1,0 +1,7 @@
+/home/rkmtlab/.local/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py:26: UserWarning: 
+    There is an imbalance between your GPUs. You may want to exclude GPU 1 which
+    has less than 75% of the memory or cores of GPU 0. You can do so by setting
+    the device_ids argument to DataParallel, or by setting the CUDA_VISIBLE_DEVICES
+    environment variable.
+  warnings.warn(imbalance_warn.format(device_ids[min_pos], device_ids[max_pos]))
+  0%|          | 0/30 [00:00<?, ?epochs/s]
