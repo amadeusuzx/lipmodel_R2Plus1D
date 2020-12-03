@@ -3,3 +3,7 @@ datasets
 .vscode
 .ipynb_checkpoints
 __pycache__
+*zxsu*
+features
+*aug*
+testmodel

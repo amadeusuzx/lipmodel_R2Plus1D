@@ -31,12 +31,12 @@ def train_model(num_classes, directory, num_epochs=45, path="model_data.pth.tar"
     for label in sorted(os.listdir(folder)):
         shuffled_list = os.listdir(os.path.join(folder, label))
         random.shuffle(shuffled_list)
-        for fname in shuffled_list[:]:
+        for fname in shuffled_list[:-3]:
             train_fnames.append(os.path.join(folder, label, fname))
             train_labels.append(label)
-        for fname in shuffled_list[-5:]:
+        for fname in shuffled_list[-3:]:
             val_fnames.append(os.path.join(folder, label, fname))
-            val_labels.append(label)  
+            val_labels.append(label)
     layer_sizes=[2,2,2,2,2]
     save=True
     # initalize the ResNet 18 version of this model
@@ -49,17 +49,18 @@ def train_model(num_classes, directory, num_epochs=45, path="model_data.pth.tar"
 
 
     video_transform_list = [
-        video_transforms.RandomRotation((5)),
-        video_transforms.RandomResize((1,1.2)),
-        video_transforms.CenterCrop((48,86)),    # h,w
+        video_transforms.RandomRotation((8)),
+        video_transforms.RandomVerticalFlip(0.5),
+        video_transforms.RandomResize((0.97,1.06)),
+        video_transforms.CenterCrop((46,92)),    # h,w
         video_transforms.ColorJitter(0.3,0.3,0.3)]
     transforms = video_transforms.Compose(video_transform_list)
 
-    test_transforms = video_transforms.Compose([video_transforms.CenterCrop((48,86))])
-    train_set = VideoDataset(fnames=train_fnames,labels=train_labels,transforms=transforms)
+    test_transforms = video_transforms.Compose([video_transforms.CenterCrop((46,92))])
+    train_set = VideoDataset(fnames=train_fnames,labels=train_labels,transforms=test_transforms)
     val_set = VideoDataset(fnames=val_fnames,labels=val_labels,mode = 'val',transforms=test_transforms)
 
-    train_dataloader = DataLoader(train_set, batch_size = 12, shuffle=True, num_workers=8 , collate_fn = pad_3d_sequence)
+    train_dataloader = DataLoader(train_set, batch_size = 12, shuffle=True, num_workers= 16 , collate_fn = pad_3d_sequence)
 
     val_dataloader = DataLoader(val_set, batch_size=1, num_workers=4)
     dataloaders = {'train': train_dataloader, 'val': val_dataloader}
