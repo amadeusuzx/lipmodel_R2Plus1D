@@ -21,7 +21,6 @@ class SpatioTemporalResBlock(nn.Module):
         # to halve the residual output size, and the input x is passed 
         # through a seperate 1x1x1 conv with stride = 2 to also halve it.
 
-        # no pooling layers are used inside ResNet
         self.downsample = downsample
         
         # to allow for SAME padding
@@ -110,7 +109,7 @@ class R2Plus1DNet(nn.Module):
         self.conv3 = SpatioTemporalResLayer(64, 128, 3, layer_sizes[1], block_type=block_type, downsample=True)
         self.conv4 = SpatioTemporalResLayer(128, 256, 3, layer_sizes[2], block_type=block_type, downsample=True)
         self.conv5 = SpatioTemporalResLayer(256, 512, 3, layer_sizes[3], block_type=block_type, downsample=True)
-        # self.conv6 = SpatioTemporalResLayer(512, 512, 3, layer_sizes[3], block_type=block_type, downsample=True)
+        self.conv6 = SpatioTemporalResLayer(512, 1024, 3, layer_sizes[3], block_type=block_type, downsample=True)
         # self.conv7 = SpatioTemporalResLayer(512, 1024, 3, layer_sizes[4], block_type=block_type, downsample=True)
         # global average pooling of the output
         self.pool = nn.AdaptiveAvgPool3d(1)
@@ -121,11 +120,11 @@ class R2Plus1DNet(nn.Module):
         x = self.conv3(x)
         x = self.conv4(x)
         x = self.conv5(x)
-        # x = self.conv6(x)
+        x = self.conv6(x)
         # x = self.conv7(x)
         x = self.pool(x)
         
-        return x.view(-1, 512)
+        return x.view(-1, 1024)
 
 class R2Plus1DClassifier(nn.Module):
     r"""Forms a complete ResNet classifier producing vectors of size num_classes, by initializng 5 layers, 
@@ -142,7 +141,7 @@ class R2Plus1DClassifier(nn.Module):
         super(R2Plus1DClassifier, self).__init__()
 
         self.res2plus1d = R2Plus1DNet(layer_sizes, block_type)
-        self.linear = nn.Linear(512, num_classes)
+        self.linear = nn.Linear(1024, num_classes)
 
     def forward(self, x):
         x = self.res2plus1d(x)

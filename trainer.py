@@ -14,7 +14,7 @@ import sys
 import cv2
 import random
 # Use GPU if available else revert to CPU
-device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 from torch_videovision.torchvideotransforms import video_transforms, volume_transforms
 
 def pad_3d_sequence(batch):
@@ -37,11 +37,10 @@ def train_model(num_classes, directory, num_epochs=45, path="model_data.pth.tar"
         for fname in shuffled_list[-3:]:
             val_fnames.append(os.path.join(folder, label, fname))
             val_labels.append(label)
-    layer_sizes=[2,2,2,2,2]
+    layer_sizes=[2,2,2,2,2,2]
     save=True
     # initalize the ResNet 18 version of this model
     model = R2Plus1DClassifier(num_classes=num_classes, layer_sizes=layer_sizes).to(device)
-    model = torch.nn.DataParallel(model, device_ids=[1,2,0])
 
     criterion = nn.CrossEntropyLoss() # standard crossentropy loss for classification
     optimizer = optim.SGD(model.parameters(), lr=0.01)  # hyperparameters as given in pa per sec 4.1
@@ -49,18 +48,18 @@ def train_model(num_classes, directory, num_epochs=45, path="model_data.pth.tar"
 
 
     video_transform_list = [
-        video_transforms.RandomRotation((8)),
-        video_transforms.RandomVerticalFlip(0.5),
-        video_transforms.RandomResize((0.97,1.06)),
+        video_transforms.RandomRotation((5)),
+        video_transforms.RandomHorizontalFlip(0.5),
+        # video_transforms.RandomResize((0.98,1.06)),
         video_transforms.CenterCrop((46,92)),    # h,w
         video_transforms.ColorJitter(0.3,0.3,0.3)]
     transforms = video_transforms.Compose(video_transform_list)
 
     test_transforms = video_transforms.Compose([video_transforms.CenterCrop((46,92))])
-    train_set = VideoDataset(fnames=train_fnames,labels=train_labels,transforms=test_transforms)
+    train_set = VideoDataset(fnames=train_fnames,labels=train_labels,transforms=transforms)
     val_set = VideoDataset(fnames=val_fnames,labels=val_labels,mode = 'val',transforms=test_transforms)
 
-    train_dataloader = DataLoader(train_set, batch_size = 12, shuffle=True, num_workers= 16 , collate_fn = pad_3d_sequence)
+    train_dataloader = DataLoader(train_set, batch_size = 3, shuffle=True, num_workers= 16 , collate_fn = pad_3d_sequence)
 
     val_dataloader = DataLoader(val_set, batch_size=1, num_workers=4)
     dataloaders = {'train': train_dataloader, 'val': val_dataloader}
@@ -124,8 +123,6 @@ def train_model(num_classes, directory, num_epochs=45, path="model_data.pth.tar"
             'acc': epoch_acc,
             'opt_dict': optimizer.state_dict(),
             }, path)
-            model.eval()
-            torch.save(model.module.state_dict(), path+"_puremodel")
 
     time_elapsed = time.time() - start    
     print(f"Training complete in {time_elapsed//3600}h {(time_elapsed%3600)//60}m {time_elapsed %60}s")
