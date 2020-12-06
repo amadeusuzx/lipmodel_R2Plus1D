@@ -38,7 +38,7 @@ class VideoDataset(Dataset):
         while (count < frame_count and retaining):
             retaining, frame = capture.read()
             if (count > drop_beginning) and (count not in droplist):
-                frame = cv2.resize(frame,(120,60))
+                frame = cv2.resize(frame,(80,40))
                 frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
                 frame = Image.fromarray(frame, 'RGB')
                 buffer.append(frame)

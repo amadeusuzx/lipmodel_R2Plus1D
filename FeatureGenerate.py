@@ -50,40 +50,49 @@ def train_model(num_classes, directory, path="model_data.pth.tar"):
     'click'])
     device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
     folder = Path(directory)
-    train_fnames,train_labels = [],[]
+    train_fnames,train_labels,val_fnames,val_labels = [],[],[],[]
     for label in sorted(os.listdir(folder)):
-        data_list = os.listdir(os.path.join(folder, label))
-        for fname in data_list:
+        shuffled_list = os.listdir(os.path.join(folder, label))
+        random.Random(4).shuffle(shuffled_list)
+        for fname in shuffled_list[:-10]:
             train_fnames.append(os.path.join(folder, label, fname))
             train_labels.append(label)
+        for fname in shuffled_list[-10:]:
+            val_fnames.append(os.path.join(folder, label, fname))
+            val_labels.append(label)
     layer_sizes=[2,2,2,2,2,2]
     save=True
     # initalize the ResNet 18 version of this model
     model = R2Plus1DClassifier(num_classes=num_classes, layer_sizes=layer_sizes).to(device)
 
-    transforms = video_transforms.Compose([video_transforms.CenterCrop((46,92))])
+    transforms = video_transforms.Compose([video_transforms.CenterCrop((30,60))])
     train_set = VideoDataset(fnames=train_fnames,labels=train_labels,transforms=transforms)
+    train_set = VideoDataset(fnames=val_fnames,labels=val_labels,transforms=transforms)
 
-    dataloader = DataLoader(train_set, batch_size = 1, shuffle=False, num_workers= 1)
-
+    train_dataloader = DataLoader(train_set, batch_size = 1, shuffle=False, num_workers= 4)
+    val_dataloader = DataLoader(train_set, batch_size = 1, shuffle=False, num_workers= 4)
 
     if os.path.exists(path):
         checkpoint = torch.load(path)
         print("Reloading from previously saved checkpoint")
-        model.load_state_dict(checkpoint)
+        model.load_state_dict(checkpoint["state_dict"])
     model.eval()
-    i = 0  
-    for inputs, labels in dataloader:
-        inputs_buffer = inputs.permute(0,4,1,2,3).to(device)
+    
+    dataloaders = {'train_dataloader':train_dataloader,'val_dataloader':val_dataloader}
+    for phase in ['train_dataloader','val_dataloader']:
+        i = 0  
+        for inputs, labels in dataloaders[phase]:
+            inputs_buffer = inputs.permute(0,4,1,2,3).to(device)
 
-        with torch.set_grad_enabled(False):
-            outputs = model.res2plus1d(inputs_buffer) 
+            with torch.set_grad_enabled(False):
+                outputs = model.res2plus1d(inputs_buffer) 
 
-        i += 1
-        print(f"extracted {i} of {len(dataloader.dataset)} videos")
-        if not os.path.exists(f"features/{commands[labels[0]]}"):
-            os.makedirs(f"features/{commands[labels[0]]}") 
-        np.save(f"./features/{commands[labels[0]]}/{commands[labels[0]]}{i}.npy",outputs.cpu().detach().numpy())
+            i += 1
+            print(f"extracted {i} of {len(dataloaders[phase].dataset)} videos")
+            feats_dir = f"features/{phase}/{commands[labels[0]]}"
+            if not os.path.exists(feats_dir):
+                os.makedirs(feats_dir) 
+            np.save(f"{feats_dir}/{commands[labels[0]]}{i}.npy",outputs.cpu().detach().numpy())
 
 
 if __name__ == "__main__":

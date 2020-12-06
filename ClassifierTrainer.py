@@ -32,41 +32,63 @@ class ClassifierDataset(Dataset):
 def train_model(num_classes, directory,num_epochs,model_name):
     # batch_size = 20
     commands = sorted([
-    'caption',
-    'play',
-    'stop',
-    'go_back',
-    'go_forward',
-    'previous',
-    'next'])
+        'caption',
+        'play',
+        'stop',
+        'go_back',
+        'go_forward',
+        'previous',
+        'next',
+        'volume_up',
+        'volume_down',
+        'maximize',
+        'expand',
+        'delete',
+        'save',
+        'like',
+        'dislike',
+        'share',
+        'add_to_queue',
+        'watch_later',
+        'home',
+        'trending',
+        'subscription',
+        'original',
+        'library',
+        'profile',
+        'notification',
+        'scroll_up',
+        'scroll_down',
+        'click'])
+    
     device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
-    folder = Path(directory)
+    train_folder = Path(directory+"/train")
+    val_folder = Path(directory+"/val")
     train_fnames,train_labels,val_fnames,val_labels = [],[],[],[]
-    for label in sorted(os.listdir(folder)):
+    for label in sorted(os.listdir(train_folder)):
         if label in commands:
-            shuffled_list = os.listdir(os.path.join(folder, label))
-            random.shuffle(shuffled_list)
-            for fname in shuffled_list[:-3]:
-                train_fnames.append(os.path.join(folder, label, fname))
+            train_list = os.listdir(os.path.join(train_folder, label))
+            val_list = os.listdir(os.path.join(val_folder, label))
+            random.Random(4).shuffle(train_list)
+            random.Random(4).shuffle(val_list)
+            for fname in train_list:
+                train_fnames.append(os.path.join(train_folder, label, fname))
                 train_labels.append(label)
-            for fname in shuffled_list[-3:]:
-                val_fnames.append(os.path.join(folder, label, fname))
+            for fname in val_list:
+                val_fnames.append(os.path.join(val_folder, label, fname))
                 val_labels.append(label)
-    layer_sizes=[2,2,2,2,2,2]
     save=True
     # initalize the ResNet 18 version of this model
     model = nn.Linear(1024, num_classes).to(device)
 
     train_set = ClassifierDataset(fnames=train_fnames,labels=train_labels)
-    train_dataloader = DataLoader(train_set, batch_size = 16, shuffle=True, num_workers= 1)
+    train_dataloader = DataLoader(train_set, batch_size = 16, shuffle=False, num_workers= 4)
     val_set = ClassifierDataset(fnames=val_fnames,labels=val_labels)
-    val_dataloader = DataLoader(val_set, batch_size = 1, shuffle=True, num_workers= 1)
+    val_dataloader = DataLoader(val_set, batch_size = 16, shuffle=False, num_workers= 4)
     criterion = nn.CrossEntropyLoss() # standard crossentropy loss for classification
     optimizer = optim.SGD(model.parameters(), lr=0.01)  # hyperparameters as given in pa per sec 4.1
 
-    train_dataloader = DataLoader(train_set, batch_size = 3, shuffle=True, num_workers= 16)
 
-    val_dataloader = DataLoader(val_set, batch_size=1, num_workers=4)
     dataloaders = {'train': train_dataloader, 'val': val_dataloader}
 
     dataset_sizes = {x: len(dataloaders[x].dataset) for x in ['train', 'val']}
