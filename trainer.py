@@ -31,10 +31,10 @@ def train_model(directory, path, num_classes, batch_size, num_epochs):
     for label in sorted(os.listdir(folder)):
         shuffled_list = os.listdir(os.path.join(folder, label))
         random.Random(4).shuffle(shuffled_list)
-        for fname in shuffled_list[:-5]:
+        for fname in shuffled_list[:]:
             train_fnames.append(os.path.join(folder, label, fname))
             train_labels.append(label)
-        for fname in shuffled_list[-5:]:
+        for fname in shuffled_list[-1:]:
             val_fnames.append(os.path.join(folder, label, fname))
             val_labels.append(label)
     layer_sizes = [2, 2, 2, 2, 2, 2]
@@ -50,7 +50,7 @@ def train_model(directory, path, num_classes, batch_size, num_epochs):
     scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.1)
 
     video_transform_list = [
-        video_transforms.RandomRotation((10)),
+        video_transforms.RandomRotation((7)),
         video_transforms.RandomResize((0.97, 1.03)),
         video_transforms.CenterCrop((30, 60)),    # h,w
         video_transforms.ColorJitter(0.2, 0.2, 0.2)]
