@@ -34,7 +34,7 @@ def train_model(directory, path, num_classes, batch_size, num_epochs):
         for fname in shuffled_list[:]:
             train_fnames.append(os.path.join(folder, label, fname))
             train_labels.append(label)
-        for fname in shuffled_list[-1:]:
+        for fname in shuffled_list[-3:]:
             val_fnames.append(os.path.join(folder, label, fname))
             val_labels.append(label)
     layer_sizes = [2, 2, 2, 2, 2, 2]
@@ -50,14 +50,14 @@ def train_model(directory, path, num_classes, batch_size, num_epochs):
     scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.1)
 
     video_transform_list = [
-        video_transforms.RandomRotation((7)),
+        video_transforms.RandomRotation((8)),
         video_transforms.RandomResize((0.97, 1.03)),
-        video_transforms.CenterCrop((30, 60)),    # h,w
+        video_transforms.CenterCrop((40, 80)),    # h,w
         video_transforms.ColorJitter(0.2, 0.2, 0.2)]
     transforms = video_transforms.Compose(video_transform_list)
 
     test_transforms = video_transforms.Compose(
-        [video_transforms.CenterCrop((30, 60))])
+        [video_transforms.CenterCrop((40, 80))])
     train_set = VideoDataset(
         fnames=train_fnames, labels=train_labels, transforms=transforms)
     val_set = VideoDataset(fnames=val_fnames, labels=val_labels,
