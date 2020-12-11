@@ -31,7 +31,7 @@ def train_model(directory, path, num_classes, batch_size, num_epochs):
     for label in sorted(os.listdir(folder)):
         shuffled_list = os.listdir(os.path.join(folder, label))
         random.Random(4).shuffle(shuffled_list)
-        for fname in shuffled_list[:]:
+        for fname in shuffled_list[:1]:
             train_fnames.append(os.path.join(folder, label, fname))
             train_labels.append(label)
         for fname in shuffled_list[-3:]:
