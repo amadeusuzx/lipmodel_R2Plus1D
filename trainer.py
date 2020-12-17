@@ -31,10 +31,10 @@ def train_model(directory, path, num_classes, batch_size, num_epochs):
     for label in sorted(os.listdir(folder)):
         shuffled_list = os.listdir(os.path.join(folder, label))
         random.Random(4).shuffle(shuffled_list)
-        for fname in shuffled_list[:1]:
+        for fname in shuffled_list[:]:
             train_fnames.append(os.path.join(folder, label, fname))
             train_labels.append(label)
-        for fname in shuffled_list[-3:]:
+        for fname in shuffled_list[:]:
             val_fnames.append(os.path.join(folder, label, fname))
             val_labels.append(label)
     layer_sizes = [2, 2, 2, 2, 2, 2]
@@ -50,16 +50,16 @@ def train_model(directory, path, num_classes, batch_size, num_epochs):
     scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.1)
 
     video_transform_list = [
-        video_transforms.RandomRotation((8)),
+        video_transforms.RandomRotation((7)),
         video_transforms.RandomResize((0.97, 1.03)),
         video_transforms.CenterCrop((40, 80)),    # h,w
         video_transforms.ColorJitter(0.2, 0.2, 0.2)]
-    transforms = video_transforms.Compose(video_transform_list)
+    train_transforms = video_transforms.Compose(video_transform_list)
 
     test_transforms = video_transforms.Compose(
         [video_transforms.CenterCrop((40, 80))])
     train_set = VideoDataset(
-        fnames=train_fnames, labels=train_labels, transforms=transforms)
+        fnames=train_fnames, labels=train_labels, transforms=train_transforms)
     val_set = VideoDataset(fnames=val_fnames, labels=val_labels,
                            mode='val', transforms=test_transforms)
 
@@ -85,7 +85,7 @@ def train_model(directory, path, num_classes, batch_size, num_epochs):
         epoch_resume = checkpoint["epoch"]
 
     for epoch in tqdm(range(epoch_resume, num_epochs), unit="epochs", initial=epoch_resume, total=num_epochs):
-        for phase in ['train', 'val']:
+        for phase in ['train']:
 
             # reset the running loss and corrects
             running_loss = 0.0

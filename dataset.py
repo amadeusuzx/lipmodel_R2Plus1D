@@ -31,7 +31,7 @@ class VideoDataset(Dataset):
         count = 0
         retaining = True
 
-        droplist = random.sample(range(frame_count),random.randint(0,frame_count//10)) if self.mode == "train" else []
+        droplist = random.sample(range(frame_count),random.randint(0,frame_count//20)) if self.mode == "train" else []
         drop_beginning = -1
         # sampling = np.linspace(0, frame_count-1, num=n_frame, dtype=int)
         # read in each frame, one at a time into the numpy buffer array
