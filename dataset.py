@@ -26,16 +26,17 @@ class VideoDataset(Dataset):
     def loadvideo(self, fname):
         capture = cv2.VideoCapture(fname)
         frame_count = int(capture.get(cv2.CAP_PROP_FRAME_COUNT))
+        
         buffer = []
 
         count = 0
         retaining = True
-
         droplist = random.sample(range(frame_count),random.randint(0,frame_count//20)) if self.mode == "train" else []
-        drop_beginning = -1
+        drop_beginning = random.randint(0,20)
+        drop_end = frame_count - random.randint(0,20)
         # sampling = np.linspace(0, frame_count-1, num=n_frame, dtype=int)
         # read in each frame, one at a time into the numpy buffer array
-        while (count < frame_count and retaining):
+        while (count < drop_end and retaining):
             retaining, frame = capture.read()
             if (count > drop_beginning) and (count not in droplist):
                 # frame = cv2.resize(frame,(120,60))

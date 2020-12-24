@@ -11,6 +11,7 @@ from tqdm import tqdm
 from pathlib import Path
 from dataset import VideoDataset
 from network import R2Plus1DClassifier
+from torch.utils.tensorboard import SummaryWriter
 
 import cv2
 import random
@@ -27,16 +28,31 @@ def pad_3d_sequence(batch):
 def train_model(directory, path, num_classes, batch_size, num_epochs):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     folder = Path(directory)
+    sample_dir = os.listdir(os.path.join(folder, "zxsu"))
     train_fnames, train_labels, val_fnames, val_labels = [], [], [], []
-    for label in sorted(os.listdir(folder)):
-        shuffled_list = os.listdir(os.path.join(folder, label))
-        random.Random(4).shuffle(shuffled_list)
-        for fname in shuffled_list[:]:
-            train_fnames.append(os.path.join(folder, label, fname))
-            train_labels.append(label)
-        for fname in shuffled_list[:]:
-            val_fnames.append(os.path.join(folder, label, fname))
-            val_labels.append(label)
+    # for label in sorted(sample_dir):
+    #     for subject in sorted(os.listdir(folder)):
+    #         shuffled_list = os.listdir(os.path.join(folder, subject, label))
+    #         random.Random(4).shuffle(shuffled_list)
+    #         for fname in shuffled_list[:-2]:
+    #             train_fnames.append(os.path.join(folder, subject, label, fname))
+    #             train_labels.append(label)
+    #         for fname in shuffled_list[-2:]:
+    #             val_fnames.append(os.path.join(folder, subject, label, fname))
+    #             val_labels.append(label)
+        # for label in sorted(sample_dir):
+    for label in sorted(sample_dir):
+        for subject in sorted(os.listdir(folder)):
+            shuffled_list = os.listdir(os.path.join(folder, subject, label))
+            random.Random(4).shuffle(shuffled_list)
+            if subject != "zxsu":
+                for fname in shuffled_list:
+                    train_fnames.append(os.path.join(folder, subject, label, fname))
+                    train_labels.append(label)
+            else:
+                for fname in shuffled_list:
+                    val_fnames.append(os.path.join(folder, subject, label, fname))
+                    val_labels.append(label)
     layer_sizes = [2, 2, 2, 2, 2, 2]
     save = True
     # initalize the ResNet 18 version of this model
@@ -59,7 +75,7 @@ def train_model(directory, path, num_classes, batch_size, num_epochs):
     test_transforms = video_transforms.Compose(
         [video_transforms.CenterCrop((40, 80))])
     train_set = VideoDataset(
-        fnames=train_fnames, labels=train_labels, transforms=train_transforms)
+        fnames=train_fnames, labels=train_labels, transforms=test_transforms)
     val_set = VideoDataset(fnames=val_fnames, labels=val_labels,
                            mode='val', transforms=test_transforms)
 
@@ -83,9 +99,10 @@ def train_model(directory, path, num_classes, batch_size, num_epochs):
         optimizer.load_state_dict(checkpoint['opt_dict'])
 
         epoch_resume = checkpoint["epoch"]
-
+    writer = SummaryWriter("exzxsu")
+    i = 0
     for epoch in tqdm(range(epoch_resume, num_epochs), unit="epochs", initial=epoch_resume, total=num_epochs):
-        for phase in ['train']:
+        for phase in ['train','val']:
 
             # reset the running loss and corrects
             running_loss = 0.0
@@ -109,12 +126,17 @@ def train_model(directory, path, num_classes, batch_size, num_epochs):
                     if phase == 'train':
                         loss.backward()
                         optimizer.step()
-
-                running_loss += loss.item() * inputs_buffer.size(0)
+                iter_loss = loss.item() * inputs_buffer.size(0)
+                running_loss += iter_loss
                 running_corrects += torch.sum(preds == labels_buffer.data)
+                writer.add_scalar('IterLoss/' + phase, iter_loss, i)
+                i+=1
 
             epoch_loss = running_loss / dataset_sizes[phase]
             epoch_acc = running_corrects.double() / dataset_sizes[phase]
+            writer.add_scalar('Loss/' + phase, epoch_acc, epoch)
+            writer.add_scalar('Accuracy/' + phase, epoch_acc, epoch)
+
             if phase == 'train':
                 scheduler.step()
                 print(f"\n{phase} Loss: {epoch_loss} Acc: {epoch_acc}")

@@ -9,7 +9,9 @@ features
 testmodel
 *training*
 .empty
-demotest3060_alldata.pt
+*.pt
 xin*
 features
 user_independence
+tensorboard_data
+tb
