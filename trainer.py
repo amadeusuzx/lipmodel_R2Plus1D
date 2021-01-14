@@ -24,17 +24,17 @@ def pad_3d_sequence(batch):
     return sequences_padded, labels
 
 
-def train_model(directory, path, num_classes, batch_size, num_epochs):
+def train_model(directory, path, num_classes, batch_size, num_epochs,k):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     folder = Path(directory)
     train_fnames, train_labels, val_fnames, val_labels = [], [], [], []
     for label in sorted(os.listdir(folder)):
         shuffled_list = os.listdir(os.path.join(folder, label))
         random.Random(4).shuffle(shuffled_list)
-        for fname in shuffled_list[:]:
+        for fname in shuffled_list[:k]+shuffled_list[k+1:]:
             train_fnames.append(os.path.join(folder, label, fname))
             train_labels.append(label)
-        for fname in shuffled_list[:]:
+        for fname in shuffled_list[k:k+1]:
             val_fnames.append(os.path.join(folder, label, fname))
             val_labels.append(label)
     layer_sizes = [2, 2, 2, 2, 2, 2]
@@ -74,6 +74,7 @@ def train_model(directory, path, num_classes, batch_size, num_epochs):
 
     start = time.time()
     epoch_resume = 0
+    last_acc = 0
 
     if os.path.exists(path):
         checkpoint = torch.load(path)
@@ -85,7 +86,7 @@ def train_model(directory, path, num_classes, batch_size, num_epochs):
         epoch_resume = checkpoint["epoch"]
 
     for epoch in tqdm(range(epoch_resume, num_epochs), unit="epochs", initial=epoch_resume, total=num_epochs):
-        for phase in ['train']:
+        for phase in ['train','val']:
 
             # reset the running loss and corrects
             running_loss = 0.0
@@ -120,18 +121,19 @@ def train_model(directory, path, num_classes, batch_size, num_epochs):
                 print(f"\n{phase} Loss: {epoch_loss} Acc: {epoch_acc}")
             else:
                 print(f"{phase} Loss: {epoch_loss} Acc: {epoch_acc}\n")
-        if save:
-            torch.save({
-                'epoch': epoch + 1,
-                'state_dict': model.module.state_dict(),
-                'acc': epoch_acc,
-                'opt_dict': optimizer.state_dict(),
-            }, path)
+                last_acc = max(epoch_acc,last_acc)
+        # if save:
+        #     torch.save({
+        #         'epoch': epoch + 1,
+        #         'state_dict': model.module.state_dict(),
+        #         'acc': epoch_acc,
+        #         'opt_dict': optimizer.state_dict(),
+        #     }, path)
 
     time_elapsed = time.time() - start
     print(
         f"Training complete in {time_elapsed//3600}h {(time_elapsed%3600)//60}m {time_elapsed %60}s")
-
+    return last_acc
 
 if __name__ == "__main__":
     import argparse
@@ -145,6 +147,8 @@ if __name__ == "__main__":
     parser.add_argument('--batch-size', type=int, help='batch size')
 
     args = parser.parse_args()
-
-    train_model(args.data, args.model, args.num_classes,
-                args.batch_size, args.num_epochs,)
+    val_accs = []
+    for k in range(9):
+        val_accs.append(train_model(args.data, args.model, args.num_classes,args.batch_size, args.num_epochs,k))
+    for k in range(9):
+        print(f"number {k}, accuracy {val_accs[k]}")
