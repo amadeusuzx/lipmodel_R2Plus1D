@@ -1,1111 +1,0 @@
-/home/rkmtlab/.local/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py:26: UserWarning: 
-    There is an imbalance between your GPUs. You may want to exclude GPU 1 which
-    has less than 75% of the memory or cores of GPU 0. You can do so by setting
-    the device_ids argument to DataParallel, or by setting the CUDA_VISIBLE_DEVICES
-    environment variable.
-  warnings.warn(imbalance_warn.format(device_ids[min_pos], device_ids[max_pos]))
-  0%|          | 0/30 [00:00<?, ?epochs/s]/home/rkmtlab/.local/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py:26: UserWarning: 
-    There is an imbalance between your GPUs. You may want to exclude GPU 1 which
-    has less than 75% of the memory or cores of GPU 0. You can do so by setting
-    the device_ids argument to DataParallel, or by setting the CUDA_VISIBLE_DEVICES
-    environment variable.
-  warnings.warn(imbalance_warn.format(device_ids[min_pos], device_ids[max_pos]))
-  2%|▏         | 1/50 [00:00<?, ?epochs/s]Reloading from previously saved checkpoint
-
-train Loss: 2.671495026036313 Acc: 0.1368421052631579
-  4%|▍         | 2/50 [00:41<33:12, 41.52s/epochs]
-val Loss: 2.798423464674699 Acc: 0.08421052631578947
-
-train Loss: 2.3316796051828486 Acc: 0.2736842105263158
-  6%|▌         | 3/50 [01:18<31:31, 40.24s/epochs]
-val Loss: 2.0265677514829132 Acc: 0.3684210526315789
-
-train Loss: 2.128639723125257 Acc: 0.3333333333333333
-  8%|▊         | 4/50 [01:56<30:10, 39.36s/epochs]
-val Loss: 1.7560066649788304 Acc: 0.43157894736842106
-
-train Loss: 1.8928912614521227 Acc: 0.47017543859649125
- 10%|█         | 5/50 [02:35<29:37, 39.49s/epochs]
-val Loss: 1.4959036337701899 Acc: 0.5157894736842105
-
-train Loss: 1.6859608863529405 Acc: 0.48771929824561405
- 12%|█▏        | 6/50 [03:12<28:21, 38.68s/epochs]
-val Loss: 1.4814734095021298 Acc: 0.5157894736842105
-
-train Loss: 1.540201647658097 Acc: 0.543859649122807
- 14%|█▍        | 7/50 [03:49<27:22, 38.20s/epochs]
-val Loss: 1.2316039725353842 Acc: 0.5578947368421052
-
-train Loss: 1.2313704465564927 Acc: 0.6736842105263158
- 16%|█▌        | 8/50 [04:27<26:35, 37.99s/epochs]
-val Loss: 0.9864948310350117 Acc: 0.6947368421052631
-
-train Loss: 1.1463867563950387 Acc: 0.6807017543859649
- 18%|█▊        | 9/50 [05:04<25:54, 37.91s/epochs]
-val Loss: 0.7448451769979376 Acc: 0.7578947368421053
-
-train Loss: 0.9726467201584263 Acc: 0.7614035087719299
- 20%|██        | 10/50 [05:41<25:04, 37.61s/epochs]
-val Loss: 0.8172745654457494 Acc: 0.7684210526315789
-
-train Loss: 0.8463014728144596 Acc: 0.7719298245614036
- 22%|██▏       | 11/50 [06:18<24:20, 37.45s/epochs]
-val Loss: 0.584393953022204 Acc: 0.8105263157894737
-
-train Loss: 0.7841315238099349 Acc: 0.8456140350877193
- 24%|██▍       | 12/50 [06:56<23:40, 37.37s/epochs]
-val Loss: 0.5561264339246248 Acc: 0.8421052631578947
-
-train Loss: 0.7011939550700941 Acc: 0.8736842105263158
- 26%|██▌       | 13/50 [07:33<23:05, 37.45s/epochs]
-val Loss: 0.5125762312035812 Acc: 0.8526315789473684
-
-train Loss: 0.6702541514446861 Acc: 0.8701754385964913
- 28%|██▊       | 14/50 [08:13<22:55, 38.21s/epochs]
-val Loss: 0.4865122519041363 Acc: 0.8421052631578947
-
-train Loss: 0.6218996587552522 Acc: 0.8771929824561404
- 30%|███       | 15/50 [08:51<22:07, 37.94s/epochs]
-val Loss: 0.5051861185776559 Acc: 0.8315789473684211
-
-train Loss: 0.658358623479542 Acc: 0.8982456140350877
- 32%|███▏      | 16/50 [09:28<21:21, 37.70s/epochs]
-val Loss: 0.485553651106985 Acc: 0.8421052631578947
-
-train Loss: 0.6017155948438142 Acc: 0.8912280701754386
- 34%|███▍      | 17/50 [10:05<20:40, 37.59s/epochs]
-val Loss: 0.47221792120682565 Acc: 0.8421052631578947
-
-train Loss: 0.6316219725106892 Acc: 0.8736842105263158
- 36%|███▌      | 18/50 [10:42<19:56, 37.39s/epochs]
-val Loss: 0.4478209784156398 Acc: 0.8631578947368421
-
-train Loss: 0.5584017841439498 Acc: 0.9228070175438596
- 38%|███▊      | 19/50 [11:20<19:21, 37.46s/epochs]
-val Loss: 0.47626584329103167 Acc: 0.8421052631578947
-/home/rkmtlab/.local/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py:26: UserWarning: 
-    There is an imbalance between your GPUs. You may want to exclude GPU 1 which
-    has less than 75% of the memory or cores of GPU 0. You can do so by setting
-    the device_ids argument to DataParallel, or by setting the CUDA_VISIBLE_DEVICES
-    environment variable.
-  warnings.warn(imbalance_warn.format(device_ids[min_pos], device_ids[max_pos]))
-  0%|          | 0/50 [00:00<?, ?epochs/s]
-train Loss: 2.948657626436468 Acc: 0.07719298245614035
-  2%|▏         | 1/50 [00:55<45:01, 55.14s/epochs]
-val Loss: 3.0706413118462814 Acc: 0.05263157894736842
-
-train Loss: 2.7616521191178705 Acc: 0.0912280701754386
-  4%|▍         | 2/50 [01:46<43:17, 54.11s/epochs]
-val Loss: 2.352782241921676 Acc: 0.18947368421052632
-
-train Loss: 2.601338940335993 Acc: 0.1473684210526316
-  6%|▌         | 3/50 [02:38<41:48, 53.37s/epochs]
-val Loss: 2.0195693329760904 Acc: 0.3157894736842105
-
-train Loss: 2.2960190128861813 Acc: 0.2736842105263158
-  8%|▊         | 4/50 [03:32<41:02, 53.52s/epochs]
-val Loss: 2.249261682911923 Acc: 0.28421052631578947
-
-train Loss: 2.105540391018516 Acc: 0.3333333333333333
- 10%|█         | 5/50 [04:24<39:45, 53.00s/epochs]
-val Loss: 1.7177179926320125 Acc: 0.3368421052631579
-
-train Loss: 1.8923579793227345 Acc: 0.4105263157894737
- 12%|█▏        | 6/50 [05:15<38:36, 52.65s/epochs]
-val Loss: 1.2307019459573847 Acc: 0.6
-
-train Loss: 1.7141254241006416 Acc: 0.4736842105263158
- 14%|█▍        | 7/50 [06:08<37:36, 52.48s/epochs]
-val Loss: 1.2290690622831646 Acc: 0.49473684210526314
-
-train Loss: 1.5854027020303827 Acc: 0.543859649122807
- 16%|█▌        | 8/50 [06:59<36:36, 52.30s/epochs]
-val Loss: 1.1125451916142515 Acc: 0.6526315789473685
-
-train Loss: 1.3322160645535117 Acc: 0.624561403508772
- 18%|█▊        | 9/50 [07:51<35:40, 52.20s/epochs]
-val Loss: 1.1109171490920218 Acc: 0.5894736842105263
-
-train Loss: 1.154295544038739 Acc: 0.7368421052631579
- 20%|██        | 10/50 [08:43<34:39, 51.99s/epochs]
-val Loss: 0.7145168153863204 Acc: 0.7684210526315789
-
-train Loss: 0.9936168628826476 Acc: 0.8035087719298246
- 22%|██▏       | 11/50 [09:35<33:44, 51.90s/epochs]
-val Loss: 0.6881682998255679 Acc: 0.7894736842105263
-
-train Loss: 0.9524103231597365 Acc: 0.7859649122807018
- 24%|██▍       | 12/50 [10:26<32:47, 51.78s/epochs]
-val Loss: 0.625849259527106 Acc: 0.8105263157894737
-
-train Loss: 0.9200306787825467 Acc: 0.8
- 26%|██▌       | 13/50 [11:17<31:49, 51.62s/epochs]
-val Loss: 0.5280780528721056 Acc: 0.8421052631578947
-
-train Loss: 0.9198923684003061 Acc: 0.8315789473684211
- 28%|██▊       | 14/50 [12:09<30:57, 51.59s/epochs]
-val Loss: 0.5362938529566714 Acc: 0.8315789473684211
-
-train Loss: 0.8588917004434686 Acc: 0.8491228070175438
- 30%|███       | 15/50 [13:00<30:05, 51.57s/epochs]
-val Loss: 0.4976716443112022 Acc: 0.8315789473684211
-
-train Loss: 0.8437741488741155 Acc: 0.8771929824561404
- 32%|███▏      | 16/50 [13:52<29:14, 51.61s/epochs]
-val Loss: 0.47928280579416377 Acc: 0.8315789473684211
-
-train Loss: 0.8880659831197638 Acc: 0.8666666666666667
- 34%|███▍      | 17/50 [14:45<28:36, 52.02s/epochs]
-val Loss: 0.4863554603175113 Acc: 0.8421052631578947
-
-train Loss: 0.8458717848125257 Acc: 0.8245614035087719
- 36%|███▌      | 18/50 [15:37<27:42, 51.95s/epochs]
-val Loss: 0.5055109726755243 Acc: 0.8210526315789474
-
-train Loss: 0.8828347335781968 Acc: 0.8421052631578948
- 38%|███▊      | 19/50 [16:29<26:47, 51.87s/epochs]
-val Loss: 0.47718004678425036 Acc: 0.8315789473684211
-
-train Loss: 0.7161604799722371 Acc: 0.8982456140350877
- 40%|████      | 20/50 [17:20<25:54, 51.82s/epochs]
-val Loss: 0.4879589231390702 Acc: 0.8315789473684211
-
-train Loss: 0.7507757308190329 Acc: 0.8666666666666667
- 42%|████▏     | 21/50 [18:12<25:01, 51.76s/epochs]
-val Loss: 0.4537530522597463 Acc: 0.8526315789473684
-
-train Loss: 0.7734274466832479 Acc: 0.887719298245614
- 44%|████▍     | 22/50 [19:04<24:11, 51.82s/epochs]
-val Loss: 0.47790009097049113 Acc: 0.8421052631578947
-
-train Loss: 0.7158202999516537 Acc: 0.8842105263157894
- 46%|████▌     | 23/50 [19:55<23:13, 51.62s/epochs]
-val Loss: 0.4669263237401059 Acc: 0.8315789473684211
-
-train Loss: 0.7176713483375415 Acc: 0.9017543859649123
- 48%|████▊     | 24/50 [20:46<22:18, 51.48s/epochs]
-val Loss: 0.44646641329715125 Acc: 0.8421052631578947
-
-train Loss: 0.7518452171693768 Acc: 0.8842105263157894
- 50%|█████     | 25/50 [21:37<21:25, 51.43s/epochs]
-val Loss: 0.5297956366288035 Acc: 0.7999999999999999
-
-train Loss: 0.7778115740993566 Acc: 0.8771929824561404
- 52%|█████▏    | 26/50 [22:31<20:49, 52.05s/epochs]
-val Loss: 0.4742680449234812 Acc: 0.8315789473684211
-
-train Loss: 0.7740539404383877 Acc: 0.856140350877193
- 54%|█████▍    | 27/50 [23:22<19:52, 51.87s/epochs]
-val Loss: 0.4410800482097425 Acc: 0.8526315789473684
-
-train Loss: 0.7699722001427098 Acc: 0.8491228070175438
- 56%|█████▌    | 28/50 [24:14<18:57, 51.72s/epochs]
-val Loss: 0.4542195897353323 Acc: 0.8526315789473684
-
-train Loss: 0.7726192537106966 Acc: 0.8666666666666667
- 58%|█████▊    | 29/50 [25:05<18:03, 51.58s/epochs]
-val Loss: 0.4993344181462338 Acc: 0.8421052631578947
-
-train Loss: 0.747653401525397 Acc: 0.8736842105263158
- 60%|██████    | 30/50 [25:57<17:11, 51.58s/epochs]
-val Loss: 0.45335832395051656 Acc: 0.8421052631578947
-
-train Loss: 0.7132816065821731 Acc: 0.8947368421052632
- 62%|██████▏   | 31/50 [26:49<16:22, 51.70s/epochs]
-val Loss: 0.44356737387807743 Acc: 0.8315789473684211
-
-train Loss: 0.711842733935306 Acc: 0.8982456140350877
- 64%|██████▍   | 32/50 [27:40<15:30, 51.67s/epochs]
-val Loss: 0.4546604031010678 Acc: 0.8526315789473684
-
-train Loss: 0.7294642787230642 Acc: 0.8631578947368421
- 66%|██████▌   | 33/50 [28:32<14:37, 51.64s/epochs]
-val Loss: 0.4752220956902755 Acc: 0.8421052631578947
-
-train Loss: 0.744043539281477 Acc: 0.8701754385964913
- 68%|██████▊   | 34/50 [29:23<13:45, 51.60s/epochs]
-val Loss: 0.45601100168730085 Acc: 0.8210526315789474
-
-train Loss: 0.7569156537976182 Acc: 0.8631578947368421
- 70%|███████   | 35/50 [30:18<13:07, 52.48s/epochs]
-val Loss: 0.4619602680206299 Acc: 0.8526315789473684
-
-train Loss: 0.7584594199531957 Acc: 0.8807017543859649
- 72%|███████▏  | 36/50 [31:09<12:10, 52.18s/epochs]
-val Loss: 0.4864371324840345 Acc: 0.8315789473684211
-
-train Loss: 0.8000547183187384 Acc: 0.8456140350877193
- 74%|███████▍  | 37/50 [32:01<11:15, 52.00s/epochs]
-val Loss: 0.47598481805701004 Acc: 0.8315789473684211
-
-train Loss: 0.7345798659742924 Acc: 0.8666666666666667
- 76%|███████▌  | 38/50 [32:52<10:22, 51.89s/epochs]
-val Loss: 0.4699532559043483 Acc: 0.8526315789473684
-
-train Loss: 0.6742794990539551 Acc: 0.9263157894736842
- 78%|███████▊  | 39/50 [33:44<09:28, 51.72s/epochs]
-val Loss: 0.44579675825018633 Acc: 0.8631578947368421
-
-train Loss: 0.6900190955714176 Acc: 0.9017543859649123
- 80%|████████  | 40/50 [34:35<08:36, 51.64s/epochs]
-val Loss: 0.43305799333672773 Acc: 0.8315789473684211
-
-train Loss: 0.704585029367815 Acc: 0.8736842105263158
- 82%|████████▏ | 41/50 [35:27<07:44, 51.59s/epochs]
-val Loss: 0.47795654849002234 Acc: 0.8315789473684211
-
-train Loss: 0.7232770472242122 Acc: 0.887719298245614
- 84%|████████▍ | 42/50 [36:18<06:52, 51.58s/epochs]
-val Loss: 0.45240466720179506 Acc: 0.8736842105263157
-
-train Loss: 0.6820151904173065 Acc: 0.8982456140350877
- 86%|████████▌ | 43/50 [37:10<06:00, 51.51s/epochs]
-val Loss: 0.48522676543185583 Acc: 0.8315789473684211
-
-train Loss: 0.7415852216252109 Acc: 0.8526315789473684
- 88%|████████▊ | 44/50 [38:04<05:13, 52.29s/epochs]
-val Loss: 0.454396707133243 Acc: 0.8421052631578947
-
-train Loss: 0.7506803880658066 Acc: 0.8771929824561404
- 90%|█████████ | 45/50 [38:55<04:19, 52.00s/epochs]
-val Loss: 0.48049282525715076 Acc: 0.8315789473684211
-
-train Loss: 0.7161518009085405 Acc: 0.8947368421052632
- 92%|█████████▏| 46/50 [39:47<03:27, 51.87s/epochs]
-val Loss: 0.48757200241088866 Acc: 0.8315789473684211
-
-train Loss: 0.7110470349328559 Acc: 0.8666666666666667
- 94%|█████████▍| 47/50 [40:38<02:34, 51.64s/epochs]
-val Loss: 0.4631143143302516 Acc: 0.8421052631578947
-
-train Loss: 0.7223918668010778 Acc: 0.8807017543859649
- 96%|█████████▌| 48/50 [41:30<01:43, 51.69s/epochs]
-val Loss: 0.4691710923847399 Acc: 0.8210526315789474
-
-train Loss: 0.6853366416797303 Acc: 0.9052631578947369
- 98%|█████████▊| 49/50 [42:21<00:51, 51.66s/epochs]
-val Loss: 0.465482611405222 Acc: 0.8315789473684211
-
-train Loss: 0.7518293464392947 Acc: 0.8631578947368421
-100%|██████████| 50/50 [43:13<00:00, 51.61s/epochs]
-
-val Loss: 0.4481588489130924 Acc: 0.8526315789473684
-Training complete in 0.0h 43.0m 13.134634971618652s
-  0%|          | 0/40 [00:00<?, ?epochs/s]
-train Loss: 3.4878588391722536 Acc: 0.025179856115107917
-  2%|▎         | 1/40 [00:35<22:58, 35.34s/epochs]
-val Loss: 3.977463585989816 Acc: 0.03571428571428571
-
-train Loss: 3.0245229597571943 Acc: 0.10791366906474821
-  5%|▌         | 2/40 [01:08<22:02, 34.80s/epochs]
-val Loss: 4.068006076131549 Acc: 0.03571428571428571
-
-train Loss: 2.664650061147676 Acc: 0.1510791366906475
-  8%|▊         | 3/40 [01:43<21:23, 34.70s/epochs]
-val Loss: 4.495013689994812 Acc: 0.03214285714285714
-
-train Loss: 2.1885662430481947 Acc: 0.33093525179856115
- 10%|█         | 4/40 [02:18<20:49, 34.71s/epochs]
-val Loss: 5.191057886396136 Acc: 0.03571428571428571
-
-train Loss: 1.746981325767023 Acc: 0.46402877697841727
- 12%|█▎        | 5/40 [02:53<20:17, 34.78s/epochs]
-val Loss: 5.677694143567766 Acc: 0.04642857142857143
-
-train Loss: 1.4239209298607256 Acc: 0.5827338129496403
- 15%|█▌        | 6/40 [03:27<19:43, 34.81s/epochs]
-val Loss: 5.854421298844474 Acc: 0.03571428571428571
-
-train Loss: 1.0868147920361526 Acc: 0.683453237410072
- 18%|█▊        | 7/40 [04:03<19:13, 34.94s/epochs]
-val Loss: 6.119897498403277 Acc: 0.04642857142857143
-
-train Loss: 1.004021574696191 Acc: 0.7086330935251799
- 20%|██        | 8/40 [04:38<18:42, 35.06s/epochs]
-val Loss: 5.7632666655949185 Acc: 0.03571428571428571
-
-train Loss: 0.8432210152097743 Acc: 0.723021582733813
- 22%|██▎       | 9/40 [05:14<18:13, 35.28s/epochs]
-val Loss: 5.582009857041495 Acc: 0.039285714285714285
-
-train Loss: 0.6745472867711843 Acc: 0.7877697841726619
- 25%|██▌       | 10/40 [05:50<17:43, 35.44s/epochs]
-val Loss: 6.195579835346767 Acc: 0.03571428571428571
-
-train Loss: 0.4575527471175297 Acc: 0.9064748201438849
- 28%|██▊       | 11/40 [06:26<17:12, 35.60s/epochs]
-val Loss: 5.852587958744594 Acc: 0.05357142857142857
-  0%|          | 0/100 [00:00<?, ?epochs/s]
-train Loss: 3.371978841900255 Acc: 0.0645933014354067
-  1%|          | 1/100 [00:46<1:16:29, 46.36s/epochs]
-val Loss: 4.339511448996408 Acc: 0.05714285714285714
-
-train Loss: 2.901312688891397 Acc: 0.14114832535885166
-  2%|▏         | 2/100 [01:31<1:15:11, 46.03s/epochs]
-val Loss: 4.866051210675921 Acc: 0.049999999999999996
-
-train Loss: 2.306594139080869 Acc: 0.2727272727272727
-  3%|▎         | 3/100 [02:17<1:14:21, 45.99s/epochs]
-val Loss: 5.653407342093331 Acc: 0.03571428571428571
-
-train Loss: 1.648563342801692 Acc: 0.4712918660287081
-  4%|▍         | 4/100 [03:04<1:13:50, 46.15s/epochs]
-val Loss: 5.673007583618164 Acc: 0.03571428571428571
-
-train Loss: 1.2202332316403184 Acc: 0.6244019138755981
-  5%|▌         | 5/100 [03:51<1:13:47, 46.61s/epochs]
-val Loss: 5.2997165952410015 Acc: 0.04285714285714286
-
-train Loss: 0.9224726897107357 Acc: 0.7440191387559808
-  6%|▌         | 6/100 [04:38<1:13:14, 46.75s/epochs]
-val Loss: 7.359261676243373 Acc: 0.03571428571428571
-
-train Loss: 0.8464573171150171 Acc: 0.7296650717703349
-  7%|▋         | 7/100 [05:25<1:12:39, 46.87s/epochs]
-val Loss: 6.25475605555943 Acc: 0.03571428571428571
-
-train Loss: 0.6394551296553543 Acc: 0.8373205741626794
-  8%|▊         | 8/100 [06:12<1:11:49, 46.84s/epochs]
-val Loss: 6.2428682463509695 Acc: 0.03571428571428571
-
-train Loss: 0.5137821028107091 Acc: 0.8444976076555024
-  9%|▉         | 9/100 [06:59<1:11:03, 46.85s/epochs]
-val Loss: 4.908176517486572 Acc: 0.03571428571428571
-
-train Loss: 0.4592070495397851 Acc: 0.8564593301435406
- 10%|█         | 10/100 [07:46<1:10:20, 46.90s/epochs]
-val Loss: 4.8050860404968265 Acc: 0.04285714285714286
-
-train Loss: 0.3458861690103723 Acc: 0.9138755980861244
- 11%|█         | 11/100 [08:33<1:09:30, 46.86s/epochs]
-val Loss: 5.89904124396188 Acc: 0.03571428571428571
-
-train Loss: 0.2527796122731204 Acc: 0.9497607655502392
- 12%|█▏        | 12/100 [09:20<1:08:37, 46.79s/epochs]
-val Loss: 5.8118041855948315 Acc: 0.04285714285714286
-
-train Loss: 0.24918217600532697 Acc: 0.9425837320574162
- 13%|█▎        | 13/100 [10:06<1:07:48, 46.76s/epochs]
-val Loss: 5.898084340776716 Acc: 0.03571428571428571
-
-train Loss: 0.234304019566358 Acc: 0.9425837320574162
- 14%|█▍        | 14/100 [10:53<1:07:05, 46.81s/epochs]
-val Loss: 5.927724593026298 Acc: 0.03571428571428571
-
-train Loss: 0.2608252766600066 Acc: 0.937799043062201
- 15%|█▌        | 15/100 [11:40<1:06:19, 46.81s/epochs]
-val Loss: 5.647699792044503 Acc: 0.06428571428571428
-
-train Loss: 0.23652963981959238 Acc: 0.9545454545454545
- 16%|█▌        | 16/100 [12:27<1:05:35, 46.86s/epochs]
-val Loss: 5.943828664507184 Acc: 0.05714285714285714
-
-train Loss: 0.22151247023395373 Acc: 0.9569377990430622
- 17%|█▋        | 17/100 [13:14<1:04:57, 46.96s/epochs]
-val Loss: 5.912602056775774 Acc: 0.049999999999999996
-
-train Loss: 0.22114332647700058 Acc: 0.9593301435406698
- 18%|█▊        | 18/100 [14:01<1:04:13, 47.00s/epochs]
-val Loss: 5.695963832310268 Acc: 0.03571428571428571
-
-train Loss: 0.19081843013398386 Acc: 0.9617224880382774
- 19%|█▉        | 19/100 [14:48<1:03:22, 46.95s/epochs]
-val Loss: 5.9420837266104565 Acc: 0.03571428571428571
-
-train Loss: 0.18498174168846823 Acc: 0.9688995215311005
- 20%|██        | 20/100 [15:35<1:02:36, 46.95s/epochs]
-val Loss: 5.812337875366211 Acc: 0.04285714285714286
-
-train Loss: 0.17968067612374228 Acc: 0.9688995215311005
- 21%|██        | 21/100 [16:22<1:01:49, 46.95s/epochs]
-val Loss: 5.720209285191127 Acc: 0.049999999999999996
-
-train Loss: 0.17269012681319953 Acc: 0.9808612440191388
- 22%|██▏       | 22/100 [17:09<1:01:05, 47.00s/epochs]
-val Loss: 5.652495670318603 Acc: 0.03571428571428571
-
-train Loss: 0.16147912090474908 Acc: 0.9760765550239234
- 23%|██▎       | 23/100 [17:56<1:00:13, 46.93s/epochs]
-val Loss: 5.965868023463658 Acc: 0.03571428571428571
-
-train Loss: 0.17824226143685254 Acc: 0.9688995215311005
- 24%|██▍       | 24/100 [18:43<59:26, 46.92s/epochs]  
-val Loss: 5.940497316632952 Acc: 0.03571428571428571
-
-train Loss: 0.16520642578316647 Acc: 0.9665071770334928
- 25%|██▌       | 25/100 [19:29<58:34, 46.86s/epochs]
-val Loss: 5.936799594334194 Acc: 0.03571428571428571
-
-train Loss: 0.1723013255727348 Acc: 0.9712918660287081
- 26%|██▌       | 26/100 [20:16<57:45, 46.83s/epochs]
-val Loss: 5.662496389661516 Acc: 0.03571428571428571
-
-train Loss: 0.18080855389103365 Acc: 0.9688995215311005
- 27%|██▋       | 27/100 [21:03<56:59, 46.85s/epochs]
-val Loss: 5.71871679850987 Acc: 0.03571428571428571
-
-train Loss: 0.16479381626587736 Acc: 0.9832535885167464
- 28%|██▊       | 28/100 [21:50<56:06, 46.76s/epochs]
-val Loss: 6.122971180507115 Acc: 0.03571428571428571
-
-train Loss: 0.1825645403428511 Acc: 0.9665071770334928
- 29%|██▉       | 29/100 [22:37<55:23, 46.81s/epochs]
-val Loss: 6.271499579293387 Acc: 0.05714285714285714
-
-train Loss: 0.17309789409477744 Acc: 0.9617224880382774
- 30%|███       | 30/100 [23:24<54:44, 46.92s/epochs]
-val Loss: 5.688649531773159 Acc: 0.049999999999999996
-
-train Loss: 0.15826993959657312 Acc: 0.9832535885167464
- 31%|███       | 31/100 [24:11<54:04, 47.02s/epochs]
-val Loss: 5.790946892329624 Acc: 0.06428571428571428
-
-train Loss: 0.19292398210632744 Acc: 0.9760765550239234
- 32%|███▏      | 32/100 [24:58<53:14, 46.97s/epochs]
-val Loss: 5.9489824567522325 Acc: 0.03571428571428571
-
-train Loss: 0.1951571623460528 Acc: 0.9760765550239234
- 33%|███▎      | 33/100 [25:45<52:30, 47.03s/epochs]
-val Loss: 5.894567584991455 Acc: 0.03571428571428571
-
-train Loss: 0.16223872798766817 Acc: 0.9760765550239234
- 34%|███▍      | 34/100 [26:32<51:44, 47.04s/epochs]
-val Loss: 5.8713878086635045 Acc: 0.049999999999999996
-
-train Loss: 0.1738566625774192 Acc: 0.9665071770334928
- 35%|███▌      | 35/100 [27:19<50:54, 46.99s/epochs]
-val Loss: 5.847792611803327 Acc: 0.03571428571428571
-
-train Loss: 0.16368715785907217 Acc: 0.985645933014354
- 36%|███▌      | 36/100 [28:06<50:11, 47.06s/epochs]
-val Loss: 5.772773102351597 Acc: 0.03571428571428571
-
-train Loss: 0.1620106419735548 Acc: 0.9736842105263157
- 37%|███▋      | 37/100 [28:53<49:18, 46.96s/epochs]
-val Loss: 5.938939993722098 Acc: 0.03571428571428571
-
-train Loss: 0.15636599242116847 Acc: 0.9712918660287081
- 38%|███▊      | 38/100 [29:40<48:34, 47.01s/epochs]
-val Loss: 5.797945308685303 Acc: 0.06428571428571428
-
-train Loss: 0.15384819654471565 Acc: 0.9832535885167464
- 39%|███▉      | 39/100 [30:27<47:51, 47.07s/epochs]
-val Loss: 5.746470246996198 Acc: 0.03571428571428571
-
-train Loss: 0.16908138284557744 Acc: 0.9760765550239234
- 40%|████      | 40/100 [31:14<46:55, 46.93s/epochs]
-val Loss: 5.9956419536045615 Acc: 0.03571428571428571
-
-train Loss: 0.17907384095009435 Acc: 0.985645933014354
- 41%|████      | 41/100 [32:01<46:11, 46.98s/epochs]
-val Loss: 5.871257550375802 Acc: 0.05714285714285714
-
-train Loss: 0.18417664175256018 Acc: 0.9665071770334928
- 42%|████▏     | 42/100 [32:48<45:23, 46.96s/epochs]
-val Loss: 5.7878967830113 Acc: 0.05714285714285714
-
-train Loss: 0.17718255562645396 Acc: 0.9760765550239234
- 43%|████▎     | 43/100 [33:35<44:37, 46.98s/epochs]
-val Loss: 5.699910586220877 Acc: 0.04285714285714286
-
-train Loss: 0.1796697477261986 Acc: 0.9688995215311005
- 44%|████▍     | 44/100 [34:22<43:47, 46.92s/epochs]
-val Loss: 5.842956897190639 Acc: 0.04285714285714286
-
-train Loss: 0.1616841318647257 Acc: 0.9736842105263157
- 45%|████▌     | 45/100 [35:09<43:07, 47.05s/epochs]
-val Loss: 5.60663196018764 Acc: 0.03571428571428571
-
-train Loss: 0.1810162927260239 Acc: 0.9641148325358851
- 46%|████▌     | 46/100 [35:56<42:20, 47.04s/epochs]
-val Loss: 5.75934317452567 Acc: 0.05714285714285714
-
-train Loss: 0.17103750312157226 Acc: 0.9760765550239234
- 47%|████▋     | 47/100 [36:43<41:36, 47.10s/epochs]
-val Loss: 5.622144957951137 Acc: 0.05714285714285714
-
-train Loss: 0.15645731065832258 Acc: 0.9712918660287081
- 48%|████▊     | 48/100 [37:30<40:47, 47.07s/epochs]
-val Loss: 5.80961024420602 Acc: 0.03571428571428571
-
-train Loss: 0.21012561158700424 Acc: 0.9641148325358851
- 49%|████▉     | 49/100 [38:17<39:55, 46.97s/epochs]
-val Loss: 5.959948880331857 Acc: 0.049999999999999996
-
-train Loss: 0.1857426377574793 Acc: 0.9665071770334928
- 50%|█████     | 50/100 [39:04<39:06, 46.93s/epochs]
-val Loss: 5.775636141640799 Acc: 0.05714285714285714
-
-train Loss: 0.17163814789655676 Acc: 0.9736842105263157
- 51%|█████     | 51/100 [39:51<38:19, 46.92s/epochs]
-val Loss: 5.901374980381557 Acc: 0.04285714285714286
-
-train Loss: 0.15149516936694607 Acc: 0.978468899521531
- 52%|█████▏    | 52/100 [40:37<37:29, 46.86s/epochs]
-val Loss: 5.916439465114048 Acc: 0.049999999999999996
-
-train Loss: 0.17863969611779354 Acc: 0.9688995215311005
- 53%|█████▎    | 53/100 [41:25<36:46, 46.95s/epochs]
-val Loss: 5.883858898707799 Acc: 0.03571428571428571
-
-train Loss: 0.18413181724160482 Acc: 0.9712918660287081
- 54%|█████▍    | 54/100 [42:11<35:56, 46.88s/epochs]
-val Loss: 6.074282101222447 Acc: 0.04285714285714286
-
-train Loss: 0.19114144706127176 Acc: 0.9665071770334928
- 55%|█████▌    | 55/100 [42:58<35:11, 46.93s/epochs]
-val Loss: 5.762025765010288 Acc: 0.04285714285714286
-
-train Loss: 0.21694805612119192 Acc: 0.9593301435406698
- 56%|█████▌    | 56/100 [43:45<34:25, 46.94s/epochs]
-val Loss: 5.62485545022147 Acc: 0.03571428571428571
-
-train Loss: 0.18425528427060142 Acc: 0.9736842105263157
- 57%|█████▋    | 57/100 [44:32<33:37, 46.92s/epochs]
-val Loss: 5.775779342651367 Acc: 0.049999999999999996
-
-train Loss: 0.17437796055842814 Acc: 0.9736842105263157
- 58%|█████▊    | 58/100 [45:19<32:48, 46.87s/epochs]
-val Loss: 6.034772777557373 Acc: 0.03571428571428571
-
-train Loss: 0.16114202163151006 Acc: 0.9832535885167464
- 59%|█████▉    | 59/100 [46:05<31:56, 46.75s/epochs]
-val Loss: 5.868145438602992 Acc: 0.03571428571428571
-
-train Loss: 0.16793193464929407 Acc: 0.9712918660287081
- 60%|██████    | 60/100 [46:52<31:10, 46.76s/epochs]
-val Loss: 5.557995319366455 Acc: 0.03571428571428571
-
-train Loss: 0.18796513611049742 Acc: 0.9712918660287081
- 61%|██████    | 61/100 [47:39<30:25, 46.81s/epochs]
-val Loss: 5.8533996445792065 Acc: 0.03571428571428571
-
-train Loss: 0.19093257873252248 Acc: 0.9712918660287081
- 62%|██████▏   | 62/100 [48:26<29:40, 46.84s/epochs]
-val Loss: 5.818323217119489 Acc: 0.03571428571428571
-
-train Loss: 0.18601714017573726 Acc: 0.9665071770334928
- 63%|██████▎   | 63/100 [49:13<28:55, 46.90s/epochs]
-val Loss: 5.89785464150565 Acc: 0.049999999999999996
-
-train Loss: 0.1838898037751896 Acc: 0.9665071770334928
- 64%|██████▍   | 64/100 [50:00<28:08, 46.89s/epochs]
-val Loss: 5.985714326586042 Acc: 0.03571428571428571
-
-train Loss: 0.17466870171316504 Acc: 0.9641148325358851
- 65%|██████▌   | 65/100 [50:47<27:20, 46.88s/epochs]
-val Loss: 5.720710413796561 Acc: 0.06428571428571428
-
-train Loss: 0.1631678067254678 Acc: 0.9760765550239234
- 66%|██████▌   | 66/100 [51:33<26:30, 46.78s/epochs]
-val Loss: 5.827587195805141 Acc: 0.03571428571428571
-
-train Loss: 0.17739127615564748 Acc: 0.9736842105263157
- 67%|██████▋   | 67/100 [52:20<25:45, 46.82s/epochs]
-val Loss: 5.8931268692016605 Acc: 0.049999999999999996
-
-train Loss: 0.16324256196546783 Acc: 0.9808612440191388
- 68%|██████▊   | 68/100 [53:07<24:56, 46.76s/epochs]
-val Loss: 5.807127039773124 Acc: 0.03571428571428571
-
-train Loss: 0.16644377457468132 Acc: 0.9760765550239234
- 69%|██████▉   | 69/100 [53:54<24:14, 46.93s/epochs]
-val Loss: 6.112158993312291 Acc: 0.03571428571428571
-
-train Loss: 0.16518120325067967 Acc: 0.9665071770334928
- 70%|███████   | 70/100 [54:41<23:28, 46.94s/epochs]
-val Loss: 5.853483894893102 Acc: 0.06428571428571428
-
-train Loss: 0.17412876191606932 Acc: 0.9641148325358851
- 71%|███████   | 71/100 [55:28<22:44, 47.04s/epochs]
-val Loss: 5.869232927049909 Acc: 0.04285714285714286
-
-train Loss: 0.1810392837917976 Acc: 0.9712918660287081
- 72%|███████▏  | 72/100 [56:15<21:55, 46.98s/epochs]
-val Loss: 5.718702806745257 Acc: 0.04285714285714286
-
-train Loss: 0.15653896125024586 Acc: 0.9808612440191388
- 73%|███████▎  | 73/100 [57:02<21:07, 46.96s/epochs]
-val Loss: 5.933730888366699 Acc: 0.03571428571428571
-
-train Loss: 0.20117981232809679 Acc: 0.9736842105263157
- 74%|███████▍  | 74/100 [57:49<20:21, 46.97s/epochs]
-val Loss: 5.645085293906075 Acc: 0.03571428571428571
-
-train Loss: 0.14796985233086718 Acc: 0.9808612440191388
- 75%|███████▌  | 75/100 [58:36<19:31, 46.84s/epochs]
-val Loss: 5.844587884630475 Acc: 0.04285714285714286
-
-train Loss: 0.17785748244044883 Acc: 0.9665071770334928
- 76%|███████▌  | 76/100 [59:23<18:45, 46.89s/epochs]
-val Loss: 5.761729649135044 Acc: 0.03571428571428571
-
-train Loss: 0.16939237357326672 Acc: 0.978468899521531
- 77%|███████▋  | 77/100 [1:00:10<17:58, 46.88s/epochs]
-val Loss: 5.9097275188991 Acc: 0.049999999999999996
-
-train Loss: 0.17671888011494322 Acc: 0.9808612440191388
- 78%|███████▊  | 78/100 [1:00:57<17:14, 47.01s/epochs]
-val Loss: 5.669367245265415 Acc: 0.04285714285714286
-
-train Loss: 0.1746196442029693 Acc: 0.9641148325358851
- 79%|███████▉  | 79/100 [1:01:44<16:26, 46.99s/epochs]
-val Loss: 5.815110996791295 Acc: 0.03571428571428571
-
-train Loss: 0.15652602533119148 Acc: 0.9808612440191388
- 80%|████████  | 80/100 [1:02:31<15:37, 46.90s/epochs]
-val Loss: 5.92760466166905 Acc: 0.07142857142857142
-
-train Loss: 0.17959941909358831 Acc: 0.9497607655502392
- 81%|████████  | 81/100 [1:03:18<14:51, 46.92s/epochs]
-val Loss: 5.849319853101458 Acc: 0.03571428571428571
-
-train Loss: 0.18412363044382854 Acc: 0.9665071770334928
- 82%|████████▏ | 82/100 [1:04:05<14:06, 47.00s/epochs]
-val Loss: 5.850675528390067 Acc: 0.03571428571428571
-
-train Loss: 0.18610640576011256 Acc: 0.9569377990430622
- 83%|████████▎ | 83/100 [1:04:51<13:17, 46.88s/epochs]
-val Loss: 5.966834000178745 Acc: 0.04285714285714286
-
-train Loss: 0.16992884175629136 Acc: 0.978468899521531
- 84%|████████▍ | 84/100 [1:05:38<12:31, 46.96s/epochs]
-val Loss: 5.935222203390939 Acc: 0.03571428571428571
-
-train Loss: 0.1962910265300833 Acc: 0.9712918660287081
- 85%|████████▌ | 85/100 [1:06:25<11:43, 46.91s/epochs]
-val Loss: 6.120875494820731 Acc: 0.03571428571428571
-
-train Loss: 0.15912293610675482 Acc: 0.9808612440191388
- 86%|████████▌ | 86/100 [1:07:12<10:57, 46.97s/epochs]
-val Loss: 5.731408636910575 Acc: 0.05714285714285714
-
-train Loss: 0.17473222072900196 Acc: 0.9760765550239234
- 87%|████████▋ | 87/100 [1:07:59<10:10, 46.99s/epochs]
-val Loss: 5.721266051701137 Acc: 0.03571428571428571
-
-train Loss: 0.16219397359772733 Acc: 0.9665071770334928
- 88%|████████▊ | 88/100 [1:08:47<09:25, 47.09s/epochs]
-val Loss: 5.846701404026576 Acc: 0.03571428571428571
-
-train Loss: 0.17000630241261716 Acc: 0.9736842105263157
- 89%|████████▉ | 89/100 [1:09:34<08:37, 47.05s/epochs]
-val Loss: 5.8810023444039485 Acc: 0.03571428571428571
-
-train Loss: 0.16505089181176782 Acc: 0.9641148325358851
- 90%|█████████ | 90/100 [1:10:20<07:49, 46.96s/epochs]
-val Loss: 5.692977809906006 Acc: 0.05714285714285714
-
-train Loss: 0.1702433815983494 Acc: 0.9880382775119617
- 91%|█████████ | 91/100 [1:11:08<07:03, 47.06s/epochs]
-val Loss: 6.002452823093959 Acc: 0.03571428571428571
-
-train Loss: 0.18259001526821173 Acc: 0.9617224880382774
- 92%|█████████▏| 92/100 [1:11:55<06:15, 46.99s/epochs]
-val Loss: 5.724576813834054 Acc: 0.06428571428571428
-
-train Loss: 0.178129893598374 Acc: 0.9760765550239234
- 93%|█████████▎| 93/100 [1:12:41<05:28, 46.95s/epochs]
-val Loss: 5.872302286965507 Acc: 0.06428571428571428
-
-train Loss: 0.17076116058815038 Acc: 0.9808612440191388
- 94%|█████████▍| 94/100 [1:13:29<04:42, 47.02s/epochs]
-val Loss: 5.918715340750558 Acc: 0.04285714285714286
-
-train Loss: 0.20037816935463956 Acc: 0.9545454545454545
- 95%|█████████▌| 95/100 [1:14:16<03:55, 47.07s/epochs]
-val Loss: 5.880086476462228 Acc: 0.03571428571428571
-
-train Loss: 0.17204105989499527 Acc: 0.9712918660287081
- 96%|█████████▌| 96/100 [1:15:03<03:08, 47.13s/epochs]
-val Loss: 5.705273069654193 Acc: 0.03571428571428571
-
-train Loss: 0.1922103315591812 Acc: 0.9617224880382774
- 97%|█████████▋| 97/100 [1:15:50<02:21, 47.12s/epochs]
-val Loss: 6.107129451206752 Acc: 0.03571428571428571
-
-train Loss: 0.1741866421613967 Acc: 0.978468899521531
- 98%|█████████▊| 98/100 [1:16:37<01:34, 47.04s/epochs]
-val Loss: 6.072957720075335 Acc: 0.03571428571428571
-
-train Loss: 0.19311025439266954 Acc: 0.9641148325358851
- 99%|█████████▉| 99/100 [1:17:24<00:46, 46.91s/epochs]
-val Loss: 6.014528601510184 Acc: 0.049999999999999996
-
-train Loss: 0.17535324836746927 Acc: 0.985645933014354
-100%|██████████| 100/100 [1:18:10<00:00, 46.83s/epochs]100%|██████████| 100/100 [1:18:10<00:00, 46.91s/epochs]
-
-val Loss: 5.807812186649867 Acc: 0.03571428571428571
-Training complete in 1.0h 18.0m 10.733704566955566s
-  0%|          | 0/25 [00:00<?, ?epochs/s]
-train Loss: 2.9601342766373246 Acc: 0.13182674199623354
-  4%|▍         | 1/25 [05:39<2:15:58, 339.92s/epochs]val Loss: 2.8547588531617767 Acc: 0.19444444444444442
-
-
-train Loss: 2.1799535655556275 Acc: 0.3289391086001256
-  8%|▊         | 2/25 [11:16<2:09:52, 338.80s/epochs]val Loss: 2.4345568508013256 Acc: 0.28703703703703703
-
-
-train Loss: 1.569751446380304 Acc: 0.519774011299435
- 12%|█▏        | 3/25 [16:53<2:04:01, 338.24s/epochs]val Loss: 4.5118653737914025 Acc: 0.2777777777777778
-
-Exception in thread Thread-1:
-Traceback (most recent call last):
-  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
-    self.run()
-  File "/usr/local/lib/python3.8/dist-packages/tensorboard/summary/writer/event_file_writer.py", line 238, in run
-    self._record_writer.write(data)
-  File "/usr/local/lib/python3.8/dist-packages/tensorboard/summary/writer/record_writer.py", line 40, in write
-    self._writer.write(header + header_crc + data + footer_crc)
-  File "/usr/local/lib/python3.8/dist-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 531, in write
-    self.fs.append(self.filename, file_content, self.binary_mode)
-  File "/usr/local/lib/python3.8/dist-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 154, in append
-    self._write(filename, file_content, "ab" if binary_mode else "a")
-  File "/usr/local/lib/python3.8/dist-packages/tensorboard/compat/tensorflow_stub/io/gfile.py", line 158, in _write
-    with io.open(filename, mode, encoding=encoding) as f:
-FileNotFoundError: [Errno 2] No such file or directory: b'tensorboard_data/events.out.tfevents.1608227878.fb970433000a.3290.0'
-Traceback (most recent call last):
-  File "trainer.py", line 158, in <module>
-    train_model(args.data, args.model, args.num_classes,
-  File "trainer.py", line 46, in train_model
-    model = R2Plus1DClassifier(
-  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 612, in to
-    return self._apply(convert)
-  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 359, in _apply
-    module._apply(fn)
-  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 359, in _apply
-    module._apply(fn)
-  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 359, in _apply
-    module._apply(fn)
-  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 381, in _apply
-    param_applied = fn(param)
-  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 610, in convert
-    return t.to(device, dtype if t.is_floating_point() else None, non_blocking)
-RuntimeError: CUDA error: all CUDA-capable devices are busy or unavailable
-Reloading from previously saved checkpoint
-Traceback (most recent call last):
-  File "trainer.py", line 158, in <module>
-    train_model(args.data, args.model, args.num_classes,
-  File "trainer.py", line 85, in train_model
-    model.load_state_dict(checkpoint['state_dict'])
-  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1051, in load_state_dict
-    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
-RuntimeError: Error(s) in loading state_dict for DataParallel:
-	Missing key(s) in state_dict: "module.res2plus1d.conv1.spatial_conv.weight", "module.res2plus1d.conv1.spatial_conv.bias", "module.res2plus1d.conv1.bn.weight", "module.res2plus1d.conv1.bn.bias", "module.res2plus1d.conv1.bn.running_mean", "module.res2plus1d.conv1.bn.running_var", "module.res2plus1d.conv1.temporal_conv.weight", "module.res2plus1d.conv1.temporal_conv.bias", "module.res2plus1d.conv2.block1.conv1.spatial_conv.weight", "module.res2plus1d.conv2.block1.conv1.spatial_conv.bias", "module.res2plus1d.conv2.block1.conv1.bn.weight", "module.res2plus1d.conv2.block1.conv1.bn.bias", "module.res2plus1d.conv2.block1.conv1.bn.running_mean", "module.res2plus1d.conv2.block1.conv1.bn.running_var", "module.res2plus1d.conv2.block1.conv1.temporal_conv.weight", "module.res2plus1d.conv2.block1.conv1.temporal_conv.bias", "module.res2plus1d.conv2.block1.bn1.weight", "module.res2plus1d.conv2.block1.bn1.bias", "module.res2plus1d.conv2.block1.bn1.running_mean", "module.res2plus1d.conv2.block1.bn1.running_var", "module.res2plus1d.conv2.block1.conv2.spatial_conv.weight", "module.res2plus1d.conv2.block1.conv2.spatial_conv.bias", "module.res2plus1d.conv2.block1.conv2.bn.weight", "module.res2plus1d.conv2.block1.conv2.bn.bias", "module.res2plus1d.conv2.block1.conv2.bn.running_mean", "module.res2plus1d.conv2.block1.conv2.bn.running_var", "module.res2plus1d.conv2.block1.conv2.temporal_conv.weight", "module.res2plus1d.conv2.block1.conv2.temporal_conv.bias", "module.res2plus1d.conv2.block1.bn2.weight", "module.res2plus1d.conv2.block1.bn2.bias", "module.res2plus1d.conv2.block1.bn2.running_mean", "module.res2plus1d.conv2.block1.bn2.running_var", "module.res2plus1d.conv2.blocks.0.conv1.spatial_conv.weight", "module.res2plus1d.conv2.blocks.0.conv1.spatial_conv.bias", "module.res2plus1d.conv2.blocks.0.conv1.bn.weight", "module.res2plus1d.conv2.blocks.0.conv1.bn.bias", "module.res2plus1d.conv2.blocks.0.conv1.bn.running_mean", "module.res2plus1d.conv2.blocks.0.conv1.bn.running_var", "module.res2plus1d.conv2.blocks.0.conv1.temporal_conv.weight", "module.res2plus1d.conv2.blocks.0.conv1.temporal_conv.bias", "module.res2plus1d.conv2.blocks.0.bn1.weight", "module.res2plus1d.conv2.blocks.0.bn1.bias", "module.res2plus1d.conv2.blocks.0.bn1.running_mean", "module.res2plus1d.conv2.blocks.0.bn1.running_var", "module.res2plus1d.conv2.blocks.0.conv2.spatial_conv.weight", "module.res2plus1d.conv2.blocks.0.conv2.spatial_conv.bias", "module.res2plus1d.conv2.blocks.0.conv2.bn.weight", "module.res2plus1d.conv2.blocks.0.conv2.bn.bias", "module.res2plus1d.conv2.blocks.0.conv2.bn.running_mean", "module.res2plus1d.conv2.blocks.0.conv2.bn.running_var", "module.res2plus1d.conv2.blocks.0.conv2.temporal_conv.weight", "module.res2plus1d.conv2.blocks.0.conv2.temporal_conv.bias", "module.res2plus1d.conv2.blocks.0.bn2.weight", "module.res2plus1d.conv2.blocks.0.bn2.bias", "module.res2plus1d.conv2.blocks.0.bn2.running_mean", "module.res2plus1d.conv2.blocks.0.bn2.running_var", "module.res2plus1d.conv3.block1.downsampleconv.spatial_conv.weight", "module.res2plus1d.conv3.block1.downsampleconv.spatial_conv.bias", "module.res2plus1d.conv3.block1.downsampleconv.bn.weight", "module.res2plus1d.conv3.block1.downsampleconv.bn.bias", "module.res2plus1d.conv3.block1.downsampleconv.bn.running_mean", "module.res2plus1d.conv3.block1.downsampleconv.bn.running_var", "module.res2plus1d.conv3.block1.downsampleconv.temporal_conv.weight", "module.res2plus1d.conv3.block1.downsampleconv.temporal_conv.bias", "module.res2plus1d.conv3.block1.downsamplebn.weight", "module.res2plus1d.conv3.block1.downsamplebn.bias", "module.res2plus1d.conv3.block1.downsamplebn.running_mean", "module.res2plus1d.conv3.block1.downsamplebn.running_var", "module.res2plus1d.conv3.block1.conv1.spatial_conv.weight", "module.res2plus1d.conv3.block1.conv1.spatial_conv.bias", "module.res2plus1d.conv3.block1.conv1.bn.weight", "module.res2plus1d.conv3.block1.conv1.bn.bias", "module.res2plus1d.conv3.block1.conv1.bn.running_mean", "module.res2plus1d.conv3.block1.conv1.bn.running_var", "module.res2plus1d.conv3.block1.conv1.temporal_conv.weight", "module.res2plus1d.conv3.block1.conv1.temporal_conv.bias", "module.res2plus1d.conv3.block1.bn1.weight", "module.res2plus1d.conv3.block1.bn1.bias", "module.res2plus1d.conv3.block1.bn1.running_mean", "module.res2plus1d.conv3.block1.bn1.running_var", "module.res2plus1d.conv3.block1.conv2.spatial_conv.weight", "module.res2plus1d.conv3.block1.conv2.spatial_conv.bias", "module.res2plus1d.conv3.block1.conv2.bn.weight", "module.res2plus1d.conv3.block1.conv2.bn.bias", "module.res2plus1d.conv3.block1.conv2.bn.running_mean", "module.res2plus1d.conv3.block1.conv2.bn.running_var", "module.res2plus1d.conv3.block1.conv2.temporal_conv.weight", "module.res2plus1d.conv3.block1.conv2.temporal_conv.bias", "module.res2plus1d.conv3.block1.bn2.weight", "module.res2plus1d.conv3.block1.bn2.bias", "module.res2plus1d.conv3.block1.bn2.running_mean", "module.res2plus1d.conv3.block1.bn2.running_var", "module.res2plus1d.conv3.blocks.0.conv1.spatial_conv.weight", "module.res2plus1d.conv3.blocks.0.conv1.spatial_conv.bias", "module.res2plus1d.conv3.blocks.0.conv1.bn.weight", "module.res2plus1d.conv3.blocks.0.conv1.bn.bias", "module.res2plus1d.conv3.blocks.0.conv1.bn.running_mean", "module.res2plus1d.conv3.blocks.0.conv1.bn.running_var", "module.res2plus1d.conv3.blocks.0.conv1.temporal_conv.weight", "module.res2plus1d.conv3.blocks.0.conv1.temporal_conv.bias", "module.res2plus1d.conv3.blocks.0.bn1.weight", "module.res2plus1d.conv3.blocks.0.bn1.bias", "module.res2plus1d.conv3.blocks.0.bn1.running_mean", "module.res2plus1d.conv3.blocks.0.bn1.running_var", "module.res2plus1d.conv3.blocks.0.conv2.spatial_conv.weight", "module.res2plus1d.conv3.blocks.0.conv2.spatial_conv.bias", "module.res2plus1d.conv3.blocks.0.conv2.bn.weight", "module.res2plus1d.conv3.blocks.0.conv2.bn.bias", "module.res2plus1d.conv3.blocks.0.conv2.bn.running_mean", "module.res2plus1d.conv3.blocks.0.conv2.bn.running_var", "module.res2plus1d.conv3.blocks.0.conv2.temporal_conv.weight", "module.res2plus1d.conv3.blocks.0.conv2.temporal_conv.bias", "module.res2plus1d.conv3.blocks.0.bn2.weight", "module.res2plus1d.conv3.blocks.0.bn2.bias", "module.res2plus1d.conv3.blocks.0.bn2.running_mean", "module.res2plus1d.conv3.blocks.0.bn2.running_var", "module.res2plus1d.conv4.block1.downsampleconv.spatial_conv.weight", "module.res2plus1d.conv4.block1.downsampleconv.spatial_conv.bias", "module.res2plus1d.conv4.block1.downsampleconv.bn.weight", "module.res2plus1d.conv4.block1.downsampleconv.bn.bias", "module.res2plus1d.conv4.block1.downsampleconv.bn.running_mean", "module.res2plus1d.conv4.block1.downsampleconv.bn.running_var", "module.res2plus1d.conv4.block1.downsampleconv.temporal_conv.weight", "module.res2plus1d.conv4.block1.downsampleconv.temporal_conv.bias", "module.res2plus1d.conv4.block1.downsamplebn.weight", "module.res2plus1d.conv4.block1.downsamplebn.bias", "module.res2plus1d.conv4.block1.downsamplebn.running_mean", "module.res2plus1d.conv4.block1.downsamplebn.running_var", "module.res2plus1d.conv4.block1.conv1.spatial_conv.weight", "module.res2plus1d.conv4.block1.conv1.spatial_conv.bias", "module.res2plus1d.conv4.block1.conv1.bn.weight", "module.res2plus1d.conv4.block1.conv1.bn.bias", "module.res2plus1d.conv4.block1.conv1.bn.running_mean", "module.res2plus1d.conv4.block1.conv1.bn.running_var", "module.res2plus1d.conv4.block1.conv1.temporal_conv.weight", "module.res2plus1d.conv4.block1.conv1.temporal_conv.bias", "module.res2plus1d.conv4.block1.bn1.weight", "module.res2plus1d.conv4.block1.bn1.bias", "module.res2plus1d.conv4.block1.bn1.running_mean", "module.res2plus1d.conv4.block1.bn1.running_var", "module.res2plus1d.conv4.block1.conv2.spatial_conv.weight", "module.res2plus1d.conv4.block1.conv2.spatial_conv.bias", "module.res2plus1d.conv4.block1.conv2.bn.weight", "module.res2plus1d.conv4.block1.conv2.bn.bias", "module.res2plus1d.conv4.block1.conv2.bn.running_mean", "module.res2plus1d.conv4.block1.conv2.bn.running_var", "module.res2plus1d.conv4.block1.conv2.temporal_conv.weight", "module.res2plus1d.conv4.block1.conv2.temporal_conv.bias", "module.res2plus1d.conv4.block1.bn2.weight", "module.res2plus1d.conv4.block1.bn2.bias", "module.res2plus1d.conv4.block1.bn2.running_mean", "module.res2plus1d.conv4.block1.bn2.running_var", "module.res2plus1d.conv4.blocks.0.conv1.spatial_conv.weight", "module.res2plus1d.conv4.blocks.0.conv1.spatial_conv.bias", "module.res2plus1d.conv4.blocks.0.conv1.bn.weight", "module.res2plus1d.conv4.blocks.0.conv1.bn.bias", "module.res2plus1d.conv4.blocks.0.conv1.bn.running_mean", "module.res2plus1d.conv4.blocks.0.conv1.bn.running_var", "module.res2plus1d.conv4.blocks.0.conv1.temporal_conv.weight", "module.res2plus1d.conv4.blocks.0.conv1.temporal_conv.bias", "module.res2plus1d.conv4.blocks.0.bn1.weight", "module.res2plus1d.conv4.blocks.0.bn1.bias", "module.res2plus1d.conv4.blocks.0.bn1.running_mean", "module.res2plus1d.conv4.blocks.0.bn1.running_var", "module.res2plus1d.conv4.blocks.0.conv2.spatial_conv.weight", "module.res2plus1d.conv4.blocks.0.conv2.spatial_conv.bias", "module.res2plus1d.conv4.blocks.0.conv2.bn.weight", "module.res2plus1d.conv4.blocks.0.conv2.bn.bias", "module.res2plus1d.conv4.blocks.0.conv2.bn.running_mean", "module.res2plus1d.conv4.blocks.0.conv2.bn.running_var", "module.res2plus1d.conv4.blocks.0.conv2.temporal_conv.weight", "module.res2plus1d.conv4.blocks.0.conv2.temporal_conv.bias", "module.res2plus1d.conv4.blocks.0.bn2.weight", "module.res2plus1d.conv4.blocks.0.bn2.bias", "module.res2plus1d.conv4.blocks.0.bn2.running_mean", "module.res2plus1d.conv4.blocks.0.bn2.running_var", "module.res2plus1d.conv5.block1.downsampleconv.spatial_conv.weight", "module.res2plus1d.conv5.block1.downsampleconv.spatial_conv.bias", "module.res2plus1d.conv5.block1.downsampleconv.bn.weight", "module.res2plus1d.conv5.block1.downsampleconv.bn.bias", "module.res2plus1d.conv5.block1.downsampleconv.bn.running_mean", "module.res2plus1d.conv5.block1.downsampleconv.bn.running_var", "module.res2plus1d.conv5.block1.downsampleconv.temporal_conv.weight", "module.res2plus1d.conv5.block1.downsampleconv.temporal_conv.bias", "module.res2plus1d.conv5.block1.downsamplebn.weight", "module.res2plus1d.conv5.block1.downsamplebn.bias", "module.res2plus1d.conv5.block1.downsamplebn.running_mean", "module.res2plus1d.conv5.block1.downsamplebn.running_var", "module.res2plus1d.conv5.block1.conv1.spatial_conv.weight", "module.res2plus1d.conv5.block1.conv1.spatial_conv.bias", "module.res2plus1d.conv5.block1.conv1.bn.weight", "module.res2plus1d.conv5.block1.conv1.bn.bias", "module.res2plus1d.conv5.block1.conv1.bn.running_mean", "module.res2plus1d.conv5.block1.conv1.bn.running_var", "module.res2plus1d.conv5.block1.conv1.temporal_conv.weight", "module.res2plus1d.conv5.block1.conv1.temporal_conv.bias", "module.res2plus1d.conv5.block1.bn1.weight", "module.res2plus1d.conv5.block1.bn1.bias", "module.res2plus1d.conv5.block1.bn1.running_mean", "module.res2plus1d.conv5.block1.bn1.running_var", "module.res2plus1d.conv5.block1.conv2.spatial_conv.weight", "module.res2plus1d.conv5.block1.conv2.spatial_conv.bias", "module.res2plus1d.conv5.block1.conv2.bn.weight", "module.res2plus1d.conv5.block1.conv2.bn.bias", "module.res2plus1d.conv5.block1.conv2.bn.running_mean", "module.res2plus1d.conv5.block1.conv2.bn.running_var", "module.res2plus1d.conv5.block1.conv2.temporal_conv.weight", "module.res2plus1d.conv5.block1.conv2.temporal_conv.bias", "module.res2plus1d.conv5.block1.bn2.weight", "module.res2plus1d.conv5.block1.bn2.bias", "module.res2plus1d.conv5.block1.bn2.running_mean", "module.res2plus1d.conv5.block1.bn2.running_var", "module.res2plus1d.conv5.blocks.0.conv1.spatial_conv.weight", "module.res2plus1d.conv5.blocks.0.conv1.spatial_conv.bias", "module.res2plus1d.conv5.blocks.0.conv1.bn.weight", "module.res2plus1d.conv5.blocks.0.conv1.bn.bias", "module.res2plus1d.conv5.blocks.0.conv1.bn.running_mean", "module.res2plus1d.conv5.blocks.0.conv1.bn.running_var", "module.res2plus1d.conv5.blocks.0.conv1.temporal_conv.weight", "module.res2plus1d.conv5.blocks.0.conv1.temporal_conv.bias", "module.res2plus1d.conv5.blocks.0.bn1.weight", "module.res2plus1d.conv5.blocks.0.bn1.bias", "module.res2plus1d.conv5.blocks.0.bn1.running_mean", "module.res2plus1d.conv5.blocks.0.bn1.running_var", "module.res2plus1d.conv5.blocks.0.conv2.spatial_conv.weight", "module.res2plus1d.conv5.blocks.0.conv2.spatial_conv.bias", "module.res2plus1d.conv5.blocks.0.conv2.bn.weight", "module.res2plus1d.conv5.blocks.0.conv2.bn.bias", "module.res2plus1d.conv5.blocks.0.conv2.bn.running_mean", "module.res2plus1d.conv5.blocks.0.conv2.bn.running_var", "module.res2plus1d.conv5.blocks.0.conv2.temporal_conv.weight", "module.res2plus1d.conv5.blocks.0.conv2.temporal_conv.bias", "module.res2plus1d.conv5.blocks.0.bn2.weight", "module.res2plus1d.conv5.blocks.0.bn2.bias", "module.res2plus1d.conv5.blocks.0.bn2.running_mean", "module.res2plus1d.conv5.blocks.0.bn2.running_var", "module.res2plus1d.conv6.block1.downsampleconv.spatial_conv.weight", "module.res2plus1d.conv6.block1.downsampleconv.spatial_conv.bias", "module.res2plus1d.conv6.block1.downsampleconv.bn.weight", "module.res2plus1d.conv6.block1.downsampleconv.bn.bias", "module.res2plus1d.conv6.block1.downsampleconv.bn.running_mean", "module.res2plus1d.conv6.block1.downsampleconv.bn.running_var", "module.res2plus1d.conv6.block1.downsampleconv.temporal_conv.weight", "module.res2plus1d.conv6.block1.downsampleconv.temporal_conv.bias", "module.res2plus1d.conv6.block1.downsamplebn.weight", "module.res2plus1d.conv6.block1.downsamplebn.bias", "module.res2plus1d.conv6.block1.downsamplebn.running_mean", "module.res2plus1d.conv6.block1.downsamplebn.running_var", "module.res2plus1d.conv6.block1.conv1.spatial_conv.weight", "module.res2plus1d.conv6.block1.conv1.spatial_conv.bias", "module.res2plus1d.conv6.block1.conv1.bn.weight", "module.res2plus1d.conv6.block1.conv1.bn.bias", "module.res2plus1d.conv6.block1.conv1.bn.running_mean", "module.res2plus1d.conv6.block1.conv1.bn.running_var", "module.res2plus1d.conv6.block1.conv1.temporal_conv.weight", "module.res2plus1d.conv6.block1.conv1.temporal_conv.bias", "module.res2plus1d.conv6.block1.bn1.weight", "module.res2plus1d.conv6.block1.bn1.bias", "module.res2plus1d.conv6.block1.bn1.running_mean", "module.res2plus1d.conv6.block1.bn1.running_var", "module.res2plus1d.conv6.block1.conv2.spatial_conv.weight", "module.res2plus1d.conv6.block1.conv2.spatial_conv.bias", "module.res2plus1d.conv6.block1.conv2.bn.weight", "module.res2plus1d.conv6.block1.conv2.bn.bias", "module.res2plus1d.conv6.block1.conv2.bn.running_mean", "module.res2plus1d.conv6.block1.conv2.bn.running_var", "module.res2plus1d.conv6.block1.conv2.temporal_conv.weight", "module.res2plus1d.conv6.block1.conv2.temporal_conv.bias", "module.res2plus1d.conv6.block1.bn2.weight", "module.res2plus1d.conv6.block1.bn2.bias", "module.res2plus1d.conv6.block1.bn2.running_mean", "module.res2plus1d.conv6.block1.bn2.running_var", "module.res2plus1d.conv6.blocks.0.conv1.spatial_conv.weight", "module.res2plus1d.conv6.blocks.0.conv1.spatial_conv.bias", "module.res2plus1d.conv6.blocks.0.conv1.bn.weight", "module.res2plus1d.conv6.blocks.0.conv1.bn.bias", "module.res2plus1d.conv6.blocks.0.conv1.bn.running_mean", "module.res2plus1d.conv6.blocks.0.conv1.bn.running_var", "module.res2plus1d.conv6.blocks.0.conv1.temporal_conv.weight", "module.res2plus1d.conv6.blocks.0.conv1.temporal_conv.bias", "module.res2plus1d.conv6.blocks.0.bn1.weight", "module.res2plus1d.conv6.blocks.0.bn1.bias", "module.res2plus1d.conv6.blocks.0.bn1.running_mean", "module.res2plus1d.conv6.blocks.0.bn1.running_var", "module.res2plus1d.conv6.blocks.0.conv2.spatial_conv.weight", "module.res2plus1d.conv6.blocks.0.conv2.spatial_conv.bias", "module.res2plus1d.conv6.blocks.0.conv2.bn.weight", "module.res2plus1d.conv6.blocks.0.conv2.bn.bias", "module.res2plus1d.conv6.blocks.0.conv2.bn.running_mean", "module.res2plus1d.conv6.blocks.0.conv2.bn.running_var", "module.res2plus1d.conv6.blocks.0.conv2.temporal_conv.weight", "module.res2plus1d.conv6.blocks.0.conv2.temporal_conv.bias", "module.res2plus1d.conv6.blocks.0.bn2.weight", "module.res2plus1d.conv6.blocks.0.bn2.bias", "module.res2plus1d.conv6.blocks.0.bn2.running_mean", "module.res2plus1d.conv6.blocks.0.bn2.running_var", "module.linear.weight", "module.linear.bias". 
-	Unexpected key(s) in state_dict: "res2plus1d.conv1.spatial_conv.weight", "res2plus1d.conv1.spatial_conv.bias", "res2plus1d.conv1.bn.weight", "res2plus1d.conv1.bn.bias", "res2plus1d.conv1.bn.running_mean", "res2plus1d.conv1.bn.running_var", "res2plus1d.conv1.bn.num_batches_tracked", "res2plus1d.conv1.temporal_conv.weight", "res2plus1d.conv1.temporal_conv.bias", "res2plus1d.conv2.block1.conv1.spatial_conv.weight", "res2plus1d.conv2.block1.conv1.spatial_conv.bias", "res2plus1d.conv2.block1.conv1.bn.weight", "res2plus1d.conv2.block1.conv1.bn.bias", "res2plus1d.conv2.block1.conv1.bn.running_mean", "res2plus1d.conv2.block1.conv1.bn.running_var", "res2plus1d.conv2.block1.conv1.bn.num_batches_tracked", "res2plus1d.conv2.block1.conv1.temporal_conv.weight", "res2plus1d.conv2.block1.conv1.temporal_conv.bias", "res2plus1d.conv2.block1.bn1.weight", "res2plus1d.conv2.block1.bn1.bias", "res2plus1d.conv2.block1.bn1.running_mean", "res2plus1d.conv2.block1.bn1.running_var", "res2plus1d.conv2.block1.bn1.num_batches_tracked", "res2plus1d.conv2.block1.conv2.spatial_conv.weight", "res2plus1d.conv2.block1.conv2.spatial_conv.bias", "res2plus1d.conv2.block1.conv2.bn.weight", "res2plus1d.conv2.block1.conv2.bn.bias", "res2plus1d.conv2.block1.conv2.bn.running_mean", "res2plus1d.conv2.block1.conv2.bn.running_var", "res2plus1d.conv2.block1.conv2.bn.num_batches_tracked", "res2plus1d.conv2.block1.conv2.temporal_conv.weight", "res2plus1d.conv2.block1.conv2.temporal_conv.bias", "res2plus1d.conv2.block1.bn2.weight", "res2plus1d.conv2.block1.bn2.bias", "res2plus1d.conv2.block1.bn2.running_mean", "res2plus1d.conv2.block1.bn2.running_var", "res2plus1d.conv2.block1.bn2.num_batches_tracked", "res2plus1d.conv2.blocks.0.conv1.spatial_conv.weight", "res2plus1d.conv2.blocks.0.conv1.spatial_conv.bias", "res2plus1d.conv2.blocks.0.conv1.bn.weight", "res2plus1d.conv2.blocks.0.conv1.bn.bias", "res2plus1d.conv2.blocks.0.conv1.bn.running_mean", "res2plus1d.conv2.blocks.0.conv1.bn.running_var", "res2plus1d.conv2.blocks.0.conv1.bn.num_batches_tracked", "res2plus1d.conv2.blocks.0.conv1.temporal_conv.weight", "res2plus1d.conv2.blocks.0.conv1.temporal_conv.bias", "res2plus1d.conv2.blocks.0.bn1.weight", "res2plus1d.conv2.blocks.0.bn1.bias", "res2plus1d.conv2.blocks.0.bn1.running_mean", "res2plus1d.conv2.blocks.0.bn1.running_var", "res2plus1d.conv2.blocks.0.bn1.num_batches_tracked", "res2plus1d.conv2.blocks.0.conv2.spatial_conv.weight", "res2plus1d.conv2.blocks.0.conv2.spatial_conv.bias", "res2plus1d.conv2.blocks.0.conv2.bn.weight", "res2plus1d.conv2.blocks.0.conv2.bn.bias", "res2plus1d.conv2.blocks.0.conv2.bn.running_mean", "res2plus1d.conv2.blocks.0.conv2.bn.running_var", "res2plus1d.conv2.blocks.0.conv2.bn.num_batches_tracked", "res2plus1d.conv2.blocks.0.conv2.temporal_conv.weight", "res2plus1d.conv2.blocks.0.conv2.temporal_conv.bias", "res2plus1d.conv2.blocks.0.bn2.weight", "res2plus1d.conv2.blocks.0.bn2.bias", "res2plus1d.conv2.blocks.0.bn2.running_mean", "res2plus1d.conv2.blocks.0.bn2.running_var", "res2plus1d.conv2.blocks.0.bn2.num_batches_tracked", "res2plus1d.conv3.block1.downsampleconv.spatial_conv.weight", "res2plus1d.conv3.block1.downsampleconv.spatial_conv.bias", "res2plus1d.conv3.block1.downsampleconv.bn.weight", "res2plus1d.conv3.block1.downsampleconv.bn.bias", "res2plus1d.conv3.block1.downsampleconv.bn.running_mean", "res2plus1d.conv3.block1.downsampleconv.bn.running_var", "res2plus1d.conv3.block1.downsampleconv.bn.num_batches_tracked", "res2plus1d.conv3.block1.downsampleconv.temporal_conv.weight", "res2plus1d.conv3.block1.downsampleconv.temporal_conv.bias", "res2plus1d.conv3.block1.downsamplebn.weight", "res2plus1d.conv3.block1.downsamplebn.bias", "res2plus1d.conv3.block1.downsamplebn.running_mean", "res2plus1d.conv3.block1.downsamplebn.running_var", "res2plus1d.conv3.block1.downsamplebn.num_batches_tracked", "res2plus1d.conv3.block1.conv1.spatial_conv.weight", "res2plus1d.conv3.block1.conv1.spatial_conv.bias", "res2plus1d.conv3.block1.conv1.bn.weight", "res2plus1d.conv3.block1.conv1.bn.bias", "res2plus1d.conv3.block1.conv1.bn.running_mean", "res2plus1d.conv3.block1.conv1.bn.running_var", "res2plus1d.conv3.block1.conv1.bn.num_batches_tracked", "res2plus1d.conv3.block1.conv1.temporal_conv.weight", "res2plus1d.conv3.block1.conv1.temporal_conv.bias", "res2plus1d.conv3.block1.bn1.weight", "res2plus1d.conv3.block1.bn1.bias", "res2plus1d.conv3.block1.bn1.running_mean", "res2plus1d.conv3.block1.bn1.running_var", "res2plus1d.conv3.block1.bn1.num_batches_tracked", "res2plus1d.conv3.block1.conv2.spatial_conv.weight", "res2plus1d.conv3.block1.conv2.spatial_conv.bias", "res2plus1d.conv3.block1.conv2.bn.weight", "res2plus1d.conv3.block1.conv2.bn.bias", "res2plus1d.conv3.block1.conv2.bn.running_mean", "res2plus1d.conv3.block1.conv2.bn.running_var", "res2plus1d.conv3.block1.conv2.bn.num_batches_tracked", "res2plus1d.conv3.block1.conv2.temporal_conv.weight", "res2plus1d.conv3.block1.conv2.temporal_conv.bias", "res2plus1d.conv3.block1.bn2.weight", "res2plus1d.conv3.block1.bn2.bias", "res2plus1d.conv3.block1.bn2.running_mean", "res2plus1d.conv3.block1.bn2.running_var", "res2plus1d.conv3.block1.bn2.num_batches_tracked", "res2plus1d.conv3.blocks.0.conv1.spatial_conv.weight", "res2plus1d.conv3.blocks.0.conv1.spatial_conv.bias", "res2plus1d.conv3.blocks.0.conv1.bn.weight", "res2plus1d.conv3.blocks.0.conv1.bn.bias", "res2plus1d.conv3.blocks.0.conv1.bn.running_mean", "res2plus1d.conv3.blocks.0.conv1.bn.running_var", "res2plus1d.conv3.blocks.0.conv1.bn.num_batches_tracked", "res2plus1d.conv3.blocks.0.conv1.temporal_conv.weight", "res2plus1d.conv3.blocks.0.conv1.temporal_conv.bias", "res2plus1d.conv3.blocks.0.bn1.weight", "res2plus1d.conv3.blocks.0.bn1.bias", "res2plus1d.conv3.blocks.0.bn1.running_mean", "res2plus1d.conv3.blocks.0.bn1.running_var", "res2plus1d.conv3.blocks.0.bn1.num_batches_tracked", "res2plus1d.conv3.blocks.0.conv2.spatial_conv.weight", "res2plus1d.conv3.blocks.0.conv2.spatial_conv.bias", "res2plus1d.conv3.blocks.0.conv2.bn.weight", "res2plus1d.conv3.blocks.0.conv2.bn.bias", "res2plus1d.conv3.blocks.0.conv2.bn.running_mean", "res2plus1d.conv3.blocks.0.conv2.bn.running_var", "res2plus1d.conv3.blocks.0.conv2.bn.num_batches_tracked", "res2plus1d.conv3.blocks.0.conv2.temporal_conv.weight", "res2plus1d.conv3.blocks.0.conv2.temporal_conv.bias", "res2plus1d.conv3.blocks.0.bn2.weight", "res2plus1d.conv3.blocks.0.bn2.bias", "res2plus1d.conv3.blocks.0.bn2.running_mean", "res2plus1d.conv3.blocks.0.bn2.running_var", "res2plus1d.conv3.blocks.0.bn2.num_batches_tracked", "res2plus1d.conv4.block1.downsampleconv.spatial_conv.weight", "res2plus1d.conv4.block1.downsampleconv.spatial_conv.bias", "res2plus1d.conv4.block1.downsampleconv.bn.weight", "res2plus1d.conv4.block1.downsampleconv.bn.bias", "res2plus1d.conv4.block1.downsampleconv.bn.running_mean", "res2plus1d.conv4.block1.downsampleconv.bn.running_var", "res2plus1d.conv4.block1.downsampleconv.bn.num_batches_tracked", "res2plus1d.conv4.block1.downsampleconv.temporal_conv.weight", "res2plus1d.conv4.block1.downsampleconv.temporal_conv.bias", "res2plus1d.conv4.block1.downsamplebn.weight", "res2plus1d.conv4.block1.downsamplebn.bias", "res2plus1d.conv4.block1.downsamplebn.running_mean", "res2plus1d.conv4.block1.downsamplebn.running_var", "res2plus1d.conv4.block1.downsamplebn.num_batches_tracked", "res2plus1d.conv4.block1.conv1.spatial_conv.weight", "res2plus1d.conv4.block1.conv1.spatial_conv.bias", "res2plus1d.conv4.block1.conv1.bn.weight", "res2plus1d.conv4.block1.conv1.bn.bias", "res2plus1d.conv4.block1.conv1.bn.running_mean", "res2plus1d.conv4.block1.conv1.bn.running_var", "res2plus1d.conv4.block1.conv1.bn.num_batches_tracked", "res2plus1d.conv4.block1.conv1.temporal_conv.weight", "res2plus1d.conv4.block1.conv1.temporal_conv.bias", "res2plus1d.conv4.block1.bn1.weight", "res2plus1d.conv4.block1.bn1.bias", "res2plus1d.conv4.block1.bn1.running_mean", "res2plus1d.conv4.block1.bn1.running_var", "res2plus1d.conv4.block1.bn1.num_batches_tracked", "res2plus1d.conv4.block1.conv2.spatial_conv.weight", "res2plus1d.conv4.block1.conv2.spatial_conv.bias", "res2plus1d.conv4.block1.conv2.bn.weight", "res2plus1d.conv4.block1.conv2.bn.bias", "res2plus1d.conv4.block1.conv2.bn.running_mean", "res2plus1d.conv4.block1.conv2.bn.running_var", "res2plus1d.conv4.block1.conv2.bn.num_batches_tracked", "res2plus1d.conv4.block1.conv2.temporal_conv.weight", "res2plus1d.conv4.block1.conv2.temporal_conv.bias", "res2plus1d.conv4.block1.bn2.weight", "res2plus1d.conv4.block1.bn2.bias", "res2plus1d.conv4.block1.bn2.running_mean", "res2plus1d.conv4.block1.bn2.running_var", "res2plus1d.conv4.block1.bn2.num_batches_tracked", "res2plus1d.conv4.blocks.0.conv1.spatial_conv.weight", "res2plus1d.conv4.blocks.0.conv1.spatial_conv.bias", "res2plus1d.conv4.blocks.0.conv1.bn.weight", "res2plus1d.conv4.blocks.0.conv1.bn.bias", "res2plus1d.conv4.blocks.0.conv1.bn.running_mean", "res2plus1d.conv4.blocks.0.conv1.bn.running_var", "res2plus1d.conv4.blocks.0.conv1.bn.num_batches_tracked", "res2plus1d.conv4.blocks.0.conv1.temporal_conv.weight", "res2plus1d.conv4.blocks.0.conv1.temporal_conv.bias", "res2plus1d.conv4.blocks.0.bn1.weight", "res2plus1d.conv4.blocks.0.bn1.bias", "res2plus1d.conv4.blocks.0.bn1.running_mean", "res2plus1d.conv4.blocks.0.bn1.running_var", "res2plus1d.conv4.blocks.0.bn1.num_batches_tracked", "res2plus1d.conv4.blocks.0.conv2.spatial_conv.weight", "res2plus1d.conv4.blocks.0.conv2.spatial_conv.bias", "res2plus1d.conv4.blocks.0.conv2.bn.weight", "res2plus1d.conv4.blocks.0.conv2.bn.bias", "res2plus1d.conv4.blocks.0.conv2.bn.running_mean", "res2plus1d.conv4.blocks.0.conv2.bn.running_var", "res2plus1d.conv4.blocks.0.conv2.bn.num_batches_tracked", "res2plus1d.conv4.blocks.0.conv2.temporal_conv.weight", "res2plus1d.conv4.blocks.0.conv2.temporal_conv.bias", "res2plus1d.conv4.blocks.0.bn2.weight", "res2plus1d.conv4.blocks.0.bn2.bias", "res2plus1d.conv4.blocks.0.bn2.running_mean", "res2plus1d.conv4.blocks.0.bn2.running_var", "res2plus1d.conv4.blocks.0.bn2.num_batches_tracked", "res2plus1d.conv5.block1.downsampleconv.spatial_conv.weight", "res2plus1d.conv5.block1.downsampleconv.spatial_conv.bias", "res2plus1d.conv5.block1.downsampleconv.bn.weight", "res2plus1d.conv5.block1.downsampleconv.bn.bias", "res2plus1d.conv5.block1.downsampleconv.bn.running_mean", "res2plus1d.conv5.block1.downsampleconv.bn.running_var", "res2plus1d.conv5.block1.downsampleconv.bn.num_batches_tracked", "res2plus1d.conv5.block1.downsampleconv.temporal_conv.weight", "res2plus1d.conv5.block1.downsampleconv.temporal_conv.bias", "res2plus1d.conv5.block1.downsamplebn.weight", "res2plus1d.conv5.block1.downsamplebn.bias", "res2plus1d.conv5.block1.downsamplebn.running_mean", "res2plus1d.conv5.block1.downsamplebn.running_var", "res2plus1d.conv5.block1.downsamplebn.num_batches_tracked", "res2plus1d.conv5.block1.conv1.spatial_conv.weight", "res2plus1d.conv5.block1.conv1.spatial_conv.bias", "res2plus1d.conv5.block1.conv1.bn.weight", "res2plus1d.conv5.block1.conv1.bn.bias", "res2plus1d.conv5.block1.conv1.bn.running_mean", "res2plus1d.conv5.block1.conv1.bn.running_var", "res2plus1d.conv5.block1.conv1.bn.num_batches_tracked", "res2plus1d.conv5.block1.conv1.temporal_conv.weight", "res2plus1d.conv5.block1.conv1.temporal_conv.bias", "res2plus1d.conv5.block1.bn1.weight", "res2plus1d.conv5.block1.bn1.bias", "res2plus1d.conv5.block1.bn1.running_mean", "res2plus1d.conv5.block1.bn1.running_var", "res2plus1d.conv5.block1.bn1.num_batches_tracked", "res2plus1d.conv5.block1.conv2.spatial_conv.weight", "res2plus1d.conv5.block1.conv2.spatial_conv.bias", "res2plus1d.conv5.block1.conv2.bn.weight", "res2plus1d.conv5.block1.conv2.bn.bias", "res2plus1d.conv5.block1.conv2.bn.running_mean", "res2plus1d.conv5.block1.conv2.bn.running_var", "res2plus1d.conv5.block1.conv2.bn.num_batches_tracked", "res2plus1d.conv5.block1.conv2.temporal_conv.weight", "res2plus1d.conv5.block1.conv2.temporal_conv.bias", "res2plus1d.conv5.block1.bn2.weight", "res2plus1d.conv5.block1.bn2.bias", "res2plus1d.conv5.block1.bn2.running_mean", "res2plus1d.conv5.block1.bn2.running_var", "res2plus1d.conv5.block1.bn2.num_batches_tracked", "res2plus1d.conv5.blocks.0.conv1.spatial_conv.weight", "res2plus1d.conv5.blocks.0.conv1.spatial_conv.bias", "res2plus1d.conv5.blocks.0.conv1.bn.weight", "res2plus1d.conv5.blocks.0.conv1.bn.bias", "res2plus1d.conv5.blocks.0.conv1.bn.running_mean", "res2plus1d.conv5.blocks.0.conv1.bn.running_var", "res2plus1d.conv5.blocks.0.conv1.bn.num_batches_tracked", "res2plus1d.conv5.blocks.0.conv1.temporal_conv.weight", "res2plus1d.conv5.blocks.0.conv1.temporal_conv.bias", "res2plus1d.conv5.blocks.0.bn1.weight", "res2plus1d.conv5.blocks.0.bn1.bias", "res2plus1d.conv5.blocks.0.bn1.running_mean", "res2plus1d.conv5.blocks.0.bn1.running_var", "res2plus1d.conv5.blocks.0.bn1.num_batches_tracked", "res2plus1d.conv5.blocks.0.conv2.spatial_conv.weight", "res2plus1d.conv5.blocks.0.conv2.spatial_conv.bias", "res2plus1d.conv5.blocks.0.conv2.bn.weight", "res2plus1d.conv5.blocks.0.conv2.bn.bias", "res2plus1d.conv5.blocks.0.conv2.bn.running_mean", "res2plus1d.conv5.blocks.0.conv2.bn.running_var", "res2plus1d.conv5.blocks.0.conv2.bn.num_batches_tracked", "res2plus1d.conv5.blocks.0.conv2.temporal_conv.weight", "res2plus1d.conv5.blocks.0.conv2.temporal_conv.bias", "res2plus1d.conv5.blocks.0.bn2.weight", "res2plus1d.conv5.blocks.0.bn2.bias", "res2plus1d.conv5.blocks.0.bn2.running_mean", "res2plus1d.conv5.blocks.0.bn2.running_var", "res2plus1d.conv5.blocks.0.bn2.num_batches_tracked", "res2plus1d.conv6.block1.downsampleconv.spatial_conv.weight", "res2plus1d.conv6.block1.downsampleconv.spatial_conv.bias", "res2plus1d.conv6.block1.downsampleconv.bn.weight", "res2plus1d.conv6.block1.downsampleconv.bn.bias", "res2plus1d.conv6.block1.downsampleconv.bn.running_mean", "res2plus1d.conv6.block1.downsampleconv.bn.running_var", "res2plus1d.conv6.block1.downsampleconv.bn.num_batches_tracked", "res2plus1d.conv6.block1.downsampleconv.temporal_conv.weight", "res2plus1d.conv6.block1.downsampleconv.temporal_conv.bias", "res2plus1d.conv6.block1.downsamplebn.weight", "res2plus1d.conv6.block1.downsamplebn.bias", "res2plus1d.conv6.block1.downsamplebn.running_mean", "res2plus1d.conv6.block1.downsamplebn.running_var", "res2plus1d.conv6.block1.downsamplebn.num_batches_tracked", "res2plus1d.conv6.block1.conv1.spatial_conv.weight", "res2plus1d.conv6.block1.conv1.spatial_conv.bias", "res2plus1d.conv6.block1.conv1.bn.weight", "res2plus1d.conv6.block1.conv1.bn.bias", "res2plus1d.conv6.block1.conv1.bn.running_mean", "res2plus1d.conv6.block1.conv1.bn.running_var", "res2plus1d.conv6.block1.conv1.bn.num_batches_tracked", "res2plus1d.conv6.block1.conv1.temporal_conv.weight", "res2plus1d.conv6.block1.conv1.temporal_conv.bias", "res2plus1d.conv6.block1.bn1.weight", "res2plus1d.conv6.block1.bn1.bias", "res2plus1d.conv6.block1.bn1.running_mean", "res2plus1d.conv6.block1.bn1.running_var", "res2plus1d.conv6.block1.bn1.num_batches_tracked", "res2plus1d.conv6.block1.conv2.spatial_conv.weight", "res2plus1d.conv6.block1.conv2.spatial_conv.bias", "res2plus1d.conv6.block1.conv2.bn.weight", "res2plus1d.conv6.block1.conv2.bn.bias", "res2plus1d.conv6.block1.conv2.bn.running_mean", "res2plus1d.conv6.block1.conv2.bn.running_var", "res2plus1d.conv6.block1.conv2.bn.num_batches_tracked", "res2plus1d.conv6.block1.conv2.temporal_conv.weight", "res2plus1d.conv6.block1.conv2.temporal_conv.bias", "res2plus1d.conv6.block1.bn2.weight", "res2plus1d.conv6.block1.bn2.bias", "res2plus1d.conv6.block1.bn2.running_mean", "res2plus1d.conv6.block1.bn2.running_var", "res2plus1d.conv6.block1.bn2.num_batches_tracked", "res2plus1d.conv6.blocks.0.conv1.spatial_conv.weight", "res2plus1d.conv6.blocks.0.conv1.spatial_conv.bias", "res2plus1d.conv6.blocks.0.conv1.bn.weight", "res2plus1d.conv6.blocks.0.conv1.bn.bias", "res2plus1d.conv6.blocks.0.conv1.bn.running_mean", "res2plus1d.conv6.blocks.0.conv1.bn.running_var", "res2plus1d.conv6.blocks.0.conv1.bn.num_batches_tracked", "res2plus1d.conv6.blocks.0.conv1.temporal_conv.weight", "res2plus1d.conv6.blocks.0.conv1.temporal_conv.bias", "res2plus1d.conv6.blocks.0.bn1.weight", "res2plus1d.conv6.blocks.0.bn1.bias", "res2plus1d.conv6.blocks.0.bn1.running_mean", "res2plus1d.conv6.blocks.0.bn1.running_var", "res2plus1d.conv6.blocks.0.bn1.num_batches_tracked", "res2plus1d.conv6.blocks.0.conv2.spatial_conv.weight", "res2plus1d.conv6.blocks.0.conv2.spatial_conv.bias", "res2plus1d.conv6.blocks.0.conv2.bn.weight", "res2plus1d.conv6.blocks.0.conv2.bn.bias", "res2plus1d.conv6.blocks.0.conv2.bn.running_mean", "res2plus1d.conv6.blocks.0.conv2.bn.running_var", "res2plus1d.conv6.blocks.0.conv2.bn.num_batches_tracked", "res2plus1d.conv6.blocks.0.conv2.temporal_conv.weight", "res2plus1d.conv6.blocks.0.conv2.temporal_conv.bias", "res2plus1d.conv6.blocks.0.bn2.weight", "res2plus1d.conv6.blocks.0.bn2.bias", "res2plus1d.conv6.blocks.0.bn2.running_mean", "res2plus1d.conv6.blocks.0.bn2.running_var", "res2plus1d.conv6.blocks.0.bn2.num_batches_tracked", "linear.weight", "linear.bias". 
-Reloading from previously saved checkpoint
-Traceback (most recent call last):
-  File "trainer.py", line 158, in <module>
-    train_model(args.data, args.model, args.num_classes,
-  File "trainer.py", line 85, in train_model
-    model.load_state_dict(checkpoint['state_dict'])
-  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1051, in load_state_dict
-    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
-RuntimeError: Error(s) in loading state_dict for DataParallel:
-	Missing key(s) in state_dict: "module.res2plus1d.conv1.spatial_conv.weight", "module.res2plus1d.conv1.spatial_conv.bias", "module.res2plus1d.conv1.bn.weight", "module.res2plus1d.conv1.bn.bias", "module.res2plus1d.conv1.bn.running_mean", "module.res2plus1d.conv1.bn.running_var", "module.res2plus1d.conv1.temporal_conv.weight", "module.res2plus1d.conv1.temporal_conv.bias", "module.res2plus1d.conv2.block1.conv1.spatial_conv.weight", "module.res2plus1d.conv2.block1.conv1.spatial_conv.bias", "module.res2plus1d.conv2.block1.conv1.bn.weight", "module.res2plus1d.conv2.block1.conv1.bn.bias", "module.res2plus1d.conv2.block1.conv1.bn.running_mean", "module.res2plus1d.conv2.block1.conv1.bn.running_var", "module.res2plus1d.conv2.block1.conv1.temporal_conv.weight", "module.res2plus1d.conv2.block1.conv1.temporal_conv.bias", "module.res2plus1d.conv2.block1.bn1.weight", "module.res2plus1d.conv2.block1.bn1.bias", "module.res2plus1d.conv2.block1.bn1.running_mean", "module.res2plus1d.conv2.block1.bn1.running_var", "module.res2plus1d.conv2.block1.conv2.spatial_conv.weight", "module.res2plus1d.conv2.block1.conv2.spatial_conv.bias", "module.res2plus1d.conv2.block1.conv2.bn.weight", "module.res2plus1d.conv2.block1.conv2.bn.bias", "module.res2plus1d.conv2.block1.conv2.bn.running_mean", "module.res2plus1d.conv2.block1.conv2.bn.running_var", "module.res2plus1d.conv2.block1.conv2.temporal_conv.weight", "module.res2plus1d.conv2.block1.conv2.temporal_conv.bias", "module.res2plus1d.conv2.block1.bn2.weight", "module.res2plus1d.conv2.block1.bn2.bias", "module.res2plus1d.conv2.block1.bn2.running_mean", "module.res2plus1d.conv2.block1.bn2.running_var", "module.res2plus1d.conv2.blocks.0.conv1.spatial_conv.weight", "module.res2plus1d.conv2.blocks.0.conv1.spatial_conv.bias", "module.res2plus1d.conv2.blocks.0.conv1.bn.weight", "module.res2plus1d.conv2.blocks.0.conv1.bn.bias", "module.res2plus1d.conv2.blocks.0.conv1.bn.running_mean", "module.res2plus1d.conv2.blocks.0.conv1.bn.running_var", "module.res2plus1d.conv2.blocks.0.conv1.temporal_conv.weight", "module.res2plus1d.conv2.blocks.0.conv1.temporal_conv.bias", "module.res2plus1d.conv2.blocks.0.bn1.weight", "module.res2plus1d.conv2.blocks.0.bn1.bias", "module.res2plus1d.conv2.blocks.0.bn1.running_mean", "module.res2plus1d.conv2.blocks.0.bn1.running_var", "module.res2plus1d.conv2.blocks.0.conv2.spatial_conv.weight", "module.res2plus1d.conv2.blocks.0.conv2.spatial_conv.bias", "module.res2plus1d.conv2.blocks.0.conv2.bn.weight", "module.res2plus1d.conv2.blocks.0.conv2.bn.bias", "module.res2plus1d.conv2.blocks.0.conv2.bn.running_mean", "module.res2plus1d.conv2.blocks.0.conv2.bn.running_var", "module.res2plus1d.conv2.blocks.0.conv2.temporal_conv.weight", "module.res2plus1d.conv2.blocks.0.conv2.temporal_conv.bias", "module.res2plus1d.conv2.blocks.0.bn2.weight", "module.res2plus1d.conv2.blocks.0.bn2.bias", "module.res2plus1d.conv2.blocks.0.bn2.running_mean", "module.res2plus1d.conv2.blocks.0.bn2.running_var", "module.res2plus1d.conv3.block1.downsampleconv.spatial_conv.weight", "module.res2plus1d.conv3.block1.downsampleconv.spatial_conv.bias", "module.res2plus1d.conv3.block1.downsampleconv.bn.weight", "module.res2plus1d.conv3.block1.downsampleconv.bn.bias", "module.res2plus1d.conv3.block1.downsampleconv.bn.running_mean", "module.res2plus1d.conv3.block1.downsampleconv.bn.running_var", "module.res2plus1d.conv3.block1.downsampleconv.temporal_conv.weight", "module.res2plus1d.conv3.block1.downsampleconv.temporal_conv.bias", "module.res2plus1d.conv3.block1.downsamplebn.weight", "module.res2plus1d.conv3.block1.downsamplebn.bias", "module.res2plus1d.conv3.block1.downsamplebn.running_mean", "module.res2plus1d.conv3.block1.downsamplebn.running_var", "module.res2plus1d.conv3.block1.conv1.spatial_conv.weight", "module.res2plus1d.conv3.block1.conv1.spatial_conv.bias", "module.res2plus1d.conv3.block1.conv1.bn.weight", "module.res2plus1d.conv3.block1.conv1.bn.bias", "module.res2plus1d.conv3.block1.conv1.bn.running_mean", "module.res2plus1d.conv3.block1.conv1.bn.running_var", "module.res2plus1d.conv3.block1.conv1.temporal_conv.weight", "module.res2plus1d.conv3.block1.conv1.temporal_conv.bias", "module.res2plus1d.conv3.block1.bn1.weight", "module.res2plus1d.conv3.block1.bn1.bias", "module.res2plus1d.conv3.block1.bn1.running_mean", "module.res2plus1d.conv3.block1.bn1.running_var", "module.res2plus1d.conv3.block1.conv2.spatial_conv.weight", "module.res2plus1d.conv3.block1.conv2.spatial_conv.bias", "module.res2plus1d.conv3.block1.conv2.bn.weight", "module.res2plus1d.conv3.block1.conv2.bn.bias", "module.res2plus1d.conv3.block1.conv2.bn.running_mean", "module.res2plus1d.conv3.block1.conv2.bn.running_var", "module.res2plus1d.conv3.block1.conv2.temporal_conv.weight", "module.res2plus1d.conv3.block1.conv2.temporal_conv.bias", "module.res2plus1d.conv3.block1.bn2.weight", "module.res2plus1d.conv3.block1.bn2.bias", "module.res2plus1d.conv3.block1.bn2.running_mean", "module.res2plus1d.conv3.block1.bn2.running_var", "module.res2plus1d.conv3.blocks.0.conv1.spatial_conv.weight", "module.res2plus1d.conv3.blocks.0.conv1.spatial_conv.bias", "module.res2plus1d.conv3.blocks.0.conv1.bn.weight", "module.res2plus1d.conv3.blocks.0.conv1.bn.bias", "module.res2plus1d.conv3.blocks.0.conv1.bn.running_mean", "module.res2plus1d.conv3.blocks.0.conv1.bn.running_var", "module.res2plus1d.conv3.blocks.0.conv1.temporal_conv.weight", "module.res2plus1d.conv3.blocks.0.conv1.temporal_conv.bias", "module.res2plus1d.conv3.blocks.0.bn1.weight", "module.res2plus1d.conv3.blocks.0.bn1.bias", "module.res2plus1d.conv3.blocks.0.bn1.running_mean", "module.res2plus1d.conv3.blocks.0.bn1.running_var", "module.res2plus1d.conv3.blocks.0.conv2.spatial_conv.weight", "module.res2plus1d.conv3.blocks.0.conv2.spatial_conv.bias", "module.res2plus1d.conv3.blocks.0.conv2.bn.weight", "module.res2plus1d.conv3.blocks.0.conv2.bn.bias", "module.res2plus1d.conv3.blocks.0.conv2.bn.running_mean", "module.res2plus1d.conv3.blocks.0.conv2.bn.running_var", "module.res2plus1d.conv3.blocks.0.conv2.temporal_conv.weight", "module.res2plus1d.conv3.blocks.0.conv2.temporal_conv.bias", "module.res2plus1d.conv3.blocks.0.bn2.weight", "module.res2plus1d.conv3.blocks.0.bn2.bias", "module.res2plus1d.conv3.blocks.0.bn2.running_mean", "module.res2plus1d.conv3.blocks.0.bn2.running_var", "module.res2plus1d.conv4.block1.downsampleconv.spatial_conv.weight", "module.res2plus1d.conv4.block1.downsampleconv.spatial_conv.bias", "module.res2plus1d.conv4.block1.downsampleconv.bn.weight", "module.res2plus1d.conv4.block1.downsampleconv.bn.bias", "module.res2plus1d.conv4.block1.downsampleconv.bn.running_mean", "module.res2plus1d.conv4.block1.downsampleconv.bn.running_var", "module.res2plus1d.conv4.block1.downsampleconv.temporal_conv.weight", "module.res2plus1d.conv4.block1.downsampleconv.temporal_conv.bias", "module.res2plus1d.conv4.block1.downsamplebn.weight", "module.res2plus1d.conv4.block1.downsamplebn.bias", "module.res2plus1d.conv4.block1.downsamplebn.running_mean", "module.res2plus1d.conv4.block1.downsamplebn.running_var", "module.res2plus1d.conv4.block1.conv1.spatial_conv.weight", "module.res2plus1d.conv4.block1.conv1.spatial_conv.bias", "module.res2plus1d.conv4.block1.conv1.bn.weight", "module.res2plus1d.conv4.block1.conv1.bn.bias", "module.res2plus1d.conv4.block1.conv1.bn.running_mean", "module.res2plus1d.conv4.block1.conv1.bn.running_var", "module.res2plus1d.conv4.block1.conv1.temporal_conv.weight", "module.res2plus1d.conv4.block1.conv1.temporal_conv.bias", "module.res2plus1d.conv4.block1.bn1.weight", "module.res2plus1d.conv4.block1.bn1.bias", "module.res2plus1d.conv4.block1.bn1.running_mean", "module.res2plus1d.conv4.block1.bn1.running_var", "module.res2plus1d.conv4.block1.conv2.spatial_conv.weight", "module.res2plus1d.conv4.block1.conv2.spatial_conv.bias", "module.res2plus1d.conv4.block1.conv2.bn.weight", "module.res2plus1d.conv4.block1.conv2.bn.bias", "module.res2plus1d.conv4.block1.conv2.bn.running_mean", "module.res2plus1d.conv4.block1.conv2.bn.running_var", "module.res2plus1d.conv4.block1.conv2.temporal_conv.weight", "module.res2plus1d.conv4.block1.conv2.temporal_conv.bias", "module.res2plus1d.conv4.block1.bn2.weight", "module.res2plus1d.conv4.block1.bn2.bias", "module.res2plus1d.conv4.block1.bn2.running_mean", "module.res2plus1d.conv4.block1.bn2.running_var", "module.res2plus1d.conv4.blocks.0.conv1.spatial_conv.weight", "module.res2plus1d.conv4.blocks.0.conv1.spatial_conv.bias", "module.res2plus1d.conv4.blocks.0.conv1.bn.weight", "module.res2plus1d.conv4.blocks.0.conv1.bn.bias", "module.res2plus1d.conv4.blocks.0.conv1.bn.running_mean", "module.res2plus1d.conv4.blocks.0.conv1.bn.running_var", "module.res2plus1d.conv4.blocks.0.conv1.temporal_conv.weight", "module.res2plus1d.conv4.blocks.0.conv1.temporal_conv.bias", "module.res2plus1d.conv4.blocks.0.bn1.weight", "module.res2plus1d.conv4.blocks.0.bn1.bias", "module.res2plus1d.conv4.blocks.0.bn1.running_mean", "module.res2plus1d.conv4.blocks.0.bn1.running_var", "module.res2plus1d.conv4.blocks.0.conv2.spatial_conv.weight", "module.res2plus1d.conv4.blocks.0.conv2.spatial_conv.bias", "module.res2plus1d.conv4.blocks.0.conv2.bn.weight", "module.res2plus1d.conv4.blocks.0.conv2.bn.bias", "module.res2plus1d.conv4.blocks.0.conv2.bn.running_mean", "module.res2plus1d.conv4.blocks.0.conv2.bn.running_var", "module.res2plus1d.conv4.blocks.0.conv2.temporal_conv.weight", "module.res2plus1d.conv4.blocks.0.conv2.temporal_conv.bias", "module.res2plus1d.conv4.blocks.0.bn2.weight", "module.res2plus1d.conv4.blocks.0.bn2.bias", "module.res2plus1d.conv4.blocks.0.bn2.running_mean", "module.res2plus1d.conv4.blocks.0.bn2.running_var", "module.res2plus1d.conv5.block1.downsampleconv.spatial_conv.weight", "module.res2plus1d.conv5.block1.downsampleconv.spatial_conv.bias", "module.res2plus1d.conv5.block1.downsampleconv.bn.weight", "module.res2plus1d.conv5.block1.downsampleconv.bn.bias", "module.res2plus1d.conv5.block1.downsampleconv.bn.running_mean", "module.res2plus1d.conv5.block1.downsampleconv.bn.running_var", "module.res2plus1d.conv5.block1.downsampleconv.temporal_conv.weight", "module.res2plus1d.conv5.block1.downsampleconv.temporal_conv.bias", "module.res2plus1d.conv5.block1.downsamplebn.weight", "module.res2plus1d.conv5.block1.downsamplebn.bias", "module.res2plus1d.conv5.block1.downsamplebn.running_mean", "module.res2plus1d.conv5.block1.downsamplebn.running_var", "module.res2plus1d.conv5.block1.conv1.spatial_conv.weight", "module.res2plus1d.conv5.block1.conv1.spatial_conv.bias", "module.res2plus1d.conv5.block1.conv1.bn.weight", "module.res2plus1d.conv5.block1.conv1.bn.bias", "module.res2plus1d.conv5.block1.conv1.bn.running_mean", "module.res2plus1d.conv5.block1.conv1.bn.running_var", "module.res2plus1d.conv5.block1.conv1.temporal_conv.weight", "module.res2plus1d.conv5.block1.conv1.temporal_conv.bias", "module.res2plus1d.conv5.block1.bn1.weight", "module.res2plus1d.conv5.block1.bn1.bias", "module.res2plus1d.conv5.block1.bn1.running_mean", "module.res2plus1d.conv5.block1.bn1.running_var", "module.res2plus1d.conv5.block1.conv2.spatial_conv.weight", "module.res2plus1d.conv5.block1.conv2.spatial_conv.bias", "module.res2plus1d.conv5.block1.conv2.bn.weight", "module.res2plus1d.conv5.block1.conv2.bn.bias", "module.res2plus1d.conv5.block1.conv2.bn.running_mean", "module.res2plus1d.conv5.block1.conv2.bn.running_var", "module.res2plus1d.conv5.block1.conv2.temporal_conv.weight", "module.res2plus1d.conv5.block1.conv2.temporal_conv.bias", "module.res2plus1d.conv5.block1.bn2.weight", "module.res2plus1d.conv5.block1.bn2.bias", "module.res2plus1d.conv5.block1.bn2.running_mean", "module.res2plus1d.conv5.block1.bn2.running_var", "module.res2plus1d.conv5.blocks.0.conv1.spatial_conv.weight", "module.res2plus1d.conv5.blocks.0.conv1.spatial_conv.bias", "module.res2plus1d.conv5.blocks.0.conv1.bn.weight", "module.res2plus1d.conv5.blocks.0.conv1.bn.bias", "module.res2plus1d.conv5.blocks.0.conv1.bn.running_mean", "module.res2plus1d.conv5.blocks.0.conv1.bn.running_var", "module.res2plus1d.conv5.blocks.0.conv1.temporal_conv.weight", "module.res2plus1d.conv5.blocks.0.conv1.temporal_conv.bias", "module.res2plus1d.conv5.blocks.0.bn1.weight", "module.res2plus1d.conv5.blocks.0.bn1.bias", "module.res2plus1d.conv5.blocks.0.bn1.running_mean", "module.res2plus1d.conv5.blocks.0.bn1.running_var", "module.res2plus1d.conv5.blocks.0.conv2.spatial_conv.weight", "module.res2plus1d.conv5.blocks.0.conv2.spatial_conv.bias", "module.res2plus1d.conv5.blocks.0.conv2.bn.weight", "module.res2plus1d.conv5.blocks.0.conv2.bn.bias", "module.res2plus1d.conv5.blocks.0.conv2.bn.running_mean", "module.res2plus1d.conv5.blocks.0.conv2.bn.running_var", "module.res2plus1d.conv5.blocks.0.conv2.temporal_conv.weight", "module.res2plus1d.conv5.blocks.0.conv2.temporal_conv.bias", "module.res2plus1d.conv5.blocks.0.bn2.weight", "module.res2plus1d.conv5.blocks.0.bn2.bias", "module.res2plus1d.conv5.blocks.0.bn2.running_mean", "module.res2plus1d.conv5.blocks.0.bn2.running_var", "module.res2plus1d.conv6.block1.downsampleconv.spatial_conv.weight", "module.res2plus1d.conv6.block1.downsampleconv.spatial_conv.bias", "module.res2plus1d.conv6.block1.downsampleconv.bn.weight", "module.res2plus1d.conv6.block1.downsampleconv.bn.bias", "module.res2plus1d.conv6.block1.downsampleconv.bn.running_mean", "module.res2plus1d.conv6.block1.downsampleconv.bn.running_var", "module.res2plus1d.conv6.block1.downsampleconv.temporal_conv.weight", "module.res2plus1d.conv6.block1.downsampleconv.temporal_conv.bias", "module.res2plus1d.conv6.block1.downsamplebn.weight", "module.res2plus1d.conv6.block1.downsamplebn.bias", "module.res2plus1d.conv6.block1.downsamplebn.running_mean", "module.res2plus1d.conv6.block1.downsamplebn.running_var", "module.res2plus1d.conv6.block1.conv1.spatial_conv.weight", "module.res2plus1d.conv6.block1.conv1.spatial_conv.bias", "module.res2plus1d.conv6.block1.conv1.bn.weight", "module.res2plus1d.conv6.block1.conv1.bn.bias", "module.res2plus1d.conv6.block1.conv1.bn.running_mean", "module.res2plus1d.conv6.block1.conv1.bn.running_var", "module.res2plus1d.conv6.block1.conv1.temporal_conv.weight", "module.res2plus1d.conv6.block1.conv1.temporal_conv.bias", "module.res2plus1d.conv6.block1.bn1.weight", "module.res2plus1d.conv6.block1.bn1.bias", "module.res2plus1d.conv6.block1.bn1.running_mean", "module.res2plus1d.conv6.block1.bn1.running_var", "module.res2plus1d.conv6.block1.conv2.spatial_conv.weight", "module.res2plus1d.conv6.block1.conv2.spatial_conv.bias", "module.res2plus1d.conv6.block1.conv2.bn.weight", "module.res2plus1d.conv6.block1.conv2.bn.bias", "module.res2plus1d.conv6.block1.conv2.bn.running_mean", "module.res2plus1d.conv6.block1.conv2.bn.running_var", "module.res2plus1d.conv6.block1.conv2.temporal_conv.weight", "module.res2plus1d.conv6.block1.conv2.temporal_conv.bias", "module.res2plus1d.conv6.block1.bn2.weight", "module.res2plus1d.conv6.block1.bn2.bias", "module.res2plus1d.conv6.block1.bn2.running_mean", "module.res2plus1d.conv6.block1.bn2.running_var", "module.res2plus1d.conv6.blocks.0.conv1.spatial_conv.weight", "module.res2plus1d.conv6.blocks.0.conv1.spatial_conv.bias", "module.res2plus1d.conv6.blocks.0.conv1.bn.weight", "module.res2plus1d.conv6.blocks.0.conv1.bn.bias", "module.res2plus1d.conv6.blocks.0.conv1.bn.running_mean", "module.res2plus1d.conv6.blocks.0.conv1.bn.running_var", "module.res2plus1d.conv6.blocks.0.conv1.temporal_conv.weight", "module.res2plus1d.conv6.blocks.0.conv1.temporal_conv.bias", "module.res2plus1d.conv6.blocks.0.bn1.weight", "module.res2plus1d.conv6.blocks.0.bn1.bias", "module.res2plus1d.conv6.blocks.0.bn1.running_mean", "module.res2plus1d.conv6.blocks.0.bn1.running_var", "module.res2plus1d.conv6.blocks.0.conv2.spatial_conv.weight", "module.res2plus1d.conv6.blocks.0.conv2.spatial_conv.bias", "module.res2plus1d.conv6.blocks.0.conv2.bn.weight", "module.res2plus1d.conv6.blocks.0.conv2.bn.bias", "module.res2plus1d.conv6.blocks.0.conv2.bn.running_mean", "module.res2plus1d.conv6.blocks.0.conv2.bn.running_var", "module.res2plus1d.conv6.blocks.0.conv2.temporal_conv.weight", "module.res2plus1d.conv6.blocks.0.conv2.temporal_conv.bias", "module.res2plus1d.conv6.blocks.0.bn2.weight", "module.res2plus1d.conv6.blocks.0.bn2.bias", "module.res2plus1d.conv6.blocks.0.bn2.running_mean", "module.res2plus1d.conv6.blocks.0.bn2.running_var", "module.linear.weight", "module.linear.bias". 
-	Unexpected key(s) in state_dict: "res2plus1d.conv1.spatial_conv.weight", "res2plus1d.conv1.spatial_conv.bias", "res2plus1d.conv1.bn.weight", "res2plus1d.conv1.bn.bias", "res2plus1d.conv1.bn.running_mean", "res2plus1d.conv1.bn.running_var", "res2plus1d.conv1.bn.num_batches_tracked", "res2plus1d.conv1.temporal_conv.weight", "res2plus1d.conv1.temporal_conv.bias", "res2plus1d.conv2.block1.conv1.spatial_conv.weight", "res2plus1d.conv2.block1.conv1.spatial_conv.bias", "res2plus1d.conv2.block1.conv1.bn.weight", "res2plus1d.conv2.block1.conv1.bn.bias", "res2plus1d.conv2.block1.conv1.bn.running_mean", "res2plus1d.conv2.block1.conv1.bn.running_var", "res2plus1d.conv2.block1.conv1.bn.num_batches_tracked", "res2plus1d.conv2.block1.conv1.temporal_conv.weight", "res2plus1d.conv2.block1.conv1.temporal_conv.bias", "res2plus1d.conv2.block1.bn1.weight", "res2plus1d.conv2.block1.bn1.bias", "res2plus1d.conv2.block1.bn1.running_mean", "res2plus1d.conv2.block1.bn1.running_var", "res2plus1d.conv2.block1.bn1.num_batches_tracked", "res2plus1d.conv2.block1.conv2.spatial_conv.weight", "res2plus1d.conv2.block1.conv2.spatial_conv.bias", "res2plus1d.conv2.block1.conv2.bn.weight", "res2plus1d.conv2.block1.conv2.bn.bias", "res2plus1d.conv2.block1.conv2.bn.running_mean", "res2plus1d.conv2.block1.conv2.bn.running_var", "res2plus1d.conv2.block1.conv2.bn.num_batches_tracked", "res2plus1d.conv2.block1.conv2.temporal_conv.weight", "res2plus1d.conv2.block1.conv2.temporal_conv.bias", "res2plus1d.conv2.block1.bn2.weight", "res2plus1d.conv2.block1.bn2.bias", "res2plus1d.conv2.block1.bn2.running_mean", "res2plus1d.conv2.block1.bn2.running_var", "res2plus1d.conv2.block1.bn2.num_batches_tracked", "res2plus1d.conv2.blocks.0.conv1.spatial_conv.weight", "res2plus1d.conv2.blocks.0.conv1.spatial_conv.bias", "res2plus1d.conv2.blocks.0.conv1.bn.weight", "res2plus1d.conv2.blocks.0.conv1.bn.bias", "res2plus1d.conv2.blocks.0.conv1.bn.running_mean", "res2plus1d.conv2.blocks.0.conv1.bn.running_var", "res2plus1d.conv2.blocks.0.conv1.bn.num_batches_tracked", "res2plus1d.conv2.blocks.0.conv1.temporal_conv.weight", "res2plus1d.conv2.blocks.0.conv1.temporal_conv.bias", "res2plus1d.conv2.blocks.0.bn1.weight", "res2plus1d.conv2.blocks.0.bn1.bias", "res2plus1d.conv2.blocks.0.bn1.running_mean", "res2plus1d.conv2.blocks.0.bn1.running_var", "res2plus1d.conv2.blocks.0.bn1.num_batches_tracked", "res2plus1d.conv2.blocks.0.conv2.spatial_conv.weight", "res2plus1d.conv2.blocks.0.conv2.spatial_conv.bias", "res2plus1d.conv2.blocks.0.conv2.bn.weight", "res2plus1d.conv2.blocks.0.conv2.bn.bias", "res2plus1d.conv2.blocks.0.conv2.bn.running_mean", "res2plus1d.conv2.blocks.0.conv2.bn.running_var", "res2plus1d.conv2.blocks.0.conv2.bn.num_batches_tracked", "res2plus1d.conv2.blocks.0.conv2.temporal_conv.weight", "res2plus1d.conv2.blocks.0.conv2.temporal_conv.bias", "res2plus1d.conv2.blocks.0.bn2.weight", "res2plus1d.conv2.blocks.0.bn2.bias", "res2plus1d.conv2.blocks.0.bn2.running_mean", "res2plus1d.conv2.blocks.0.bn2.running_var", "res2plus1d.conv2.blocks.0.bn2.num_batches_tracked", "res2plus1d.conv3.block1.downsampleconv.spatial_conv.weight", "res2plus1d.conv3.block1.downsampleconv.spatial_conv.bias", "res2plus1d.conv3.block1.downsampleconv.bn.weight", "res2plus1d.conv3.block1.downsampleconv.bn.bias", "res2plus1d.conv3.block1.downsampleconv.bn.running_mean", "res2plus1d.conv3.block1.downsampleconv.bn.running_var", "res2plus1d.conv3.block1.downsampleconv.bn.num_batches_tracked", "res2plus1d.conv3.block1.downsampleconv.temporal_conv.weight", "res2plus1d.conv3.block1.downsampleconv.temporal_conv.bias", "res2plus1d.conv3.block1.downsamplebn.weight", "res2plus1d.conv3.block1.downsamplebn.bias", "res2plus1d.conv3.block1.downsamplebn.running_mean", "res2plus1d.conv3.block1.downsamplebn.running_var", "res2plus1d.conv3.block1.downsamplebn.num_batches_tracked", "res2plus1d.conv3.block1.conv1.spatial_conv.weight", "res2plus1d.conv3.block1.conv1.spatial_conv.bias", "res2plus1d.conv3.block1.conv1.bn.weight", "res2plus1d.conv3.block1.conv1.bn.bias", "res2plus1d.conv3.block1.conv1.bn.running_mean", "res2plus1d.conv3.block1.conv1.bn.running_var", "res2plus1d.conv3.block1.conv1.bn.num_batches_tracked", "res2plus1d.conv3.block1.conv1.temporal_conv.weight", "res2plus1d.conv3.block1.conv1.temporal_conv.bias", "res2plus1d.conv3.block1.bn1.weight", "res2plus1d.conv3.block1.bn1.bias", "res2plus1d.conv3.block1.bn1.running_mean", "res2plus1d.conv3.block1.bn1.running_var", "res2plus1d.conv3.block1.bn1.num_batches_tracked", "res2plus1d.conv3.block1.conv2.spatial_conv.weight", "res2plus1d.conv3.block1.conv2.spatial_conv.bias", "res2plus1d.conv3.block1.conv2.bn.weight", "res2plus1d.conv3.block1.conv2.bn.bias", "res2plus1d.conv3.block1.conv2.bn.running_mean", "res2plus1d.conv3.block1.conv2.bn.running_var", "res2plus1d.conv3.block1.conv2.bn.num_batches_tracked", "res2plus1d.conv3.block1.conv2.temporal_conv.weight", "res2plus1d.conv3.block1.conv2.temporal_conv.bias", "res2plus1d.conv3.block1.bn2.weight", "res2plus1d.conv3.block1.bn2.bias", "res2plus1d.conv3.block1.bn2.running_mean", "res2plus1d.conv3.block1.bn2.running_var", "res2plus1d.conv3.block1.bn2.num_batches_tracked", "res2plus1d.conv3.blocks.0.conv1.spatial_conv.weight", "res2plus1d.conv3.blocks.0.conv1.spatial_conv.bias", "res2plus1d.conv3.blocks.0.conv1.bn.weight", "res2plus1d.conv3.blocks.0.conv1.bn.bias", "res2plus1d.conv3.blocks.0.conv1.bn.running_mean", "res2plus1d.conv3.blocks.0.conv1.bn.running_var", "res2plus1d.conv3.blocks.0.conv1.bn.num_batches_tracked", "res2plus1d.conv3.blocks.0.conv1.temporal_conv.weight", "res2plus1d.conv3.blocks.0.conv1.temporal_conv.bias", "res2plus1d.conv3.blocks.0.bn1.weight", "res2plus1d.conv3.blocks.0.bn1.bias", "res2plus1d.conv3.blocks.0.bn1.running_mean", "res2plus1d.conv3.blocks.0.bn1.running_var", "res2plus1d.conv3.blocks.0.bn1.num_batches_tracked", "res2plus1d.conv3.blocks.0.conv2.spatial_conv.weight", "res2plus1d.conv3.blocks.0.conv2.spatial_conv.bias", "res2plus1d.conv3.blocks.0.conv2.bn.weight", "res2plus1d.conv3.blocks.0.conv2.bn.bias", "res2plus1d.conv3.blocks.0.conv2.bn.running_mean", "res2plus1d.conv3.blocks.0.conv2.bn.running_var", "res2plus1d.conv3.blocks.0.conv2.bn.num_batches_tracked", "res2plus1d.conv3.blocks.0.conv2.temporal_conv.weight", "res2plus1d.conv3.blocks.0.conv2.temporal_conv.bias", "res2plus1d.conv3.blocks.0.bn2.weight", "res2plus1d.conv3.blocks.0.bn2.bias", "res2plus1d.conv3.blocks.0.bn2.running_mean", "res2plus1d.conv3.blocks.0.bn2.running_var", "res2plus1d.conv3.blocks.0.bn2.num_batches_tracked", "res2plus1d.conv4.block1.downsampleconv.spatial_conv.weight", "res2plus1d.conv4.block1.downsampleconv.spatial_conv.bias", "res2plus1d.conv4.block1.downsampleconv.bn.weight", "res2plus1d.conv4.block1.downsampleconv.bn.bias", "res2plus1d.conv4.block1.downsampleconv.bn.running_mean", "res2plus1d.conv4.block1.downsampleconv.bn.running_var", "res2plus1d.conv4.block1.downsampleconv.bn.num_batches_tracked", "res2plus1d.conv4.block1.downsampleconv.temporal_conv.weight", "res2plus1d.conv4.block1.downsampleconv.temporal_conv.bias", "res2plus1d.conv4.block1.downsamplebn.weight", "res2plus1d.conv4.block1.downsamplebn.bias", "res2plus1d.conv4.block1.downsamplebn.running_mean", "res2plus1d.conv4.block1.downsamplebn.running_var", "res2plus1d.conv4.block1.downsamplebn.num_batches_tracked", "res2plus1d.conv4.block1.conv1.spatial_conv.weight", "res2plus1d.conv4.block1.conv1.spatial_conv.bias", "res2plus1d.conv4.block1.conv1.bn.weight", "res2plus1d.conv4.block1.conv1.bn.bias", "res2plus1d.conv4.block1.conv1.bn.running_mean", "res2plus1d.conv4.block1.conv1.bn.running_var", "res2plus1d.conv4.block1.conv1.bn.num_batches_tracked", "res2plus1d.conv4.block1.conv1.temporal_conv.weight", "res2plus1d.conv4.block1.conv1.temporal_conv.bias", "res2plus1d.conv4.block1.bn1.weight", "res2plus1d.conv4.block1.bn1.bias", "res2plus1d.conv4.block1.bn1.running_mean", "res2plus1d.conv4.block1.bn1.running_var", "res2plus1d.conv4.block1.bn1.num_batches_tracked", "res2plus1d.conv4.block1.conv2.spatial_conv.weight", "res2plus1d.conv4.block1.conv2.spatial_conv.bias", "res2plus1d.conv4.block1.conv2.bn.weight", "res2plus1d.conv4.block1.conv2.bn.bias", "res2plus1d.conv4.block1.conv2.bn.running_mean", "res2plus1d.conv4.block1.conv2.bn.running_var", "res2plus1d.conv4.block1.conv2.bn.num_batches_tracked", "res2plus1d.conv4.block1.conv2.temporal_conv.weight", "res2plus1d.conv4.block1.conv2.temporal_conv.bias", "res2plus1d.conv4.block1.bn2.weight", "res2plus1d.conv4.block1.bn2.bias", "res2plus1d.conv4.block1.bn2.running_mean", "res2plus1d.conv4.block1.bn2.running_var", "res2plus1d.conv4.block1.bn2.num_batches_tracked", "res2plus1d.conv4.blocks.0.conv1.spatial_conv.weight", "res2plus1d.conv4.blocks.0.conv1.spatial_conv.bias", "res2plus1d.conv4.blocks.0.conv1.bn.weight", "res2plus1d.conv4.blocks.0.conv1.bn.bias", "res2plus1d.conv4.blocks.0.conv1.bn.running_mean", "res2plus1d.conv4.blocks.0.conv1.bn.running_var", "res2plus1d.conv4.blocks.0.conv1.bn.num_batches_tracked", "res2plus1d.conv4.blocks.0.conv1.temporal_conv.weight", "res2plus1d.conv4.blocks.0.conv1.temporal_conv.bias", "res2plus1d.conv4.blocks.0.bn1.weight", "res2plus1d.conv4.blocks.0.bn1.bias", "res2plus1d.conv4.blocks.0.bn1.running_mean", "res2plus1d.conv4.blocks.0.bn1.running_var", "res2plus1d.conv4.blocks.0.bn1.num_batches_tracked", "res2plus1d.conv4.blocks.0.conv2.spatial_conv.weight", "res2plus1d.conv4.blocks.0.conv2.spatial_conv.bias", "res2plus1d.conv4.blocks.0.conv2.bn.weight", "res2plus1d.conv4.blocks.0.conv2.bn.bias", "res2plus1d.conv4.blocks.0.conv2.bn.running_mean", "res2plus1d.conv4.blocks.0.conv2.bn.running_var", "res2plus1d.conv4.blocks.0.conv2.bn.num_batches_tracked", "res2plus1d.conv4.blocks.0.conv2.temporal_conv.weight", "res2plus1d.conv4.blocks.0.conv2.temporal_conv.bias", "res2plus1d.conv4.blocks.0.bn2.weight", "res2plus1d.conv4.blocks.0.bn2.bias", "res2plus1d.conv4.blocks.0.bn2.running_mean", "res2plus1d.conv4.blocks.0.bn2.running_var", "res2plus1d.conv4.blocks.0.bn2.num_batches_tracked", "res2plus1d.conv5.block1.downsampleconv.spatial_conv.weight", "res2plus1d.conv5.block1.downsampleconv.spatial_conv.bias", "res2plus1d.conv5.block1.downsampleconv.bn.weight", "res2plus1d.conv5.block1.downsampleconv.bn.bias", "res2plus1d.conv5.block1.downsampleconv.bn.running_mean", "res2plus1d.conv5.block1.downsampleconv.bn.running_var", "res2plus1d.conv5.block1.downsampleconv.bn.num_batches_tracked", "res2plus1d.conv5.block1.downsampleconv.temporal_conv.weight", "res2plus1d.conv5.block1.downsampleconv.temporal_conv.bias", "res2plus1d.conv5.block1.downsamplebn.weight", "res2plus1d.conv5.block1.downsamplebn.bias", "res2plus1d.conv5.block1.downsamplebn.running_mean", "res2plus1d.conv5.block1.downsamplebn.running_var", "res2plus1d.conv5.block1.downsamplebn.num_batches_tracked", "res2plus1d.conv5.block1.conv1.spatial_conv.weight", "res2plus1d.conv5.block1.conv1.spatial_conv.bias", "res2plus1d.conv5.block1.conv1.bn.weight", "res2plus1d.conv5.block1.conv1.bn.bias", "res2plus1d.conv5.block1.conv1.bn.running_mean", "res2plus1d.conv5.block1.conv1.bn.running_var", "res2plus1d.conv5.block1.conv1.bn.num_batches_tracked", "res2plus1d.conv5.block1.conv1.temporal_conv.weight", "res2plus1d.conv5.block1.conv1.temporal_conv.bias", "res2plus1d.conv5.block1.bn1.weight", "res2plus1d.conv5.block1.bn1.bias", "res2plus1d.conv5.block1.bn1.running_mean", "res2plus1d.conv5.block1.bn1.running_var", "res2plus1d.conv5.block1.bn1.num_batches_tracked", "res2plus1d.conv5.block1.conv2.spatial_conv.weight", "res2plus1d.conv5.block1.conv2.spatial_conv.bias", "res2plus1d.conv5.block1.conv2.bn.weight", "res2plus1d.conv5.block1.conv2.bn.bias", "res2plus1d.conv5.block1.conv2.bn.running_mean", "res2plus1d.conv5.block1.conv2.bn.running_var", "res2plus1d.conv5.block1.conv2.bn.num_batches_tracked", "res2plus1d.conv5.block1.conv2.temporal_conv.weight", "res2plus1d.conv5.block1.conv2.temporal_conv.bias", "res2plus1d.conv5.block1.bn2.weight", "res2plus1d.conv5.block1.bn2.bias", "res2plus1d.conv5.block1.bn2.running_mean", "res2plus1d.conv5.block1.bn2.running_var", "res2plus1d.conv5.block1.bn2.num_batches_tracked", "res2plus1d.conv5.blocks.0.conv1.spatial_conv.weight", "res2plus1d.conv5.blocks.0.conv1.spatial_conv.bias", "res2plus1d.conv5.blocks.0.conv1.bn.weight", "res2plus1d.conv5.blocks.0.conv1.bn.bias", "res2plus1d.conv5.blocks.0.conv1.bn.running_mean", "res2plus1d.conv5.blocks.0.conv1.bn.running_var", "res2plus1d.conv5.blocks.0.conv1.bn.num_batches_tracked", "res2plus1d.conv5.blocks.0.conv1.temporal_conv.weight", "res2plus1d.conv5.blocks.0.conv1.temporal_conv.bias", "res2plus1d.conv5.blocks.0.bn1.weight", "res2plus1d.conv5.blocks.0.bn1.bias", "res2plus1d.conv5.blocks.0.bn1.running_mean", "res2plus1d.conv5.blocks.0.bn1.running_var", "res2plus1d.conv5.blocks.0.bn1.num_batches_tracked", "res2plus1d.conv5.blocks.0.conv2.spatial_conv.weight", "res2plus1d.conv5.blocks.0.conv2.spatial_conv.bias", "res2plus1d.conv5.blocks.0.conv2.bn.weight", "res2plus1d.conv5.blocks.0.conv2.bn.bias", "res2plus1d.conv5.blocks.0.conv2.bn.running_mean", "res2plus1d.conv5.blocks.0.conv2.bn.running_var", "res2plus1d.conv5.blocks.0.conv2.bn.num_batches_tracked", "res2plus1d.conv5.blocks.0.conv2.temporal_conv.weight", "res2plus1d.conv5.blocks.0.conv2.temporal_conv.bias", "res2plus1d.conv5.blocks.0.bn2.weight", "res2plus1d.conv5.blocks.0.bn2.bias", "res2plus1d.conv5.blocks.0.bn2.running_mean", "res2plus1d.conv5.blocks.0.bn2.running_var", "res2plus1d.conv5.blocks.0.bn2.num_batches_tracked", "res2plus1d.conv6.block1.downsampleconv.spatial_conv.weight", "res2plus1d.conv6.block1.downsampleconv.spatial_conv.bias", "res2plus1d.conv6.block1.downsampleconv.bn.weight", "res2plus1d.conv6.block1.downsampleconv.bn.bias", "res2plus1d.conv6.block1.downsampleconv.bn.running_mean", "res2plus1d.conv6.block1.downsampleconv.bn.running_var", "res2plus1d.conv6.block1.downsampleconv.bn.num_batches_tracked", "res2plus1d.conv6.block1.downsampleconv.temporal_conv.weight", "res2plus1d.conv6.block1.downsampleconv.temporal_conv.bias", "res2plus1d.conv6.block1.downsamplebn.weight", "res2plus1d.conv6.block1.downsamplebn.bias", "res2plus1d.conv6.block1.downsamplebn.running_mean", "res2plus1d.conv6.block1.downsamplebn.running_var", "res2plus1d.conv6.block1.downsamplebn.num_batches_tracked", "res2plus1d.conv6.block1.conv1.spatial_conv.weight", "res2plus1d.conv6.block1.conv1.spatial_conv.bias", "res2plus1d.conv6.block1.conv1.bn.weight", "res2plus1d.conv6.block1.conv1.bn.bias", "res2plus1d.conv6.block1.conv1.bn.running_mean", "res2plus1d.conv6.block1.conv1.bn.running_var", "res2plus1d.conv6.block1.conv1.bn.num_batches_tracked", "res2plus1d.conv6.block1.conv1.temporal_conv.weight", "res2plus1d.conv6.block1.conv1.temporal_conv.bias", "res2plus1d.conv6.block1.bn1.weight", "res2plus1d.conv6.block1.bn1.bias", "res2plus1d.conv6.block1.bn1.running_mean", "res2plus1d.conv6.block1.bn1.running_var", "res2plus1d.conv6.block1.bn1.num_batches_tracked", "res2plus1d.conv6.block1.conv2.spatial_conv.weight", "res2plus1d.conv6.block1.conv2.spatial_conv.bias", "res2plus1d.conv6.block1.conv2.bn.weight", "res2plus1d.conv6.block1.conv2.bn.bias", "res2plus1d.conv6.block1.conv2.bn.running_mean", "res2plus1d.conv6.block1.conv2.bn.running_var", "res2plus1d.conv6.block1.conv2.bn.num_batches_tracked", "res2plus1d.conv6.block1.conv2.temporal_conv.weight", "res2plus1d.conv6.block1.conv2.temporal_conv.bias", "res2plus1d.conv6.block1.bn2.weight", "res2plus1d.conv6.block1.bn2.bias", "res2plus1d.conv6.block1.bn2.running_mean", "res2plus1d.conv6.block1.bn2.running_var", "res2plus1d.conv6.block1.bn2.num_batches_tracked", "res2plus1d.conv6.blocks.0.conv1.spatial_conv.weight", "res2plus1d.conv6.blocks.0.conv1.spatial_conv.bias", "res2plus1d.conv6.blocks.0.conv1.bn.weight", "res2plus1d.conv6.blocks.0.conv1.bn.bias", "res2plus1d.conv6.blocks.0.conv1.bn.running_mean", "res2plus1d.conv6.blocks.0.conv1.bn.running_var", "res2plus1d.conv6.blocks.0.conv1.bn.num_batches_tracked", "res2plus1d.conv6.blocks.0.conv1.temporal_conv.weight", "res2plus1d.conv6.blocks.0.conv1.temporal_conv.bias", "res2plus1d.conv6.blocks.0.bn1.weight", "res2plus1d.conv6.blocks.0.bn1.bias", "res2plus1d.conv6.blocks.0.bn1.running_mean", "res2plus1d.conv6.blocks.0.bn1.running_var", "res2plus1d.conv6.blocks.0.bn1.num_batches_tracked", "res2plus1d.conv6.blocks.0.conv2.spatial_conv.weight", "res2plus1d.conv6.blocks.0.conv2.spatial_conv.bias", "res2plus1d.conv6.blocks.0.conv2.bn.weight", "res2plus1d.conv6.blocks.0.conv2.bn.bias", "res2plus1d.conv6.blocks.0.conv2.bn.running_mean", "res2plus1d.conv6.blocks.0.conv2.bn.running_var", "res2plus1d.conv6.blocks.0.conv2.bn.num_batches_tracked", "res2plus1d.conv6.blocks.0.conv2.temporal_conv.weight", "res2plus1d.conv6.blocks.0.conv2.temporal_conv.bias", "res2plus1d.conv6.blocks.0.bn2.weight", "res2plus1d.conv6.blocks.0.bn2.bias", "res2plus1d.conv6.blocks.0.bn2.running_mean", "res2plus1d.conv6.blocks.0.bn2.running_var", "res2plus1d.conv6.blocks.0.bn2.num_batches_tracked", "linear.weight", "linear.bias". 
-Reloading from previously saved checkpoint
-Traceback (most recent call last):
-  File "trainer.py", line 158, in <module>
-    train_model(args.data, args.model, args.num_classes,
-  File "trainer.py", line 85, in train_model
-    model.load_state_dict(checkpoint['state_dict'])
-  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1051, in load_state_dict
-    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
-RuntimeError: Error(s) in loading state_dict for DataParallel:
-	Missing key(s) in state_dict: "module.res2plus1d.conv1.spatial_conv.weight", "module.res2plus1d.conv1.spatial_conv.bias", "module.res2plus1d.conv1.bn.weight", "module.res2plus1d.conv1.bn.bias", "module.res2plus1d.conv1.bn.running_mean", "module.res2plus1d.conv1.bn.running_var", "module.res2plus1d.conv1.temporal_conv.weight", "module.res2plus1d.conv1.temporal_conv.bias", "module.res2plus1d.conv2.block1.conv1.spatial_conv.weight", "module.res2plus1d.conv2.block1.conv1.spatial_conv.bias", "module.res2plus1d.conv2.block1.conv1.bn.weight", "module.res2plus1d.conv2.block1.conv1.bn.bias", "module.res2plus1d.conv2.block1.conv1.bn.running_mean", "module.res2plus1d.conv2.block1.conv1.bn.running_var", "module.res2plus1d.conv2.block1.conv1.temporal_conv.weight", "module.res2plus1d.conv2.block1.conv1.temporal_conv.bias", "module.res2plus1d.conv2.block1.bn1.weight", "module.res2plus1d.conv2.block1.bn1.bias", "module.res2plus1d.conv2.block1.bn1.running_mean", "module.res2plus1d.conv2.block1.bn1.running_var", "module.res2plus1d.conv2.block1.conv2.spatial_conv.weight", "module.res2plus1d.conv2.block1.conv2.spatial_conv.bias", "module.res2plus1d.conv2.block1.conv2.bn.weight", "module.res2plus1d.conv2.block1.conv2.bn.bias", "module.res2plus1d.conv2.block1.conv2.bn.running_mean", "module.res2plus1d.conv2.block1.conv2.bn.running_var", "module.res2plus1d.conv2.block1.conv2.temporal_conv.weight", "module.res2plus1d.conv2.block1.conv2.temporal_conv.bias", "module.res2plus1d.conv2.block1.bn2.weight", "module.res2plus1d.conv2.block1.bn2.bias", "module.res2plus1d.conv2.block1.bn2.running_mean", "module.res2plus1d.conv2.block1.bn2.running_var", "module.res2plus1d.conv2.blocks.0.conv1.spatial_conv.weight", "module.res2plus1d.conv2.blocks.0.conv1.spatial_conv.bias", "module.res2plus1d.conv2.blocks.0.conv1.bn.weight", "module.res2plus1d.conv2.blocks.0.conv1.bn.bias", "module.res2plus1d.conv2.blocks.0.conv1.bn.running_mean", "module.res2plus1d.conv2.blocks.0.conv1.bn.running_var", "module.res2plus1d.conv2.blocks.0.conv1.temporal_conv.weight", "module.res2plus1d.conv2.blocks.0.conv1.temporal_conv.bias", "module.res2plus1d.conv2.blocks.0.bn1.weight", "module.res2plus1d.conv2.blocks.0.bn1.bias", "module.res2plus1d.conv2.blocks.0.bn1.running_mean", "module.res2plus1d.conv2.blocks.0.bn1.running_var", "module.res2plus1d.conv2.blocks.0.conv2.spatial_conv.weight", "module.res2plus1d.conv2.blocks.0.conv2.spatial_conv.bias", "module.res2plus1d.conv2.blocks.0.conv2.bn.weight", "module.res2plus1d.conv2.blocks.0.conv2.bn.bias", "module.res2plus1d.conv2.blocks.0.conv2.bn.running_mean", "module.res2plus1d.conv2.blocks.0.conv2.bn.running_var", "module.res2plus1d.conv2.blocks.0.conv2.temporal_conv.weight", "module.res2plus1d.conv2.blocks.0.conv2.temporal_conv.bias", "module.res2plus1d.conv2.blocks.0.bn2.weight", "module.res2plus1d.conv2.blocks.0.bn2.bias", "module.res2plus1d.conv2.blocks.0.bn2.running_mean", "module.res2plus1d.conv2.blocks.0.bn2.running_var", "module.res2plus1d.conv3.block1.downsampleconv.spatial_conv.weight", "module.res2plus1d.conv3.block1.downsampleconv.spatial_conv.bias", "module.res2plus1d.conv3.block1.downsampleconv.bn.weight", "module.res2plus1d.conv3.block1.downsampleconv.bn.bias", "module.res2plus1d.conv3.block1.downsampleconv.bn.running_mean", "module.res2plus1d.conv3.block1.downsampleconv.bn.running_var", "module.res2plus1d.conv3.block1.downsampleconv.temporal_conv.weight", "module.res2plus1d.conv3.block1.downsampleconv.temporal_conv.bias", "module.res2plus1d.conv3.block1.downsamplebn.weight", "module.res2plus1d.conv3.block1.downsamplebn.bias", "module.res2plus1d.conv3.block1.downsamplebn.running_mean", "module.res2plus1d.conv3.block1.downsamplebn.running_var", "module.res2plus1d.conv3.block1.conv1.spatial_conv.weight", "module.res2plus1d.conv3.block1.conv1.spatial_conv.bias", "module.res2plus1d.conv3.block1.conv1.bn.weight", "module.res2plus1d.conv3.block1.conv1.bn.bias", "module.res2plus1d.conv3.block1.conv1.bn.running_mean", "module.res2plus1d.conv3.block1.conv1.bn.running_var", "module.res2plus1d.conv3.block1.conv1.temporal_conv.weight", "module.res2plus1d.conv3.block1.conv1.temporal_conv.bias", "module.res2plus1d.conv3.block1.bn1.weight", "module.res2plus1d.conv3.block1.bn1.bias", "module.res2plus1d.conv3.block1.bn1.running_mean", "module.res2plus1d.conv3.block1.bn1.running_var", "module.res2plus1d.conv3.block1.conv2.spatial_conv.weight", "module.res2plus1d.conv3.block1.conv2.spatial_conv.bias", "module.res2plus1d.conv3.block1.conv2.bn.weight", "module.res2plus1d.conv3.block1.conv2.bn.bias", "module.res2plus1d.conv3.block1.conv2.bn.running_mean", "module.res2plus1d.conv3.block1.conv2.bn.running_var", "module.res2plus1d.conv3.block1.conv2.temporal_conv.weight", "module.res2plus1d.conv3.block1.conv2.temporal_conv.bias", "module.res2plus1d.conv3.block1.bn2.weight", "module.res2plus1d.conv3.block1.bn2.bias", "module.res2plus1d.conv3.block1.bn2.running_mean", "module.res2plus1d.conv3.block1.bn2.running_var", "module.res2plus1d.conv3.blocks.0.conv1.spatial_conv.weight", "module.res2plus1d.conv3.blocks.0.conv1.spatial_conv.bias", "module.res2plus1d.conv3.blocks.0.conv1.bn.weight", "module.res2plus1d.conv3.blocks.0.conv1.bn.bias", "module.res2plus1d.conv3.blocks.0.conv1.bn.running_mean", "module.res2plus1d.conv3.blocks.0.conv1.bn.running_var", "module.res2plus1d.conv3.blocks.0.conv1.temporal_conv.weight", "module.res2plus1d.conv3.blocks.0.conv1.temporal_conv.bias", "module.res2plus1d.conv3.blocks.0.bn1.weight", "module.res2plus1d.conv3.blocks.0.bn1.bias", "module.res2plus1d.conv3.blocks.0.bn1.running_mean", "module.res2plus1d.conv3.blocks.0.bn1.running_var", "module.res2plus1d.conv3.blocks.0.conv2.spatial_conv.weight", "module.res2plus1d.conv3.blocks.0.conv2.spatial_conv.bias", "module.res2plus1d.conv3.blocks.0.conv2.bn.weight", "module.res2plus1d.conv3.blocks.0.conv2.bn.bias", "module.res2plus1d.conv3.blocks.0.conv2.bn.running_mean", "module.res2plus1d.conv3.blocks.0.conv2.bn.running_var", "module.res2plus1d.conv3.blocks.0.conv2.temporal_conv.weight", "module.res2plus1d.conv3.blocks.0.conv2.temporal_conv.bias", "module.res2plus1d.conv3.blocks.0.bn2.weight", "module.res2plus1d.conv3.blocks.0.bn2.bias", "module.res2plus1d.conv3.blocks.0.bn2.running_mean", "module.res2plus1d.conv3.blocks.0.bn2.running_var", "module.res2plus1d.conv4.block1.downsampleconv.spatial_conv.weight", "module.res2plus1d.conv4.block1.downsampleconv.spatial_conv.bias", "module.res2plus1d.conv4.block1.downsampleconv.bn.weight", "module.res2plus1d.conv4.block1.downsampleconv.bn.bias", "module.res2plus1d.conv4.block1.downsampleconv.bn.running_mean", "module.res2plus1d.conv4.block1.downsampleconv.bn.running_var", "module.res2plus1d.conv4.block1.downsampleconv.temporal_conv.weight", "module.res2plus1d.conv4.block1.downsampleconv.temporal_conv.bias", "module.res2plus1d.conv4.block1.downsamplebn.weight", "module.res2plus1d.conv4.block1.downsamplebn.bias", "module.res2plus1d.conv4.block1.downsamplebn.running_mean", "module.res2plus1d.conv4.block1.downsamplebn.running_var", "module.res2plus1d.conv4.block1.conv1.spatial_conv.weight", "module.res2plus1d.conv4.block1.conv1.spatial_conv.bias", "module.res2plus1d.conv4.block1.conv1.bn.weight", "module.res2plus1d.conv4.block1.conv1.bn.bias", "module.res2plus1d.conv4.block1.conv1.bn.running_mean", "module.res2plus1d.conv4.block1.conv1.bn.running_var", "module.res2plus1d.conv4.block1.conv1.temporal_conv.weight", "module.res2plus1d.conv4.block1.conv1.temporal_conv.bias", "module.res2plus1d.conv4.block1.bn1.weight", "module.res2plus1d.conv4.block1.bn1.bias", "module.res2plus1d.conv4.block1.bn1.running_mean", "module.res2plus1d.conv4.block1.bn1.running_var", "module.res2plus1d.conv4.block1.conv2.spatial_conv.weight", "module.res2plus1d.conv4.block1.conv2.spatial_conv.bias", "module.res2plus1d.conv4.block1.conv2.bn.weight", "module.res2plus1d.conv4.block1.conv2.bn.bias", "module.res2plus1d.conv4.block1.conv2.bn.running_mean", "module.res2plus1d.conv4.block1.conv2.bn.running_var", "module.res2plus1d.conv4.block1.conv2.temporal_conv.weight", "module.res2plus1d.conv4.block1.conv2.temporal_conv.bias", "module.res2plus1d.conv4.block1.bn2.weight", "module.res2plus1d.conv4.block1.bn2.bias", "module.res2plus1d.conv4.block1.bn2.running_mean", "module.res2plus1d.conv4.block1.bn2.running_var", "module.res2plus1d.conv4.blocks.0.conv1.spatial_conv.weight", "module.res2plus1d.conv4.blocks.0.conv1.spatial_conv.bias", "module.res2plus1d.conv4.blocks.0.conv1.bn.weight", "module.res2plus1d.conv4.blocks.0.conv1.bn.bias", "module.res2plus1d.conv4.blocks.0.conv1.bn.running_mean", "module.res2plus1d.conv4.blocks.0.conv1.bn.running_var", "module.res2plus1d.conv4.blocks.0.conv1.temporal_conv.weight", "module.res2plus1d.conv4.blocks.0.conv1.temporal_conv.bias", "module.res2plus1d.conv4.blocks.0.bn1.weight", "module.res2plus1d.conv4.blocks.0.bn1.bias", "module.res2plus1d.conv4.blocks.0.bn1.running_mean", "module.res2plus1d.conv4.blocks.0.bn1.running_var", "module.res2plus1d.conv4.blocks.0.conv2.spatial_conv.weight", "module.res2plus1d.conv4.blocks.0.conv2.spatial_conv.bias", "module.res2plus1d.conv4.blocks.0.conv2.bn.weight", "module.res2plus1d.conv4.blocks.0.conv2.bn.bias", "module.res2plus1d.conv4.blocks.0.conv2.bn.running_mean", "module.res2plus1d.conv4.blocks.0.conv2.bn.running_var", "module.res2plus1d.conv4.blocks.0.conv2.temporal_conv.weight", "module.res2plus1d.conv4.blocks.0.conv2.temporal_conv.bias", "module.res2plus1d.conv4.blocks.0.bn2.weight", "module.res2plus1d.conv4.blocks.0.bn2.bias", "module.res2plus1d.conv4.blocks.0.bn2.running_mean", "module.res2plus1d.conv4.blocks.0.bn2.running_var", "module.res2plus1d.conv5.block1.downsampleconv.spatial_conv.weight", "module.res2plus1d.conv5.block1.downsampleconv.spatial_conv.bias", "module.res2plus1d.conv5.block1.downsampleconv.bn.weight", "module.res2plus1d.conv5.block1.downsampleconv.bn.bias", "module.res2plus1d.conv5.block1.downsampleconv.bn.running_mean", "module.res2plus1d.conv5.block1.downsampleconv.bn.running_var", "module.res2plus1d.conv5.block1.downsampleconv.temporal_conv.weight", "module.res2plus1d.conv5.block1.downsampleconv.temporal_conv.bias", "module.res2plus1d.conv5.block1.downsamplebn.weight", "module.res2plus1d.conv5.block1.downsamplebn.bias", "module.res2plus1d.conv5.block1.downsamplebn.running_mean", "module.res2plus1d.conv5.block1.downsamplebn.running_var", "module.res2plus1d.conv5.block1.conv1.spatial_conv.weight", "module.res2plus1d.conv5.block1.conv1.spatial_conv.bias", "module.res2plus1d.conv5.block1.conv1.bn.weight", "module.res2plus1d.conv5.block1.conv1.bn.bias", "module.res2plus1d.conv5.block1.conv1.bn.running_mean", "module.res2plus1d.conv5.block1.conv1.bn.running_var", "module.res2plus1d.conv5.block1.conv1.temporal_conv.weight", "module.res2plus1d.conv5.block1.conv1.temporal_conv.bias", "module.res2plus1d.conv5.block1.bn1.weight", "module.res2plus1d.conv5.block1.bn1.bias", "module.res2plus1d.conv5.block1.bn1.running_mean", "module.res2plus1d.conv5.block1.bn1.running_var", "module.res2plus1d.conv5.block1.conv2.spatial_conv.weight", "module.res2plus1d.conv5.block1.conv2.spatial_conv.bias", "module.res2plus1d.conv5.block1.conv2.bn.weight", "module.res2plus1d.conv5.block1.conv2.bn.bias", "module.res2plus1d.conv5.block1.conv2.bn.running_mean", "module.res2plus1d.conv5.block1.conv2.bn.running_var", "module.res2plus1d.conv5.block1.conv2.temporal_conv.weight", "module.res2plus1d.conv5.block1.conv2.temporal_conv.bias", "module.res2plus1d.conv5.block1.bn2.weight", "module.res2plus1d.conv5.block1.bn2.bias", "module.res2plus1d.conv5.block1.bn2.running_mean", "module.res2plus1d.conv5.block1.bn2.running_var", "module.res2plus1d.conv5.blocks.0.conv1.spatial_conv.weight", "module.res2plus1d.conv5.blocks.0.conv1.spatial_conv.bias", "module.res2plus1d.conv5.blocks.0.conv1.bn.weight", "module.res2plus1d.conv5.blocks.0.conv1.bn.bias", "module.res2plus1d.conv5.blocks.0.conv1.bn.running_mean", "module.res2plus1d.conv5.blocks.0.conv1.bn.running_var", "module.res2plus1d.conv5.blocks.0.conv1.temporal_conv.weight", "module.res2plus1d.conv5.blocks.0.conv1.temporal_conv.bias", "module.res2plus1d.conv5.blocks.0.bn1.weight", "module.res2plus1d.conv5.blocks.0.bn1.bias", "module.res2plus1d.conv5.blocks.0.bn1.running_mean", "module.res2plus1d.conv5.blocks.0.bn1.running_var", "module.res2plus1d.conv5.blocks.0.conv2.spatial_conv.weight", "module.res2plus1d.conv5.blocks.0.conv2.spatial_conv.bias", "module.res2plus1d.conv5.blocks.0.conv2.bn.weight", "module.res2plus1d.conv5.blocks.0.conv2.bn.bias", "module.res2plus1d.conv5.blocks.0.conv2.bn.running_mean", "module.res2plus1d.conv5.blocks.0.conv2.bn.running_var", "module.res2plus1d.conv5.blocks.0.conv2.temporal_conv.weight", "module.res2plus1d.conv5.blocks.0.conv2.temporal_conv.bias", "module.res2plus1d.conv5.blocks.0.bn2.weight", "module.res2plus1d.conv5.blocks.0.bn2.bias", "module.res2plus1d.conv5.blocks.0.bn2.running_mean", "module.res2plus1d.conv5.blocks.0.bn2.running_var", "module.res2plus1d.conv6.block1.downsampleconv.spatial_conv.weight", "module.res2plus1d.conv6.block1.downsampleconv.spatial_conv.bias", "module.res2plus1d.conv6.block1.downsampleconv.bn.weight", "module.res2plus1d.conv6.block1.downsampleconv.bn.bias", "module.res2plus1d.conv6.block1.downsampleconv.bn.running_mean", "module.res2plus1d.conv6.block1.downsampleconv.bn.running_var", "module.res2plus1d.conv6.block1.downsampleconv.temporal_conv.weight", "module.res2plus1d.conv6.block1.downsampleconv.temporal_conv.bias", "module.res2plus1d.conv6.block1.downsamplebn.weight", "module.res2plus1d.conv6.block1.downsamplebn.bias", "module.res2plus1d.conv6.block1.downsamplebn.running_mean", "module.res2plus1d.conv6.block1.downsamplebn.running_var", "module.res2plus1d.conv6.block1.conv1.spatial_conv.weight", "module.res2plus1d.conv6.block1.conv1.spatial_conv.bias", "module.res2plus1d.conv6.block1.conv1.bn.weight", "module.res2plus1d.conv6.block1.conv1.bn.bias", "module.res2plus1d.conv6.block1.conv1.bn.running_mean", "module.res2plus1d.conv6.block1.conv1.bn.running_var", "module.res2plus1d.conv6.block1.conv1.temporal_conv.weight", "module.res2plus1d.conv6.block1.conv1.temporal_conv.bias", "module.res2plus1d.conv6.block1.bn1.weight", "module.res2plus1d.conv6.block1.bn1.bias", "module.res2plus1d.conv6.block1.bn1.running_mean", "module.res2plus1d.conv6.block1.bn1.running_var", "module.res2plus1d.conv6.block1.conv2.spatial_conv.weight", "module.res2plus1d.conv6.block1.conv2.spatial_conv.bias", "module.res2plus1d.conv6.block1.conv2.bn.weight", "module.res2plus1d.conv6.block1.conv2.bn.bias", "module.res2plus1d.conv6.block1.conv2.bn.running_mean", "module.res2plus1d.conv6.block1.conv2.bn.running_var", "module.res2plus1d.conv6.block1.conv2.temporal_conv.weight", "module.res2plus1d.conv6.block1.conv2.temporal_conv.bias", "module.res2plus1d.conv6.block1.bn2.weight", "module.res2plus1d.conv6.block1.bn2.bias", "module.res2plus1d.conv6.block1.bn2.running_mean", "module.res2plus1d.conv6.block1.bn2.running_var", "module.res2plus1d.conv6.blocks.0.conv1.spatial_conv.weight", "module.res2plus1d.conv6.blocks.0.conv1.spatial_conv.bias", "module.res2plus1d.conv6.blocks.0.conv1.bn.weight", "module.res2plus1d.conv6.blocks.0.conv1.bn.bias", "module.res2plus1d.conv6.blocks.0.conv1.bn.running_mean", "module.res2plus1d.conv6.blocks.0.conv1.bn.running_var", "module.res2plus1d.conv6.blocks.0.conv1.temporal_conv.weight", "module.res2plus1d.conv6.blocks.0.conv1.temporal_conv.bias", "module.res2plus1d.conv6.blocks.0.bn1.weight", "module.res2plus1d.conv6.blocks.0.bn1.bias", "module.res2plus1d.conv6.blocks.0.bn1.running_mean", "module.res2plus1d.conv6.blocks.0.bn1.running_var", "module.res2plus1d.conv6.blocks.0.conv2.spatial_conv.weight", "module.res2plus1d.conv6.blocks.0.conv2.spatial_conv.bias", "module.res2plus1d.conv6.blocks.0.conv2.bn.weight", "module.res2plus1d.conv6.blocks.0.conv2.bn.bias", "module.res2plus1d.conv6.blocks.0.conv2.bn.running_mean", "module.res2plus1d.conv6.blocks.0.conv2.bn.running_var", "module.res2plus1d.conv6.blocks.0.conv2.temporal_conv.weight", "module.res2plus1d.conv6.blocks.0.conv2.temporal_conv.bias", "module.res2plus1d.conv6.blocks.0.bn2.weight", "module.res2plus1d.conv6.blocks.0.bn2.bias", "module.res2plus1d.conv6.blocks.0.bn2.running_mean", "module.res2plus1d.conv6.blocks.0.bn2.running_var", "module.linear.weight", "module.linear.bias". 
-	Unexpected key(s) in state_dict: "res2plus1d.conv1.spatial_conv.weight", "res2plus1d.conv1.spatial_conv.bias", "res2plus1d.conv1.bn.weight", "res2plus1d.conv1.bn.bias", "res2plus1d.conv1.bn.running_mean", "res2plus1d.conv1.bn.running_var", "res2plus1d.conv1.bn.num_batches_tracked", "res2plus1d.conv1.temporal_conv.weight", "res2plus1d.conv1.temporal_conv.bias", "res2plus1d.conv2.block1.conv1.spatial_conv.weight", "res2plus1d.conv2.block1.conv1.spatial_conv.bias", "res2plus1d.conv2.block1.conv1.bn.weight", "res2plus1d.conv2.block1.conv1.bn.bias", "res2plus1d.conv2.block1.conv1.bn.running_mean", "res2plus1d.conv2.block1.conv1.bn.running_var", "res2plus1d.conv2.block1.conv1.bn.num_batches_tracked", "res2plus1d.conv2.block1.conv1.temporal_conv.weight", "res2plus1d.conv2.block1.conv1.temporal_conv.bias", "res2plus1d.conv2.block1.bn1.weight", "res2plus1d.conv2.block1.bn1.bias", "res2plus1d.conv2.block1.bn1.running_mean", "res2plus1d.conv2.block1.bn1.running_var", "res2plus1d.conv2.block1.bn1.num_batches_tracked", "res2plus1d.conv2.block1.conv2.spatial_conv.weight", "res2plus1d.conv2.block1.conv2.spatial_conv.bias", "res2plus1d.conv2.block1.conv2.bn.weight", "res2plus1d.conv2.block1.conv2.bn.bias", "res2plus1d.conv2.block1.conv2.bn.running_mean", "res2plus1d.conv2.block1.conv2.bn.running_var", "res2plus1d.conv2.block1.conv2.bn.num_batches_tracked", "res2plus1d.conv2.block1.conv2.temporal_conv.weight", "res2plus1d.conv2.block1.conv2.temporal_conv.bias", "res2plus1d.conv2.block1.bn2.weight", "res2plus1d.conv2.block1.bn2.bias", "res2plus1d.conv2.block1.bn2.running_mean", "res2plus1d.conv2.block1.bn2.running_var", "res2plus1d.conv2.block1.bn2.num_batches_tracked", "res2plus1d.conv2.blocks.0.conv1.spatial_conv.weight", "res2plus1d.conv2.blocks.0.conv1.spatial_conv.bias", "res2plus1d.conv2.blocks.0.conv1.bn.weight", "res2plus1d.conv2.blocks.0.conv1.bn.bias", "res2plus1d.conv2.blocks.0.conv1.bn.running_mean", "res2plus1d.conv2.blocks.0.conv1.bn.running_var", "res2plus1d.conv2.blocks.0.conv1.bn.num_batches_tracked", "res2plus1d.conv2.blocks.0.conv1.temporal_conv.weight", "res2plus1d.conv2.blocks.0.conv1.temporal_conv.bias", "res2plus1d.conv2.blocks.0.bn1.weight", "res2plus1d.conv2.blocks.0.bn1.bias", "res2plus1d.conv2.blocks.0.bn1.running_mean", "res2plus1d.conv2.blocks.0.bn1.running_var", "res2plus1d.conv2.blocks.0.bn1.num_batches_tracked", "res2plus1d.conv2.blocks.0.conv2.spatial_conv.weight", "res2plus1d.conv2.blocks.0.conv2.spatial_conv.bias", "res2plus1d.conv2.blocks.0.conv2.bn.weight", "res2plus1d.conv2.blocks.0.conv2.bn.bias", "res2plus1d.conv2.blocks.0.conv2.bn.running_mean", "res2plus1d.conv2.blocks.0.conv2.bn.running_var", "res2plus1d.conv2.blocks.0.conv2.bn.num_batches_tracked", "res2plus1d.conv2.blocks.0.conv2.temporal_conv.weight", "res2plus1d.conv2.blocks.0.conv2.temporal_conv.bias", "res2plus1d.conv2.blocks.0.bn2.weight", "res2plus1d.conv2.blocks.0.bn2.bias", "res2plus1d.conv2.blocks.0.bn2.running_mean", "res2plus1d.conv2.blocks.0.bn2.running_var", "res2plus1d.conv2.blocks.0.bn2.num_batches_tracked", "res2plus1d.conv3.block1.downsampleconv.spatial_conv.weight", "res2plus1d.conv3.block1.downsampleconv.spatial_conv.bias", "res2plus1d.conv3.block1.downsampleconv.bn.weight", "res2plus1d.conv3.block1.downsampleconv.bn.bias", "res2plus1d.conv3.block1.downsampleconv.bn.running_mean", "res2plus1d.conv3.block1.downsampleconv.bn.running_var", "res2plus1d.conv3.block1.downsampleconv.bn.num_batches_tracked", "res2plus1d.conv3.block1.downsampleconv.temporal_conv.weight", "res2plus1d.conv3.block1.downsampleconv.temporal_conv.bias", "res2plus1d.conv3.block1.downsamplebn.weight", "res2plus1d.conv3.block1.downsamplebn.bias", "res2plus1d.conv3.block1.downsamplebn.running_mean", "res2plus1d.conv3.block1.downsamplebn.running_var", "res2plus1d.conv3.block1.downsamplebn.num_batches_tracked", "res2plus1d.conv3.block1.conv1.spatial_conv.weight", "res2plus1d.conv3.block1.conv1.spatial_conv.bias", "res2plus1d.conv3.block1.conv1.bn.weight", "res2plus1d.conv3.block1.conv1.bn.bias", "res2plus1d.conv3.block1.conv1.bn.running_mean", "res2plus1d.conv3.block1.conv1.bn.running_var", "res2plus1d.conv3.block1.conv1.bn.num_batches_tracked", "res2plus1d.conv3.block1.conv1.temporal_conv.weight", "res2plus1d.conv3.block1.conv1.temporal_conv.bias", "res2plus1d.conv3.block1.bn1.weight", "res2plus1d.conv3.block1.bn1.bias", "res2plus1d.conv3.block1.bn1.running_mean", "res2plus1d.conv3.block1.bn1.running_var", "res2plus1d.conv3.block1.bn1.num_batches_tracked", "res2plus1d.conv3.block1.conv2.spatial_conv.weight", "res2plus1d.conv3.block1.conv2.spatial_conv.bias", "res2plus1d.conv3.block1.conv2.bn.weight", "res2plus1d.conv3.block1.conv2.bn.bias", "res2plus1d.conv3.block1.conv2.bn.running_mean", "res2plus1d.conv3.block1.conv2.bn.running_var", "res2plus1d.conv3.block1.conv2.bn.num_batches_tracked", "res2plus1d.conv3.block1.conv2.temporal_conv.weight", "res2plus1d.conv3.block1.conv2.temporal_conv.bias", "res2plus1d.conv3.block1.bn2.weight", "res2plus1d.conv3.block1.bn2.bias", "res2plus1d.conv3.block1.bn2.running_mean", "res2plus1d.conv3.block1.bn2.running_var", "res2plus1d.conv3.block1.bn2.num_batches_tracked", "res2plus1d.conv3.blocks.0.conv1.spatial_conv.weight", "res2plus1d.conv3.blocks.0.conv1.spatial_conv.bias", "res2plus1d.conv3.blocks.0.conv1.bn.weight", "res2plus1d.conv3.blocks.0.conv1.bn.bias", "res2plus1d.conv3.blocks.0.conv1.bn.running_mean", "res2plus1d.conv3.blocks.0.conv1.bn.running_var", "res2plus1d.conv3.blocks.0.conv1.bn.num_batches_tracked", "res2plus1d.conv3.blocks.0.conv1.temporal_conv.weight", "res2plus1d.conv3.blocks.0.conv1.temporal_conv.bias", "res2plus1d.conv3.blocks.0.bn1.weight", "res2plus1d.conv3.blocks.0.bn1.bias", "res2plus1d.conv3.blocks.0.bn1.running_mean", "res2plus1d.conv3.blocks.0.bn1.running_var", "res2plus1d.conv3.blocks.0.bn1.num_batches_tracked", "res2plus1d.conv3.blocks.0.conv2.spatial_conv.weight", "res2plus1d.conv3.blocks.0.conv2.spatial_conv.bias", "res2plus1d.conv3.blocks.0.conv2.bn.weight", "res2plus1d.conv3.blocks.0.conv2.bn.bias", "res2plus1d.conv3.blocks.0.conv2.bn.running_mean", "res2plus1d.conv3.blocks.0.conv2.bn.running_var", "res2plus1d.conv3.blocks.0.conv2.bn.num_batches_tracked", "res2plus1d.conv3.blocks.0.conv2.temporal_conv.weight", "res2plus1d.conv3.blocks.0.conv2.temporal_conv.bias", "res2plus1d.conv3.blocks.0.bn2.weight", "res2plus1d.conv3.blocks.0.bn2.bias", "res2plus1d.conv3.blocks.0.bn2.running_mean", "res2plus1d.conv3.blocks.0.bn2.running_var", "res2plus1d.conv3.blocks.0.bn2.num_batches_tracked", "res2plus1d.conv4.block1.downsampleconv.spatial_conv.weight", "res2plus1d.conv4.block1.downsampleconv.spatial_conv.bias", "res2plus1d.conv4.block1.downsampleconv.bn.weight", "res2plus1d.conv4.block1.downsampleconv.bn.bias", "res2plus1d.conv4.block1.downsampleconv.bn.running_mean", "res2plus1d.conv4.block1.downsampleconv.bn.running_var", "res2plus1d.conv4.block1.downsampleconv.bn.num_batches_tracked", "res2plus1d.conv4.block1.downsampleconv.temporal_conv.weight", "res2plus1d.conv4.block1.downsampleconv.temporal_conv.bias", "res2plus1d.conv4.block1.downsamplebn.weight", "res2plus1d.conv4.block1.downsamplebn.bias", "res2plus1d.conv4.block1.downsamplebn.running_mean", "res2plus1d.conv4.block1.downsamplebn.running_var", "res2plus1d.conv4.block1.downsamplebn.num_batches_tracked", "res2plus1d.conv4.block1.conv1.spatial_conv.weight", "res2plus1d.conv4.block1.conv1.spatial_conv.bias", "res2plus1d.conv4.block1.conv1.bn.weight", "res2plus1d.conv4.block1.conv1.bn.bias", "res2plus1d.conv4.block1.conv1.bn.running_mean", "res2plus1d.conv4.block1.conv1.bn.running_var", "res2plus1d.conv4.block1.conv1.bn.num_batches_tracked", "res2plus1d.conv4.block1.conv1.temporal_conv.weight", "res2plus1d.conv4.block1.conv1.temporal_conv.bias", "res2plus1d.conv4.block1.bn1.weight", "res2plus1d.conv4.block1.bn1.bias", "res2plus1d.conv4.block1.bn1.running_mean", "res2plus1d.conv4.block1.bn1.running_var", "res2plus1d.conv4.block1.bn1.num_batches_tracked", "res2plus1d.conv4.block1.conv2.spatial_conv.weight", "res2plus1d.conv4.block1.conv2.spatial_conv.bias", "res2plus1d.conv4.block1.conv2.bn.weight", "res2plus1d.conv4.block1.conv2.bn.bias", "res2plus1d.conv4.block1.conv2.bn.running_mean", "res2plus1d.conv4.block1.conv2.bn.running_var", "res2plus1d.conv4.block1.conv2.bn.num_batches_tracked", "res2plus1d.conv4.block1.conv2.temporal_conv.weight", "res2plus1d.conv4.block1.conv2.temporal_conv.bias", "res2plus1d.conv4.block1.bn2.weight", "res2plus1d.conv4.block1.bn2.bias", "res2plus1d.conv4.block1.bn2.running_mean", "res2plus1d.conv4.block1.bn2.running_var", "res2plus1d.conv4.block1.bn2.num_batches_tracked", "res2plus1d.conv4.blocks.0.conv1.spatial_conv.weight", "res2plus1d.conv4.blocks.0.conv1.spatial_conv.bias", "res2plus1d.conv4.blocks.0.conv1.bn.weight", "res2plus1d.conv4.blocks.0.conv1.bn.bias", "res2plus1d.conv4.blocks.0.conv1.bn.running_mean", "res2plus1d.conv4.blocks.0.conv1.bn.running_var", "res2plus1d.conv4.blocks.0.conv1.bn.num_batches_tracked", "res2plus1d.conv4.blocks.0.conv1.temporal_conv.weight", "res2plus1d.conv4.blocks.0.conv1.temporal_conv.bias", "res2plus1d.conv4.blocks.0.bn1.weight", "res2plus1d.conv4.blocks.0.bn1.bias", "res2plus1d.conv4.blocks.0.bn1.running_mean", "res2plus1d.conv4.blocks.0.bn1.running_var", "res2plus1d.conv4.blocks.0.bn1.num_batches_tracked", "res2plus1d.conv4.blocks.0.conv2.spatial_conv.weight", "res2plus1d.conv4.blocks.0.conv2.spatial_conv.bias", "res2plus1d.conv4.blocks.0.conv2.bn.weight", "res2plus1d.conv4.blocks.0.conv2.bn.bias", "res2plus1d.conv4.blocks.0.conv2.bn.running_mean", "res2plus1d.conv4.blocks.0.conv2.bn.running_var", "res2plus1d.conv4.blocks.0.conv2.bn.num_batches_tracked", "res2plus1d.conv4.blocks.0.conv2.temporal_conv.weight", "res2plus1d.conv4.blocks.0.conv2.temporal_conv.bias", "res2plus1d.conv4.blocks.0.bn2.weight", "res2plus1d.conv4.blocks.0.bn2.bias", "res2plus1d.conv4.blocks.0.bn2.running_mean", "res2plus1d.conv4.blocks.0.bn2.running_var", "res2plus1d.conv4.blocks.0.bn2.num_batches_tracked", "res2plus1d.conv5.block1.downsampleconv.spatial_conv.weight", "res2plus1d.conv5.block1.downsampleconv.spatial_conv.bias", "res2plus1d.conv5.block1.downsampleconv.bn.weight", "res2plus1d.conv5.block1.downsampleconv.bn.bias", "res2plus1d.conv5.block1.downsampleconv.bn.running_mean", "res2plus1d.conv5.block1.downsampleconv.bn.running_var", "res2plus1d.conv5.block1.downsampleconv.bn.num_batches_tracked", "res2plus1d.conv5.block1.downsampleconv.temporal_conv.weight", "res2plus1d.conv5.block1.downsampleconv.temporal_conv.bias", "res2plus1d.conv5.block1.downsamplebn.weight", "res2plus1d.conv5.block1.downsamplebn.bias", "res2plus1d.conv5.block1.downsamplebn.running_mean", "res2plus1d.conv5.block1.downsamplebn.running_var", "res2plus1d.conv5.block1.downsamplebn.num_batches_tracked", "res2plus1d.conv5.block1.conv1.spatial_conv.weight", "res2plus1d.conv5.block1.conv1.spatial_conv.bias", "res2plus1d.conv5.block1.conv1.bn.weight", "res2plus1d.conv5.block1.conv1.bn.bias", "res2plus1d.conv5.block1.conv1.bn.running_mean", "res2plus1d.conv5.block1.conv1.bn.running_var", "res2plus1d.conv5.block1.conv1.bn.num_batches_tracked", "res2plus1d.conv5.block1.conv1.temporal_conv.weight", "res2plus1d.conv5.block1.conv1.temporal_conv.bias", "res2plus1d.conv5.block1.bn1.weight", "res2plus1d.conv5.block1.bn1.bias", "res2plus1d.conv5.block1.bn1.running_mean", "res2plus1d.conv5.block1.bn1.running_var", "res2plus1d.conv5.block1.bn1.num_batches_tracked", "res2plus1d.conv5.block1.conv2.spatial_conv.weight", "res2plus1d.conv5.block1.conv2.spatial_conv.bias", "res2plus1d.conv5.block1.conv2.bn.weight", "res2plus1d.conv5.block1.conv2.bn.bias", "res2plus1d.conv5.block1.conv2.bn.running_mean", "res2plus1d.conv5.block1.conv2.bn.running_var", "res2plus1d.conv5.block1.conv2.bn.num_batches_tracked", "res2plus1d.conv5.block1.conv2.temporal_conv.weight", "res2plus1d.conv5.block1.conv2.temporal_conv.bias", "res2plus1d.conv5.block1.bn2.weight", "res2plus1d.conv5.block1.bn2.bias", "res2plus1d.conv5.block1.bn2.running_mean", "res2plus1d.conv5.block1.bn2.running_var", "res2plus1d.conv5.block1.bn2.num_batches_tracked", "res2plus1d.conv5.blocks.0.conv1.spatial_conv.weight", "res2plus1d.conv5.blocks.0.conv1.spatial_conv.bias", "res2plus1d.conv5.blocks.0.conv1.bn.weight", "res2plus1d.conv5.blocks.0.conv1.bn.bias", "res2plus1d.conv5.blocks.0.conv1.bn.running_mean", "res2plus1d.conv5.blocks.0.conv1.bn.running_var", "res2plus1d.conv5.blocks.0.conv1.bn.num_batches_tracked", "res2plus1d.conv5.blocks.0.conv1.temporal_conv.weight", "res2plus1d.conv5.blocks.0.conv1.temporal_conv.bias", "res2plus1d.conv5.blocks.0.bn1.weight", "res2plus1d.conv5.blocks.0.bn1.bias", "res2plus1d.conv5.blocks.0.bn1.running_mean", "res2plus1d.conv5.blocks.0.bn1.running_var", "res2plus1d.conv5.blocks.0.bn1.num_batches_tracked", "res2plus1d.conv5.blocks.0.conv2.spatial_conv.weight", "res2plus1d.conv5.blocks.0.conv2.spatial_conv.bias", "res2plus1d.conv5.blocks.0.conv2.bn.weight", "res2plus1d.conv5.blocks.0.conv2.bn.bias", "res2plus1d.conv5.blocks.0.conv2.bn.running_mean", "res2plus1d.conv5.blocks.0.conv2.bn.running_var", "res2plus1d.conv5.blocks.0.conv2.bn.num_batches_tracked", "res2plus1d.conv5.blocks.0.conv2.temporal_conv.weight", "res2plus1d.conv5.blocks.0.conv2.temporal_conv.bias", "res2plus1d.conv5.blocks.0.bn2.weight", "res2plus1d.conv5.blocks.0.bn2.bias", "res2plus1d.conv5.blocks.0.bn2.running_mean", "res2plus1d.conv5.blocks.0.bn2.running_var", "res2plus1d.conv5.blocks.0.bn2.num_batches_tracked", "res2plus1d.conv6.block1.downsampleconv.spatial_conv.weight", "res2plus1d.conv6.block1.downsampleconv.spatial_conv.bias", "res2plus1d.conv6.block1.downsampleconv.bn.weight", "res2plus1d.conv6.block1.downsampleconv.bn.bias", "res2plus1d.conv6.block1.downsampleconv.bn.running_mean", "res2plus1d.conv6.block1.downsampleconv.bn.running_var", "res2plus1d.conv6.block1.downsampleconv.bn.num_batches_tracked", "res2plus1d.conv6.block1.downsampleconv.temporal_conv.weight", "res2plus1d.conv6.block1.downsampleconv.temporal_conv.bias", "res2plus1d.conv6.block1.downsamplebn.weight", "res2plus1d.conv6.block1.downsamplebn.bias", "res2plus1d.conv6.block1.downsamplebn.running_mean", "res2plus1d.conv6.block1.downsamplebn.running_var", "res2plus1d.conv6.block1.downsamplebn.num_batches_tracked", "res2plus1d.conv6.block1.conv1.spatial_conv.weight", "res2plus1d.conv6.block1.conv1.spatial_conv.bias", "res2plus1d.conv6.block1.conv1.bn.weight", "res2plus1d.conv6.block1.conv1.bn.bias", "res2plus1d.conv6.block1.conv1.bn.running_mean", "res2plus1d.conv6.block1.conv1.bn.running_var", "res2plus1d.conv6.block1.conv1.bn.num_batches_tracked", "res2plus1d.conv6.block1.conv1.temporal_conv.weight", "res2plus1d.conv6.block1.conv1.temporal_conv.bias", "res2plus1d.conv6.block1.bn1.weight", "res2plus1d.conv6.block1.bn1.bias", "res2plus1d.conv6.block1.bn1.running_mean", "res2plus1d.conv6.block1.bn1.running_var", "res2plus1d.conv6.block1.bn1.num_batches_tracked", "res2plus1d.conv6.block1.conv2.spatial_conv.weight", "res2plus1d.conv6.block1.conv2.spatial_conv.bias", "res2plus1d.conv6.block1.conv2.bn.weight", "res2plus1d.conv6.block1.conv2.bn.bias", "res2plus1d.conv6.block1.conv2.bn.running_mean", "res2plus1d.conv6.block1.conv2.bn.running_var", "res2plus1d.conv6.block1.conv2.bn.num_batches_tracked", "res2plus1d.conv6.block1.conv2.temporal_conv.weight", "res2plus1d.conv6.block1.conv2.temporal_conv.bias", "res2plus1d.conv6.block1.bn2.weight", "res2plus1d.conv6.block1.bn2.bias", "res2plus1d.conv6.block1.bn2.running_mean", "res2plus1d.conv6.block1.bn2.running_var", "res2plus1d.conv6.block1.bn2.num_batches_tracked", "res2plus1d.conv6.blocks.0.conv1.spatial_conv.weight", "res2plus1d.conv6.blocks.0.conv1.spatial_conv.bias", "res2plus1d.conv6.blocks.0.conv1.bn.weight", "res2plus1d.conv6.blocks.0.conv1.bn.bias", "res2plus1d.conv6.blocks.0.conv1.bn.running_mean", "res2plus1d.conv6.blocks.0.conv1.bn.running_var", "res2plus1d.conv6.blocks.0.conv1.bn.num_batches_tracked", "res2plus1d.conv6.blocks.0.conv1.temporal_conv.weight", "res2plus1d.conv6.blocks.0.conv1.temporal_conv.bias", "res2plus1d.conv6.blocks.0.bn1.weight", "res2plus1d.conv6.blocks.0.bn1.bias", "res2plus1d.conv6.blocks.0.bn1.running_mean", "res2plus1d.conv6.blocks.0.bn1.running_var", "res2plus1d.conv6.blocks.0.bn1.num_batches_tracked", "res2plus1d.conv6.blocks.0.conv2.spatial_conv.weight", "res2plus1d.conv6.blocks.0.conv2.spatial_conv.bias", "res2plus1d.conv6.blocks.0.conv2.bn.weight", "res2plus1d.conv6.blocks.0.conv2.bn.bias", "res2plus1d.conv6.blocks.0.conv2.bn.running_mean", "res2plus1d.conv6.blocks.0.conv2.bn.running_var", "res2plus1d.conv6.blocks.0.conv2.bn.num_batches_tracked", "res2plus1d.conv6.blocks.0.conv2.temporal_conv.weight", "res2plus1d.conv6.blocks.0.conv2.temporal_conv.bias", "res2plus1d.conv6.blocks.0.bn2.weight", "res2plus1d.conv6.blocks.0.bn2.bias", "res2plus1d.conv6.blocks.0.bn2.running_mean", "res2plus1d.conv6.blocks.0.bn2.running_var", "res2plus1d.conv6.blocks.0.bn2.num_batches_tracked", "linear.weight", "linear.bias". 
-  0%|          | 0/25 [00:00<?, ?epochs/s]
-train Loss: 3.0311188263782376 Acc: 0.12492153170119273
-  4%|▍         | 1/25 [05:32<2:12:52, 332.19s/epochs]val Loss: 2.969096018208398 Acc: 0.13657407407407407
-
-
-train Loss: 2.2143151082112515 Acc: 0.31701192718141874
-  8%|▊         | 2/25 [11:10<2:08:04, 334.12s/epochs]val Loss: 2.8543069627549915 Acc: 0.21990740740740738
-
-
-train Loss: 1.5970109718368253 Acc: 0.5078468298807283
- 12%|█▏        | 3/25 [16:47<2:02:48, 334.95s/epochs]val Loss: 1.2864491885896616 Acc: 0.6481481481481481
-
-
-train Loss: 1.1659599707999173 Acc: 0.6468926553672317
- 16%|█▌        | 4/25 [22:26<1:57:38, 336.12s/epochs]val Loss: 0.9670803486455783 Acc: 0.7222222222222222
-
-
-train Loss: 0.8537533089602735 Acc: 0.7332077840552418
- 20%|██        | 5/25 [28:04<1:52:14, 336.73s/epochs]val Loss: 1.1517853698244802 Acc: 0.6712962962962963
-
-
-train Loss: 0.6571851623410035 Acc: 0.8025737602008789
- 24%|██▍       | 6/25 [33:42<1:46:45, 337.12s/epochs]val Loss: 1.2607149664895756 Acc: 0.6805555555555555
-
-
-train Loss: 0.5078925195349437 Acc: 0.8518518518518519
- 28%|██▊       | 7/25 [39:22<1:41:21, 337.84s/epochs]val Loss: 0.9776389690346655 Acc: 0.7337962962962963
-
-
-train Loss: 0.42809295040196915 Acc: 0.8735091023226617
- 32%|███▏      | 8/25 [45:01<1:35:51, 338.31s/epochs]val Loss: 0.9138644671364562 Acc: 0.7638888888888888
-
-
-train Loss: 0.30549202025011507 Acc: 0.9143126177024483
- 36%|███▌      | 9/25 [50:38<1:30:07, 337.94s/epochs]val Loss: 0.6991094672526675 Acc: 0.8101851851851851
-
-
-train Loss: 0.2890658619867992 Acc: 0.9108600125549279
- 40%|████      | 10/25 [56:19<1:24:40, 338.69s/epochs]val Loss: 0.700698206727869 Acc: 0.8263888888888888
-
-
-train Loss: 0.17220629529053508 Acc: 0.9497802887633396
- 44%|████▍     | 11/25 [1:01:57<1:18:58, 338.45s/epochs]val Loss: 0.28762163977161337 Acc: 0.9212962962962963
-
-
-train Loss: 0.12226962878755238 Acc: 0.9714375392341494
- 48%|████▊     | 12/25 [1:07:35<1:13:18, 338.37s/epochs]val Loss: 0.31839422571903453 Acc: 0.912037037037037
-
-
-train Loss: 0.09937900110111061 Acc: 0.9739485247959825
- 52%|█████▏    | 13/25 [1:13:12<1:07:36, 338.02s/epochs]val Loss: 0.2842150354489503 Acc: 0.9143518518518517
-
-
-train Loss: 0.09998514255297143 Acc: 0.972693032015066
- 56%|█████▌    | 14/25 [1:18:49<1:01:56, 337.87s/epochs]val Loss: 0.28412585491080083 Acc: 0.923611111111111
-
-
-train Loss: 0.08920619941280883 Acc: 0.9774011299435029
- 60%|██████    | 15/25 [1:24:28<56:20, 338.03s/epochs]  val Loss: 0.2927462069373077 Acc: 0.9259259259259258
-
-
-train Loss: 0.07536741928621303 Acc: 0.9846202134337728
- 64%|██████▍   | 16/25 [1:30:06<50:42, 338.07s/epochs]val Loss: 0.27197608618933844 Acc: 0.9259259259259258
-
-
-train Loss: 0.07382073116588728 Acc: 0.9855618330194602
- 68%|██████▊   | 17/25 [1:35:42<45:00, 337.57s/epochs]val Loss: 0.26703118241322144 Acc: 0.9328703703703703
-
-
-train Loss: 0.07703152769251054 Acc: 0.9830508474576272
- 72%|███████▏  | 18/25 [1:41:21<39:25, 337.94s/epochs]val Loss: 0.276691153649625 Acc: 0.9328703703703703
-
-
-train Loss: 0.06588177009978509 Acc: 0.9861895794099185
- 76%|███████▌  | 19/25 [1:46:59<33:47, 337.95s/epochs]val Loss: 0.2921905239298347 Acc: 0.9259259259259258
-
-
-train Loss: 0.0670377814947006 Acc: 0.987445072190835
- 80%|████████  | 20/25 [1:52:38<28:11, 338.26s/epochs]val Loss: 0.27256001638067606 Acc: 0.9259259259259258
-
-
-train Loss: 0.05599880020797127 Acc: 0.9896421845574389
- 84%|████████▍ | 21/25 [1:58:14<22:30, 337.61s/epochs]val Loss: 0.2926011325971221 Acc: 0.9189814814814814
-
-Traceback (most recent call last):
-  File "trainer.py", line 170, in <module>
-    train_model(args.data, args.model, args.num_classes,
-  File "trainer.py", line 45, in train_model
-    shuffled_list = os.listdir(os.path.join(folder, subject, label))
-NameError: name 'label' is not defined
-  0%|          | 0/25 [00:00<?, ?epochs/s]
-train Loss: 2.974397434280902 Acc: 0.13250319284802045
-  4%|▍         | 1/25 [05:29<2:11:45, 329.38s/epochs]val Loss: 3.366761215429738 Acc: 0.102880658436214
-
-
-train Loss: 2.0961358063065685 Acc: 0.3441890166028097
-  8%|▊         | 2/25 [11:04<2:06:52, 330.99s/epochs]val Loss: 3.8543338756011836 Acc: 0.16255144032921812
-
-
-train Loss: 1.4242334272974144 Acc: 0.5609833971902938
- 12%|█▏        | 3/25 [16:37<2:01:36, 331.64s/epochs]val Loss: 3.1535435566686307 Acc: 0.20370370370370372
-
-
-train Loss: 0.9927298975478035 Acc: 0.6855044699872287
- 16%|█▌        | 4/25 [22:08<1:56:02, 331.57s/epochs]val Loss: 3.029394405859488 Acc: 0.1934156378600823
-
-
-train Loss: 0.7136730885520901 Acc: 0.7841634738186463
- 20%|██        | 5/25 [27:43<1:50:52, 332.64s/epochs]val Loss: 2.831141670054369 Acc: 0.23456790123456792
-
-
-train Loss: 0.5438461515857418 Acc: 0.8387611749680716
- 24%|██▍       | 6/25 [33:16<1:45:18, 332.57s/epochs]val Loss: 2.7112611865801086 Acc: 0.25102880658436216
-
-
-train Loss: 0.4206510591885672 Acc: 0.8738825031928481
- 28%|██▊       | 7/25 [38:48<1:39:45, 332.54s/epochs]val Loss: 2.8105046751567855 Acc: 0.24074074074074076
-
-
-train Loss: 0.35026348323001033 Acc: 0.8917624521072798
- 32%|███▏      | 8/25 [44:21<1:34:15, 332.67s/epochs]val Loss: 2.770426439159692 Acc: 0.31275720164609055
-
-
-train Loss: 0.29196074776027925 Acc: 0.9128352490421456
- 36%|███▌      | 9/25 [49:53<1:28:38, 332.39s/epochs]val Loss: 3.4312489542941496 Acc: 0.1954732510288066
-
-
-train Loss: 0.23590947593185257 Acc: 0.9329501915708813
- 40%|████      | 10/25 [55:27<1:23:12, 332.84s/epochs]val Loss: 2.7458481977505937 Acc: 0.3168724279835391
-
-
-train Loss: 0.1036500756427798 Acc: 0.975095785440613
- 44%|████▍     | 11/25 [1:01:01<1:17:46, 333.29s/epochs]val Loss: 2.0425928612795388 Acc: 0.49588477366255146
-
-
-train Loss: 0.0896808834217779 Acc: 0.9763729246487868
- 48%|████▊     | 12/25 [1:06:35<1:12:13, 333.34s/epochs]val Loss: 1.9253691331839855 Acc: 0.5020576131687243
-
-
-train Loss: 0.08099741749328682 Acc: 0.981800766283525
- 52%|█████▏    | 13/25 [1:12:08<1:06:42, 333.50s/epochs]val Loss: 2.092748721931206 Acc: 0.47325102880658443
-
-
-train Loss: 0.06541225572603149 Acc: 0.9862707535121329
- 56%|█████▌    | 14/25 [1:17:43<1:01:10, 333.68s/epochs]val Loss: 2.0937063389844854 Acc: 0.4547325102880659
-
-
-train Loss: 0.07010101191973074 Acc: 0.9840357598978289
- 60%|██████    | 15/25 [1:23:17<55:39, 333.93s/epochs]  val Loss: 2.070198558730844 Acc: 0.4588477366255144
-
-
-train Loss: 0.054818043964623565 Acc: 0.9875478927203065
- 64%|██████▍   | 16/25 [1:28:50<50:02, 333.60s/epochs]val Loss: 2.228716236328392 Acc: 0.42386831275720166
-
-
-train Loss: 0.05364779009181045 Acc: 0.9891443167305237
- 68%|██████▊   | 17/25 [1:34:23<44:27, 333.41s/epochs]val Loss: 2.223179142170973 Acc: 0.411522633744856
-
-
-train Loss: 0.05310488882383015 Acc: 0.9875478927203065
- 72%|███████▏  | 18/25 [1:39:55<38:51, 333.07s/epochs]val Loss: 2.216730548521128 Acc: 0.4547325102880659
-
-
-train Loss: 0.04900958930189206 Acc: 0.9881864623243934
- 76%|███████▌  | 19/25 [1:45:26<33:14, 332.46s/epochs]val Loss: 2.13768792642978 Acc: 0.45679012345679015
-
-
-train Loss: 0.046544840974176584 Acc: 0.9913793103448276
- 80%|████████  | 20/25 [1:50:56<27:38, 331.62s/epochs]val Loss: 2.0855601358806153 Acc: 0.46707818930041156
-
-
-train Loss: 0.047792080697921104 Acc: 0.990102171136654
- 84%|████████▍ | 21/25 [1:56:27<22:05, 331.33s/epochs]val Loss: 2.15276648220702 Acc: 0.4547325102880659
-
-
-train Loss: 0.03952029610000965 Acc: 0.9945721583652619
- 88%|████████▊ | 22/25 [2:01:55<16:31, 330.40s/epochs]val Loss: 2.0715444114963706 Acc: 0.46707818930041156
-
-
-train Loss: 0.04283741083279214 Acc: 0.9913793103448276
- 92%|█████████▏| 23/25 [2:07:22<10:58, 329.43s/epochs]val Loss: 2.1446299548011747 Acc: 0.4650205761316873
-
-
-train Loss: 0.04275460452606157 Acc: 0.9920178799489144
- 96%|█████████▌| 24/25 [2:12:50<05:29, 329.05s/epochs]val Loss: 2.137585764068635 Acc: 0.462962962962963
-
-
-train Loss: 0.04297033405332264 Acc: 0.9929757343550447
-100%|██████████| 25/25 [2:18:18<00:00, 328.63s/epochs]100%|██████████| 25/25 [2:18:18<00:00, 331.93s/epochs]
-val Loss: 2.1185837594079384 Acc: 0.47325102880658443
-
-Training complete in 2.0h 18.0m 18.228392124176025s
-  0%|          | 0/25 [00:00<?, ?epochs/s]  0%|          | 0/25 [00:00<?, ?epochs/s]
-train Loss: 2.9786614100699498 Acc: 0.1326860841423948
-  4%|▍         | 1/25 [05:43<2:17:13, 343.05s/epochs]val Loss: 2.473917300298334 Acc: 0.1963470319634703
-
-
-train Loss: 2.1086507402612518 Acc: 0.3568696675492792
-  8%|▊         | 2/25 [11:32<2:12:17, 345.11s/epochs]val Loss: 2.018779479205336 Acc: 0.3333333333333333
-
-
-train Loss: 1.4739127583137572 Acc: 0.5428067078552515
- 12%|█▏        | 3/25 [17:21<2:06:56, 346.22s/epochs]val Loss: 2.0835590970842808 Acc: 0.3835616438356164
-
-
-train Loss: 1.0429206483765328 Acc: 0.6807884671962341
- 16%|█▌        | 4/25 [23:10<2:01:23, 346.83s/epochs]val Loss: 1.9694658857706475 Acc: 0.4703196347031963
-
-
-train Loss: 0.7744261031643227 Acc: 0.7743453957046189
- 20%|██        | 5/25 [28:59<1:55:54, 347.74s/epochs]val Loss: 1.201270413078946 Acc: 0.639269406392694
-
-
-train Loss: 0.572996944903661 Acc: 0.8273021476904971
- 24%|██▍       | 6/25 [34:50<1:50:23, 348.59s/epochs]val Loss: 1.8264973427607045 Acc: 0.5205479452054794
-
-
-train Loss: 0.4253210078581848 Acc: 0.8737864077669902
- 28%|██▊       | 7/25 [40:38<1:44:33, 348.54s/epochs]val Loss: 2.102681853132297 Acc: 0.547945205479452
-
-
-train Loss: 0.3665189109457683 Acc: 0.8923212709620476
- 32%|███▏      | 8/25 [46:28<1:38:50, 348.87s/epochs]val Loss: 1.9434294154586857 Acc: 0.5799086757990868
-
-
-train Loss: 0.3728369397691293 Acc: 0.8876140041188584
- 36%|███▌      | 9/25 [52:18<1:33:06, 349.15s/epochs]val Loss: 1.5162893291477744 Acc: 0.5799086757990868
-
-
-train Loss: 0.29347992915836596 Acc: 0.9117387466902029
- 40%|████      | 10/25 [58:07<1:27:15, 349.03s/epochs]val Loss: 1.2463904197681823 Acc: 0.7031963470319634
-
-
-train Loss: 0.15097279147094017 Acc: 0.9611650485436892
- 44%|████▍     | 11/25 [1:03:58<1:21:37, 349.80s/epochs]val Loss: 1.4171610249729496 Acc: 0.6301369863013698
-
-
-train Loss: 0.11191702196026557 Acc: 0.9720506031185642
- 48%|████▊     | 12/25 [1:09:48<1:15:45, 349.67s/epochs]val Loss: 1.3880162717706468 Acc: 0.639269406392694
-
-
-train Loss: 0.09079449740683736 Acc: 0.9788172992056486
- 52%|█████▏    | 13/25 [1:15:39<1:10:01, 350.13s/epochs]val Loss: 1.3017289944452375 Acc: 0.6301369863013698
-
-
-train Loss: 0.08920129081006917 Acc: 0.9802883200941452
- 56%|█████▌    | 14/25 [1:21:28<1:04:08, 349.90s/epochs]val Loss: 1.453898735399694 Acc: 0.639269406392694
-
-
-train Loss: 0.08349123090849743 Acc: 0.9814651368049425
- 60%|██████    | 15/25 [1:27:18<58:20, 350.01s/epochs]  val Loss: 1.384946123055782 Acc: 0.6027397260273972
-
-
-train Loss: 0.07748952068519434 Acc: 0.9841129744042365
- 64%|██████▍   | 16/25 [1:33:07<52:27, 349.71s/epochs]val Loss: 1.3490640182541385 Acc: 0.634703196347032
-
-
-train Loss: 0.0658663280749933 Acc: 0.9844071785819358
- 68%|██████▊   | 17/25 [1:38:58<46:40, 350.06s/epochs]val Loss: 1.3548082796788719 Acc: 0.634703196347032
-
-
-train Loss: 0.0655534671057905 Acc: 0.9841129744042365
- 72%|███████▏  | 18/25 [1:44:51<40:55, 350.75s/epochs]val Loss: 1.304930300873887 Acc: 0.6529680365296804
-
-
-train Loss: 0.06124766124234318 Acc: 0.9861724036481317
- 76%|███████▌  | 19/25 [1:50:42<35:04, 350.80s/epochs]val Loss: 1.5586369423829358 Acc: 0.6210045662100456
-
-
-train Loss: 0.06147409964979756 Acc: 0.9867608120035304
- 80%|████████  | 20/25 [1:56:32<29:13, 350.63s/epochs]val Loss: 1.3229082393732143 Acc: 0.6621004566210045
-
-
-train Loss: 0.05602457730327526 Acc: 0.9888202412474256
- 84%|████████▍ | 21/25 [2:02:23<23:22, 350.72s/epochs]val Loss: 1.3319849032296303 Acc: 0.639269406392694
-
-
-train Loss: 0.051419965380177485 Acc: 0.9897028537805236
- 88%|████████▊ | 22/25 [2:08:11<17:30, 350.14s/epochs]val Loss: 1.6269458687054121 Acc: 0.6164383561643836
-
-
-train Loss: 0.05112114117915651 Acc: 0.9888202412474256
- 92%|█████████▏| 23/25 [2:14:02<11:40, 350.28s/epochs]val Loss: 1.4989483962313923 Acc: 0.6073059360730593
-
-
-train Loss: 0.05037845463951473 Acc: 0.9905854663136215
- 96%|█████████▌| 24/25 [2:19:52<05:50, 350.18s/epochs]val Loss: 1.3785961409445988 Acc: 0.634703196347032
-
-
-train Loss: 0.052204815954642346 Acc: 0.9911738746690202
-100%|██████████| 25/25 [2:25:42<00:00, 350.00s/epochs]100%|██████████| 25/25 [2:25:42<00:00, 349.69s/epochs]
-val Loss: 1.421884306961645 Acc: 0.6164383561643836
-
-Training complete in 2.0h 25.0m 42.145044803619385s
