@@ -28,43 +28,16 @@ def pad_3d_sequence(batch):
 def train_model(directory, path, num_classes, batch_size, num_epochs,k):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     folder = Path(directory)
-    sample_dir = os.listdir(os.path.join(folder, "zxsu"))
     train_fnames, train_labels, val_fnames, val_labels = [], [], [], []
-<<<<<<< HEAD
-    # for label in sorted(sample_dir):
-    #     for subject in sorted(os.listdir(folder)):
-    #         shuffled_list = os.listdir(os.path.join(folder, subject, label))
-    #         random.Random(4).shuffle(shuffled_list)
-    #         for fname in shuffled_list[:-2]:
-    #             train_fnames.append(os.path.join(folder, subject, label, fname))
-    #             train_labels.append(label)
-    #         for fname in shuffled_list[-2:]:
-    #             val_fnames.append(os.path.join(folder, subject, label, fname))
-    #             val_labels.append(label)
-        # for label in sorted(sample_dir):
-    for label in sorted(sample_dir):
-        for subject in sorted(os.listdir(folder)):
-            shuffled_list = os.listdir(os.path.join(folder, subject, label))
-            random.Random(4).shuffle(shuffled_list)
-            if subject != "zxsu":
-                for fname in shuffled_list:
-                    train_fnames.append(os.path.join(folder, subject, label, fname))
-                    train_labels.append(label)
-            else:
-                for fname in shuffled_list:
-                    val_fnames.append(os.path.join(folder, subject, label, fname))
-                    val_labels.append(label)
-=======
     for label in sorted(os.listdir(folder)):
         shuffled_list = os.listdir(os.path.join(folder, label))
         random.Random(4).shuffle(shuffled_list)
-        for fname in shuffled_list[:k]+shuffled_list[k+1:]:
+        for fname in shuffled_list[:k]+shuffled_list[k+2:]:
             train_fnames.append(os.path.join(folder, label, fname))
             train_labels.append(label)
-        for fname in shuffled_list[k:k+1]:
+        for fname in shuffled_list[k:k+2]:
             val_fnames.append(os.path.join(folder, label, fname))
             val_labels.append(label)
->>>>>>> schubert
     layer_sizes = [2, 2, 2, 2, 2, 2]
     save = True
     # initalize the ResNet 18 version of this model

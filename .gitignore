@@ -15,3 +15,5 @@ features
 user_independence
 tensorboard_data
 tb
+*.tar.gz
+lujiaxing
